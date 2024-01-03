@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chatgpt"
+        android:title="Pitaj CHATGPT"
+        android:icon="@drawable/baseline_question_mark_24"/>
+
+    <item
+        android:id="@+id/location"
+        android:title="Google Maps"
+        android:icon="@drawable/baseline_place_24"/>
+
+    <item
+        android:id="@+id/pocetna"
+        android:title="Početna"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/popis"
+        android:title="Popis lokacija"
+        android:icon="@drawable/baseline_landscape_24"/>
+
+    <item
+        android:id="@+id/ar"
+        android:title="AR kamera"
+        android:icon="@drawable/baseline_view_in_ar_24"/>
+
+</menu>

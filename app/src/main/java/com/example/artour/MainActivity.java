@@ -1,30 +1,51 @@
 package com.example.artour;
 
-import android.content.Intent;
-import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.view.View;
-
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
+import android.app.Activity;
+import android.os.Bundle;
 import com.example.artour.databinding.ActivityMainBinding;
 
-import android.view.Menu;
-import android.view.MenuItem;
+
+
 
 public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
+        replaceFragment(new PocetnaFragment());
+        binding.bottomNavigationView.setBackground(null);
+
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.chatgpt) {
+                replaceFragment(new PitajFragment());
+            } else if (item.getItemId() == R.id.location) {
+                replaceFragment(new MapaFragment());
+            } else if (item.getItemId() == R.id.pocetna) {
+                replaceFragment(new PocetnaFragment());
+            } else if (item.getItemId() == R.id.popis) {
+                replaceFragment(new PopisFragment());
+            } else if (item.getItemId() == R.id.ar) {
+                replaceFragment(new ARFragment());
+            }
+
+            return true;
+        });
+    }
+
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
     }
 }

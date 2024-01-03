@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_dynamic_primary90"
-    tools:context=".MainActivity">
+    tools:context=".PocetnaFragment">
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
@@ -58,8 +59,7 @@
         android:textStyle="bold"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        android:translationY="-260dp"
-        android:visibility="gone"/>
+        android:translationY="-260dp"/>
 
     <TextView
         android:id="@+id/kartice"
@@ -71,16 +71,14 @@
         android:textStyle="bold"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        android:translationY="-180dp"
-        android:visibility="gone"/>
+        android:translationY="-180dp"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="410dp"
         android:layout_height="210dp"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        android:translationY="-50dp"
-        android:visibility="gone"/>
+        android:translationY="-50dp"/>
 
     <ImageView
         android:id="@+id/ikona1"
@@ -89,9 +87,8 @@
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
         app:srcCompat="@drawable/baseline_forest_24"
-        android:translationY="80dp"
-        android:translationX="-155dp"
-        android:visibility="gone"/>
+        android:translationY="120dp"
+        android:translationX="-140dp"/>
     <ImageView
         android:id="@+id/ikona2"
         android:layout_width="50dp"
@@ -99,9 +96,8 @@
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
         app:srcCompat="@drawable/baseline_local_cafe_24"
-        android:translationY="80dp"
-        android:translationX="-95dp"
-        android:visibility="gone"/>
+        android:translationY="120dp"
+        android:translationX="-70dp"/>
     <ImageView
         android:id="@+id/ikona3"
         android:layout_width="50dp"
@@ -109,8 +105,38 @@
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
         app:srcCompat="@drawable/baseline_church_24"
-        android:translationY="80dp"
-        android:translationX="-35dp"
-        android:visibility="gone"/>
+        android:translationY="120dp"
+        android:translationX="0dp"/>
 
+    <ImageView
+        android:id="@+id/ikona4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_hotel_24"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationY="120dp"
+        android:translationX="70dp"/>
+
+    <ImageView
+        android:id="@+id/ikona5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_place_24"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationY="120dp"
+        android:translationX="140dp"/>
+
+    <TextView
+        android:id="@+id/kategorije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORIJE"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationY="60dp"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
