@@ -35,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:contentDescription="info"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="end|top"
         app:srcCompat="@android:drawable/ic_dialog_info" />
@@ -44,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:contentDescription="properties"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="start|top"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
