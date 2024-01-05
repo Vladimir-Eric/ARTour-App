@@ -15,6 +15,7 @@ public class PopisFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_popis, container, false);
+        //promjena layouta sa fragment_popis na fragment_destinations
+        return inflater.inflate(R.layout.fragment_destinations, container, false);
     }
 }

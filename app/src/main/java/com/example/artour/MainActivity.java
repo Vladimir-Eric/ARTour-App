@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.pocetna) {
                 replaceFragment(new PocetnaFragment());
             } else if (item.getItemId() == R.id.popis) {
-                replaceFragment(new PopisFragment());
+                //promjena sa PopisFragment na DestinationsFragment zbog ubačenog fragmenta
+                replaceFragment(new DestinationsFragment());
             } else if (item.getItemId() == R.id.ar) {
                 replaceFragment(new ARFragment());
             }
