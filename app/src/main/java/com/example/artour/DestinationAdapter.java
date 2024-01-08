@@ -14,10 +14,17 @@ import java.util.List;
 public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.ViewHolder> {
 
     private final List<Destination> destinationList;
+    private final OnDestinationClickListener onDestinationClickListener;
 
-    public DestinationAdapter(List<Destination> destinationList) {
+    public DestinationAdapter(List<Destination> destinationList, OnDestinationClickListener onDestinationClickListener) {
         this.destinationList = destinationList;
+        this.onDestinationClickListener = onDestinationClickListener;
     }
+
+    public interface OnDestinationClickListener {
+        void onDestinationClick(int destinationId);
+    }
+
 
     @NonNull
     @Override
@@ -34,6 +41,12 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         holder.destinationTitle.setText(destination.getTitle());
         holder.destinationImage.setImageResource(destination.getImageResource());
         holder.destinationDescription.setText(destination.getDescription());
+
+        holder.itemView.setOnClickListener(view -> {
+            if (onDestinationClickListener != null) {
+                onDestinationClickListener.onDestinationClick(destination.getId());
+            }
+        });
     }
 
     @Override

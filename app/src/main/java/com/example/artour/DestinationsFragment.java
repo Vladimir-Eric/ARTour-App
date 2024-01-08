@@ -6,13 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DestinationsFragment extends Fragment {
+public class DestinationsFragment extends Fragment implements DestinationAdapter.OnDestinationClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -23,11 +24,24 @@ public class DestinationsFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         List<Destination> destinationList = createDestinationList();
-        DestinationAdapter adapter = new DestinationAdapter(destinationList);
+        DestinationAdapter adapter = new DestinationAdapter(destinationList, this); // Dodajte "this" kao OnDestinationClickListener
         recyclerView.setAdapter(adapter);
 
         return view;
     }
+
+    public void onDestinationClick(int destinationId) {
+        openZnamenitostiFragment(destinationId);
+    }
+
+    private void openZnamenitostiFragment(int destinationId) {
+        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, ZnamenitostiFragment.newInstance(destinationId));
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+
 
     private List<Destination> createDestinationList() {
         List<Destination> destinations = new ArrayList<>();

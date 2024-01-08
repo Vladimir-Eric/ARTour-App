@@ -7,6 +7,25 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- ovo je moje kada sam radio destinacije -->
+        <string name="dest1">Opis destinacije 1</string>
+        <string name="dest2">Opis destinacije 2</string>
+        <string name="dest3">Opis destinacije 3</string>
+        <string name="dest4">Opis destinacije 4</string>
+        <!-- Dodajte ostale destinacije... -->
+
+        <string name="default_opis">Defaultni opis</string>
+
+    <!-- do ovde -->
+
+    <string name="navigation_drawer_open">Otvori meni</string>
+    <string name="navigation_drawer_close">Zatvori meni</string>
+
+
+    <string name="znamenitost_slika">Znamenitost slika</string>
+    <string name="opis_znamenitosti">Opis znamenitosti</string>
+    <string name="dugme_nazad">Nazad</string>
+
     <string name="lorem_ipsum">
        Prva apk
     </string>
