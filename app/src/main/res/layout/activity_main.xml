@@ -38,7 +38,8 @@
         android:contentDescription="info"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="end|top"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/properties"
@@ -48,7 +49,8 @@
         android:contentDescription="properties"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="start|top"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:srcCompat="@drawable/baseline_menu_24"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/naslov"
