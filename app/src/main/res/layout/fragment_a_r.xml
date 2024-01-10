@@ -6,13 +6,50 @@
     android:background="@color/pozadina"
     tools:context=".ARFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="AR"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="@color/white"/>
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Temperature: N/A"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperatureTextView"
+            android:gravity="center"
+            android:text="Humidity: N/A"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weatherInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidityTextView"
+            android:gravity="center"
+            android:text="Weather: N/A"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weatherInfoTextView"
+            android:gravity="center"
+            android:text="Wind Speed: N/A"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </FrameLayout>
