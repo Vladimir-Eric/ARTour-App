@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/chatgpt"
-        android:title="Pitaj CHATGPT"
+        android:title="Često postavljana pitanja"
         android:icon="@drawable/baseline_question_mark_24"/>
 
     <item

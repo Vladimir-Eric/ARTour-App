@@ -4,12 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_primary90"
+    android:background="@color/pozadina"
     tools:context=".MainActivity">
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:headerLayout="@layout/top_toolbar"
+        android:layout_gravity="start"/>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
@@ -30,27 +36,6 @@
             app:menu="@menu/bottom_menu"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <ImageView
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:contentDescription="info"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="end|top"
-        app:srcCompat="@android:drawable/ic_dialog_info"
-        android:visibility="gone"/>
-
-    <ImageView
-        android:id="@+id/properties"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:contentDescription="properties"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="start|top"
-        app:srcCompat="@drawable/baseline_menu_24"
-        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/naslov"
