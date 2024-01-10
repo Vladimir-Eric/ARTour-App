@@ -13,6 +13,9 @@ public class WeatherResponse {
     @SerializedName("wind")
     private WindInfo windInfo;
 
+    public WeatherResponse() {
+    }
+
     public MainInfo getMainInfo() {
         return mainInfo;
     }
@@ -42,6 +45,7 @@ public class WeatherResponse {
     }
 
     public static class WeatherInfo {
+
         @SerializedName("main")
         private String weatherMain;
 
@@ -50,6 +54,14 @@ public class WeatherResponse {
         public String getWeatherMain() {
             return weatherMain;
         }
+
+        @SerializedName("icon")
+        private String weatherIcon;
+
+        public String getWeatherIcon() {
+            return weatherIcon;
+        }
+
     }
 
     public static class WindInfo {

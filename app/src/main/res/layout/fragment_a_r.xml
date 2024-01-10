@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/temperatureTextView"
@@ -50,6 +51,17 @@
             android:text="Wind Speed: N/A"
             android:textColor="@color/white"
             android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/weatherIconImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/windSpeedTextView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="TODO" />
+
     </LinearLayout>
+
 
 </FrameLayout>

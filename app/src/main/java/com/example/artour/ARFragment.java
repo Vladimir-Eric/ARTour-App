@@ -7,9 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Locale;
+import com.squareup.picasso.Picasso;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -21,6 +22,7 @@ import retrofit2.Response;
 public class ARFragment extends Fragment {
 
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/";
+    // https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&units=metric
     private static final String API_KEY = "51f470aceb657d8b45bda10108a0b3d2";
     private static final String CITY_NAME = "Milići";
 
@@ -28,9 +30,10 @@ public class ARFragment extends Fragment {
     private TextView humidityTextView;
     private TextView weatherInfoTextView;
     private TextView windSpeedTextView;
+    private ImageView weatherIconImageView;
+
 
     private void displayTemperature(double temperature) {
-        String formattedTemperature = String.format(Locale.getDefault(), "%.1f", temperature);
         temperatureTextView.setText("Temperature: " + temperature);
     }
 
@@ -46,6 +49,17 @@ public class ARFragment extends Fragment {
         windSpeedTextView.setText("Wind Speed: " + windSpeed + " m/s");
     }
 
+    private void displayWeatherIcon(String weatherIcon) {
+        // Konstruirajte pun URL za sliku koristeći base URL za ikone od OpenWeather API-ja
+        String iconUrl = "https://openweathermap.org/img/wn/" + weatherIcon + ".png";
+
+        // Učitajte sliku koristeći neku biblioteku poput Picasso ili Glide
+        // Uključite odgovarajuću ovisnost u vašem build.gradle datoteci za Picasso ili Glide
+
+        // Primjer korištenja Picasso biblioteke:
+        Picasso.get().load(iconUrl).into(weatherIconImageView);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_a_r, container, false);
@@ -53,6 +67,7 @@ public class ARFragment extends Fragment {
         humidityTextView = view.findViewById(R.id.humidityTextView);
         weatherInfoTextView = view.findViewById(R.id.weatherInfoTextView);
         windSpeedTextView = view.findViewById(R.id.windSpeedTextView);
+        weatherIconImageView = view.findViewById(R.id.weatherIconImageView);
 
             // Inicijalizirajte Retrofit instancu
         Retrofit retrofit = new Retrofit.Builder()
@@ -91,11 +106,13 @@ public class ARFragment extends Fragment {
                         int humidity = weatherResponse.getMainInfo().getHumidity();
                         String weatherInfo = weatherResponse.getWeatherInfo()[0].getWeatherMain();
                         double windSpeed = weatherResponse.getWindInfo().getWindSpeed();
+                        String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
 
                         displayTemperature(temperature);
                         displayHumidity(humidity);
                         displayWeatherInfo(weatherInfo);
                         displayWindSpeed(windSpeed);
+                        displayWeatherIcon(weatherIcon);
                     }
                 } else {
                     // Obrada neuspješnog odgovora
