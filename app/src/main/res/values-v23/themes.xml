@@ -2,8 +2,9 @@
 
     <style name="Theme.ARTour" parent="Base.Theme.ARTour">
         <!-- Transparent system bars for edge-to-edge. -->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/pozadina</item>
+        <item name="android:statusBarColor">@color/pozadina</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+
     </style>
 </resources>
