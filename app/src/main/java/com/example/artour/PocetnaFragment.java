@@ -24,7 +24,6 @@ import java.util.Random;
 public class PocetnaFragment extends Fragment {
 
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/";
-    // https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&units=metric
     private static final String API_KEY1 = "51f470aceb657d8b45bda10108a0b3d2";
     private static final String API_KEY2 = "62239b9f50779b246af00153acec56cb";
     private static final String[] API_KEYS = {API_KEY1, API_KEY2};
@@ -36,11 +35,8 @@ public class PocetnaFragment extends Fragment {
     private TextView windSpeedTextView;
     private ImageView weatherIconImageView;
 
-
-    public static void main(String[] args) {
-        String randomApiKey = getRandomApiKey();
-        System.out.println("Selected API Key: " + randomApiKey);
-    }
+    private boolean dataLoaded = false;
+    private WeatherResponse cachedWeatherResponse;
 
     private static String getRandomApiKey() {
         Random random = new Random();
@@ -65,14 +61,22 @@ public class PocetnaFragment extends Fragment {
     }
 
     private void displayWeatherIcon(String weatherIcon) {
-        // Konstruirajte pun URL za sliku koristeći base URL za ikone od OpenWeather API-ja
         String iconUrl = "https://openweathermap.org/img/wn/" + weatherIcon + ".png";
-
-        // Učitajte sliku koristeći neku biblioteku poput Picasso ili Glide
-        // Uključite odgovarajuću ovisnost u vašem build.gradle datoteci za Picasso ili Glide
-
-        // Primjer korištenja Picasso biblioteke:
         Picasso.get().load(iconUrl).into(weatherIconImageView);
+    }
+
+    private void displayWeatherData(WeatherResponse weatherResponse) {
+        double temperature = weatherResponse.getMainInfo().getTemperature();
+        int humidity = weatherResponse.getMainInfo().getHumidity();
+        String weatherInfo = weatherResponse.getWeatherInfo()[0].getWeatherMain();
+        double windSpeed = weatherResponse.getWindInfo().getWindSpeed();
+        String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
+
+        displayTemperature(temperature);
+        displayHumidity(humidity);
+        displayWeatherInfo(weatherInfo);
+        displayWindSpeed(windSpeed);
+        displayWeatherIcon(weatherIcon);
     }
 
     @Override
@@ -84,60 +88,39 @@ public class PocetnaFragment extends Fragment {
         windSpeedTextView = view.findViewById(R.id.windSpeedTextView);
         weatherIconImageView = view.findViewById(R.id.weatherIconImageView);
 
-        // Inicijalizirajte Retrofit instancu
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+        if (!dataLoaded) {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
 
-        // Nastavite s korištenjem Retrofit instance za dohvaćanje podataka
-        // ...
+            WeatherService weatherService = retrofit.create(WeatherService.class);
 
-        fetchWeatherData();
+            Call<WeatherResponse> call = weatherService.getWeather(CITY_NAME, getRandomApiKey());
+
+            call.enqueue(new Callback<WeatherResponse>() {
+                public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
+                    if (response.isSuccessful()) {
+                        WeatherResponse weatherResponse = response.body();
+                        if (weatherResponse != null) {
+                            cachedWeatherResponse = weatherResponse;
+                            dataLoaded = true;
+                            displayWeatherData(weatherResponse);
+                        }
+                    } else {
+                        // Obrada neuspješnog odgovora
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<WeatherResponse> call, Throwable t) {
+                    // Obrada greške
+                }
+            });
+        } else {
+            displayWeatherData(cachedWeatherResponse);
+        }
 
         return view;
-    }
-
-    private void fetchWeatherData() {
-        // Inicijalizirajte Retrofit objekt
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL) //http://openweathermap.org/data/2.5
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        // Inicijalizirajte WeatherService pomoću Retrofit objekta
-        WeatherService weatherService = retrofit.create(WeatherService.class);
-
-        // Napravite poziv prema API-ju
-        Call<WeatherResponse> call = weatherService.getWeather(CITY_NAME, getRandomApiKey());
-
-        // Izvršite asinkroni poziv
-        call.enqueue(new Callback<WeatherResponse>() {
-            public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
-                if (response.isSuccessful()) {
-                    WeatherResponse weatherResponse = response.body();
-                    if (weatherResponse != null) {
-                        double temperature = weatherResponse.getMainInfo().getTemperature();
-                        int humidity = weatherResponse.getMainInfo().getHumidity();
-                        String weatherInfo = weatherResponse.getWeatherInfo()[0].getWeatherMain();
-                        double windSpeed = weatherResponse.getWindInfo().getWindSpeed();
-                        String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
-
-                        displayTemperature(temperature);
-                        displayHumidity(humidity);
-                        displayWeatherInfo(weatherInfo);
-                        displayWindSpeed(windSpeed);
-                        displayWeatherIcon(weatherIcon);
-                    }
-                } else {
-                    // Obrada neuspješnog odgovora
-                }
-            }
-
-            @Override
-            public void onFailure(Call<WeatherResponse> call, Throwable t) {
-                // Handle failure
-            }
-        });
     }
 }

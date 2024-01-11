@@ -1,0 +1,24 @@
+[33mcommit a029a302c6484aad22aa018bbd7e4b929b705c81[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: c5bf49c 361b69f
+Author: Sergej Kaldesic <sergej.kaldesic@gmail.com>
+Date:   Sun Dec 3 15:23:01 2023 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit c5bf49caa6e799fa3dcdf571bf783ea03ba9cd5a[m
+Author: Sergej Kaldesic <sergej.kaldesic@gmail.com>
+Date:   Sun Dec 3 15:22:45 2023 +0100
+
+    Commit test
+
+[33mcommit 361b69f9302d3394c46ef74abc3814d6117a180f[m
+Author: Mekflajn <milenkomm@gmail.com>
+Date:   Sun Dec 3 15:18:10 2023 +0100
+
+    Brisanje teksta.
+
+[33mcommit e4713bd6ac74b5822e72cb636c2c6d686531b640[m
+Author: Sergej Kaldesic <sergej.kaldesic@gmail.com>
+Date:   Sun Dec 3 14:21:11 2023 +0100
+
+    Prvi commit! Sergej Kaldesić
