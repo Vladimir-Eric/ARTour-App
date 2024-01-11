@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/chatgpt"
-        android:title="Često postavljana pitanja"
-        android:icon="@drawable/baseline_question_mark_24"/>
+        android:title="Info"
+        android:icon="@drawable/commentsquestion"/>
 
     <item
         android:id="@+id/location"
-        android:title="Google Maps"
-        android:icon="@drawable/baseline_place_24"/>
+        android:title="Mape"
+        android:icon="@drawable/marker"/>
 
     <item
         android:id="@+id/pocetna"
         android:title="Početna"
-        android:icon="@drawable/baseline_home_24"/>
+        android:icon="@drawable/home"/>
 
     <item
         android:id="@+id/popis"
-        android:title="Popis lokacija"
-        android:icon="@drawable/baseline_landscape_24"/>
+        android:title="Lokacije"
+        android:icon="@drawable/picture"/>
 
     <item
         android:id="@+id/ar"
-        android:title="AR kamera"
-        android:icon="@drawable/baseline_view_in_ar_24"/>
+        android:title="Kamera"
+        android:icon="@drawable/aintel"/>
 
 </menu>

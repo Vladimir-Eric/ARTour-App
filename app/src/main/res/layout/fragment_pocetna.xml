@@ -38,40 +38,55 @@
                 android:layout_marginRight="20dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/temperatureTextView"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Temperature: N/A"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/humidityTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/temperatureTextView"
-                    android:text="Humidity: N/A"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/temperatureTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="Temperature: N/A"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/weatherInfoTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/humidityTextView"
-                    android:text="Weather: N/A"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/humidityTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/temperatureTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="Humidity: N/A"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/windSpeedTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/weatherInfoTextView"
-                    android:text="Wind Speed: N/A"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/weatherInfoTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/humidityTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="Weather: N/A"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/windSpeedTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/weatherInfoTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="Wind Speed: N/A"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -83,27 +98,30 @@
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </FrameLayout>
+        android:layout_height="match_parent"></FrameLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottomAppBar"
         android:layout_gravity="bottom"
-        android:background="@color/white"
+        android:background="@android:color/white"
+        android:visibility="invisible"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="50dp">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/bottomNavigationView"
-            android:layout_marginEnd="20dp"
-            app:labelVisibilityMode="labeled"
-            android:background="@android:color/transparent"
-            app:menu="@menu/bottom_menu"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu" />
 
     <TextView
         android:id="@+id/naslov"
@@ -113,16 +131,16 @@
         android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:translationY="-260dp"
         app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:translationY="-260dp"/>
+        app:layout_anchorGravity="center" />
 
     <TextView
         android:id="@+id/kategorije"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="KATEGORIJE"
         android:fontFamily="sans-serif-condensed"
+        android:text="KATEGORIJE"
         android:textSize="20dp"
         android:textStyle="bold"
         android:translationY="-180dp"
@@ -133,81 +151,81 @@
         android:id="@+id/dugme1"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:src="@drawable/baseline_forest_24"
-        android:translationY="-120dp"
-        android:translationX="-140dp"
+        android:background="@color/pozadina"
         android:scaleType="centerCrop"
-        android:background="@color/pozadina"/>
+        android:src="@drawable/baseline_forest_24"
+        android:translationX="-140dp"
+        android:translationY="-120dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <ImageButton
         android:id="@+id/dugme2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:src="@drawable/baseline_local_cafe_24"
-        android:translationY="-120dp"
-        android:translationX="-70dp"
+        android:background="@color/pozadina"
         android:scaleType="centerCrop"
-        android:background="@color/pozadina"/>
+        android:src="@drawable/baseline_local_cafe_24"
+        android:translationX="-70dp"
+        android:translationY="-120dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <ImageButton
         android:id="@+id/dugme3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:src="@drawable/baseline_church_24"
-        android:translationY="-120dp"
-        android:translationX="0dp"
+        android:background="@color/pozadina"
         android:scaleType="centerCrop"
-        android:background="@color/pozadina"/>
+        android:src="@drawable/baseline_church_24"
+        android:translationX="0dp"
+        android:translationY="-120dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <ImageButton
         android:id="@+id/dugme4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:src="@drawable/baseline_hotel_24"
-        android:translationY="-120dp"
-        android:translationX="70dp"
+        android:background="@color/pozadina"
         android:scaleType="centerCrop"
-        android:background="@color/pozadina"/>
+        android:src="@drawable/baseline_hotel_24"
+        android:translationX="70dp"
+        android:translationY="-120dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <ImageButton
         android:id="@+id/dugme5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:src="@drawable/baseline_place_24"
-        android:translationY="-120dp"
-        android:translationX="140dp"
+        android:background="@color/pozadina"
         android:scaleType="centerCrop"
-        android:background="@color/pozadina"/>
+        android:src="@drawable/baseline_place_24"
+        android:translationX="140dp"
+        android:translationY="-120dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <TextView
         android:id="@+id/kartice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IZDVOJENE LOKACIJE"
         android:fontFamily="sans-serif-condensed"
+        android:text="IZDVOJENE LOKACIJE"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:translationY="-50dp"
         app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:translationY="-50dp"/>
+        app:layout_anchorGravity="center" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:translationY="100dp"
         app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        android:translationY="100dp"/>
+        app:layout_anchorGravity="center" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

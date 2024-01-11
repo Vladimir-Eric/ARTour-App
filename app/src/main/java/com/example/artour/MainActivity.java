@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavigationView.setBackground(null);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.chatgpt) {
-                replaceFragment(new PitajFragment());
+            if (item.getItemId() == R.id.pocetna) {
+                replaceFragment(new PocetnaFragment());
             } else if (item.getItemId() == R.id.location) {
                 replaceFragment(new MapaFragment());
-            } else if (item.getItemId() == R.id.pocetna) {
-                replaceFragment(new PocetnaFragment());
+            } else if (item.getItemId() == R.id.chatgpt) {
+                replaceFragment(new PitajFragment());
             } else if (item.getItemId() == R.id.popis) {
                 //promjena sa PopisFragment na DestinationsFragment zbog ubačenog fragmenta
                 replaceFragment(new DestinationsFragment());
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         });
+        binding.bottomNavigationView.setSelectedItemId(R.id.pocetna);
     }
 
     private void replaceFragment(Fragment fragment) {
