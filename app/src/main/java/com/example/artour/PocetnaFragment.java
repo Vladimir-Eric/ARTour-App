@@ -1,5 +1,6 @@
 package com.example.artour;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -79,6 +80,7 @@ public class PocetnaFragment extends Fragment {
         displayWeatherIcon(weatherIcon);
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pocetna, container, false);

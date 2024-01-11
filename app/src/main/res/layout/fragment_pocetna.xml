@@ -7,6 +7,79 @@
     android:background="@color/pozadina"
     tools:context=".PocetnaFragment">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="90dp"
+
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="#00FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/weatherIconImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/windSpeedTextView"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/temperatureTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature: N/A"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/humidityTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/temperatureTextView"
+                    android:text="Humidity: N/A"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/weatherInfoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/humidityTextView"
+                    android:text="Weather: N/A"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/windSpeedTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/weatherInfoTextView"
+                    android:text="Wind Speed: N/A"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
