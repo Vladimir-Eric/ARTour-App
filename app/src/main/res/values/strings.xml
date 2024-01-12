@@ -18,6 +18,19 @@
 
     <!-- do ovde -->
 
+    <!-- vremenska prognoza -->
+    <string name="clear">Vedro nebo</string>
+    <string name="clouds">Prorijeđeni oblaci</string>
+    <string name="scattered_clouds">Rasuti oblaci</string>
+    <string name="broken_clouds">Rastureni oblaci</string>
+    <string name="shower_rain">Pljusak</string>
+    <string name="rain">Kiša</string>
+    <string name="thunderstorm">Grmljavina</string>
+    <string name="snow">Snijeg</string>
+    <string name="mist">Magla</string>
+    <string name="stalni_opis">Nema pod.</string>
+
+
     <string name="navigation_drawer_open">Otvori meni</string>
     <string name="navigation_drawer_close">Zatvori meni</string>
 

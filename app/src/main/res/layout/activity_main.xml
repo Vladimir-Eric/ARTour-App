@@ -38,7 +38,7 @@
 
         <FrameLayout
             android:layout_width="406dp"
-            android:layout_height="128dp"
+            android:layout_height="120dp"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginHorizontal="30dp"
             android:visibility="visible"

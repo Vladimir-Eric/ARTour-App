@@ -22,6 +22,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class PocetnaFragment extends Fragment {
@@ -78,7 +79,16 @@ public class PocetnaFragment extends Fragment {
         double windSpeed = weatherResponse.getWindInfo().getWindSpeed();
         String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
 
-        displayTemperature(temperature);
+        DecimalFormat decimalFormat = new DecimalFormat("00.0");
+
+        double kelvin = 273.15;
+
+        double temperatureInCelsius = temperature - kelvin;
+
+        // Formatiranje temperature sa dve decimale
+        String formattedTemperature = decimalFormat.format(temperatureInCelsius);
+
+        displayTemperature(Double.parseDouble(formattedTemperature));
         displayHumidity(humidity);
         displayWeatherInfo(weatherInfo);
         displayWindSpeed(windSpeed);
