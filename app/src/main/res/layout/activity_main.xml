@@ -30,23 +30,34 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-    <FrameLayout
-        android:layout_width="340dp"
-        android:layout_height="80dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="30dp"
-        android:visibility="visible">
+        android:layout_marginBottom="0dp">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom|center|center_horizontal"
-            android:background="@drawable/rounded_bottom_navigation_bar"
-            android:elevation="8dp"
-            android:visibility="visible" />
-    </FrameLayout>
+        <FrameLayout
+            android:layout_width="406dp"
+            android:layout_height="128dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="340dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|center|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_bottom_navigation_bar"
+                android:elevation="8dp"
+                android:visibility="visible" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -55,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_vertical"
         android:layout_marginHorizontal="35dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/rounded_bottom_navigation_bar"
         android:visibility="visible"
         app:labelVisibilityMode="labeled"
