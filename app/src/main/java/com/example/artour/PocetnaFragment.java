@@ -4,10 +4,12 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +25,9 @@ import retrofit2.Response;
 import java.util.Random;
 
 public class PocetnaFragment extends Fragment {
+
+    private ViewPager2 viewPager;
+    private ViewPagerAdapter viewPagerAdapter;
 
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/";
     private static final String API_KEY1 = "51f470aceb657d8b45bda10108a0b3d2";
@@ -122,6 +127,61 @@ public class PocetnaFragment extends Fragment {
         } else {
             displayWeatherData(cachedWeatherResponse);
         }
+
+        viewPager = view.findViewById(R.id.viewPager);
+        viewPagerAdapter = new ViewPagerAdapter(getContext());
+
+        // Dodajte slike i tekstove u adapter
+        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 1");
+        viewPagerAdapter.addSlide(R.drawable.toranj, "Tekst 2");
+        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 3");
+        viewPagerAdapter.addSlide(R.drawable.default_image, "Tekst 4");
+        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 5");
+
+        viewPager.setAdapter(viewPagerAdapter);
+
+        // Postavljanje OnClickListener-a za svaki ImageButton
+        ImageButton dugme1 = view.findViewById(R.id.dugme1);
+        ImageButton dugme2 = view.findViewById(R.id.dugme2);
+        ImageButton dugme3 = view.findViewById(R.id.dugme3);
+        ImageButton dugme4 = view.findViewById(R.id.dugme4);
+        ImageButton dugme5 = view.findViewById(R.id.dugme5);
+
+        dugme1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Postavljanje trenutnog prikazanog elementa u ViewPager2
+                viewPager.setCurrentItem(0);
+            }
+        });
+
+        dugme2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(1);
+            }
+        });
+
+        dugme3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(2);
+            }
+        });
+
+        dugme4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(3);
+            }
+        });
+
+        dugme5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(4);
+            }
+        });
 
         return view;
     }

@@ -7,11 +7,50 @@
     android:background="@color/pozadina"
     tools:context=".PocetnaFragment">
 
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_anchorGravity="start|end"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/baseline_menu_24" />
+
+    <TextView
+        android:id="@+id/glavniNaslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="ARTour" />
+
+    <ImageView
+        android:id="@+id/ikonica"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|top"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="90dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="90dp"
 
         android:foregroundGravity="center"
         app:cardBackgroundColor="#00FFFFFF">
@@ -95,10 +134,204 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/kategorije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="KATEGORIJE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationY="-125dp"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationX="-140dp"
+        android:translationY="-65dp">
+
+        <ImageButton
+            android:id="@+id/dugme1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_forest_24"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="center" />
+        <TextView
+            android:id="@+id/tekst1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Priroda"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/frame1"
+            app:layout_anchorGravity="bottom|center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationX="-70dp"
+        android:translationY="-65dp">
+
+        <ImageButton
+            android:id="@+id/dugme2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_local_cafe_24"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="center" />
+
+        <TextView
+            android:id="@+id/tekst2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Objekti"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/frame1"
+            app:layout_anchorGravity="bottom|center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationX="0dp"
+        android:translationY="-65dp">
+
+        <ImageButton
+            android:id="@+id/dugme3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_church_24"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="center" />
+
+        <TextView
+            android:id="@+id/tekst3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Spomenici"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/frame1"
+            app:layout_anchorGravity="bottom|center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationX="70dp"
+        android:translationY="-65dp">
+
+        <ImageButton
+            android:id="@+id/dugme4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_hotel_24"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="center" />
+
+        <TextView
+            android:id="@+id/tekst4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Objekti"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/frame1"
+            app:layout_anchorGravity="bottom|center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_anchor="@id/frame_layout"
+        app:layout_anchorGravity="center"
+        android:translationX="140dp"
+        android:translationY="-65dp">
+
+        <ImageButton
+            android:id="@+id/dugme5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_place_24"
+            app:layout_anchor="@id/frame_layout"
+            app:layout_anchorGravity="center" />
+
+        <TextView
+            android:id="@+id/tekst5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="37dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Objekti"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/frame1"
+            app:layout_anchorGravity="bottom|center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/kartice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="IZDVOJENE LOKACIJE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationY="10dp"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:translationY="140dp"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent" />
+
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -122,110 +355,5 @@
         android:visibility="invisible"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_menu" />
-
-    <TextView
-        android:id="@+id/naslov"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:translationY="-260dp"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <TextView
-        android:id="@+id/kategorije"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="KATEGORIJE"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationY="-180dp"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <ImageButton
-        android:id="@+id/dugme1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/pozadina"
-        android:scaleType="centerCrop"
-        android:src="@drawable/baseline_forest_24"
-        android:translationX="-140dp"
-        android:translationY="-120dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <ImageButton
-        android:id="@+id/dugme2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/pozadina"
-        android:scaleType="centerCrop"
-        android:src="@drawable/baseline_local_cafe_24"
-        android:translationX="-70dp"
-        android:translationY="-120dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <ImageButton
-        android:id="@+id/dugme3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/pozadina"
-        android:scaleType="centerCrop"
-        android:src="@drawable/baseline_church_24"
-        android:translationX="0dp"
-        android:translationY="-120dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <ImageButton
-        android:id="@+id/dugme4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/pozadina"
-        android:scaleType="centerCrop"
-        android:src="@drawable/baseline_hotel_24"
-        android:translationX="70dp"
-        android:translationY="-120dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <ImageButton
-        android:id="@+id/dugme5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/pozadina"
-        android:scaleType="centerCrop"
-        android:src="@drawable/baseline_place_24"
-        android:translationX="140dp"
-        android:translationY="-120dp"
-        app:layout_anchor="@id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <TextView
-        android:id="@+id/kartice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="IZDVOJENE LOKACIJE"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationY="-50dp"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:translationY="100dp"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
