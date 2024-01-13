@@ -115,8 +115,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_below="@id/windSpeedTextView"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_gravity="center"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -161,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginRight="10dp"
                         android:gravity="center|center_horizontal|center_vertical"
                         android:orientation="horizontal"
                         android:padding="2dp">
@@ -190,7 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginRight="10dp"
                         android:gravity="center|center_horizontal|center_vertical"
                         android:orientation="horizontal">
 
@@ -242,7 +241,7 @@
                     android:layout_marginVertical="10dp"
                     android:fontFamily="@font/carossoftbold"
                     android:text="Kategorije"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -439,10 +438,12 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/viewPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_anchor="@+id/frame_layout"
+                        android:orientation="horizontal"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
