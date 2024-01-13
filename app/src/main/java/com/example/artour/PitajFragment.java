@@ -32,13 +32,29 @@ public class PitajFragment extends Fragment {
 
     private PitajAdapter createPitajAdapter() {
         List<String> listaPitanja = new ArrayList<>();
-        listaPitanja.add("Pitanje 1");
-        listaPitanja.add("Pitanje 2");
+        listaPitanja.add("Pumpe na opštini Milići");
+        listaPitanja.add("Apoteke na opštini Milići");
+        listaPitanja.add("Banke na opštini Milići");
+        listaPitanja.add("Marketi na opštini Milići");
+        listaPitanja.add("Kafići na opštini Milići");
+        listaPitanja.add("Pošta na opštini Milići");
+        listaPitanja.add("Godišnji događaji na  opštini Milići");
+        listaPitanja.add("Autobuske linije koje prolaze kroz opštinu Milići");
+        listaPitanja.add("Hitne službe na opštini Milići");
+        listaPitanja.add("Pitanje 10");
         // Dodajte još pitanja prema potrebi...
 
         HashMap<String, PitanjeOdgovorModel> mapaPitanjaOdgovora = new HashMap<>();
-        mapaPitanjaOdgovora.put("Pitanje 1", new PitanjeOdgovorModel("Pitanje 1", "Odgovor na pitanje 1"));
-        mapaPitanjaOdgovora.put("Pitanje 2", new PitanjeOdgovorModel("Pitanje 2", "Odgovor na pitanje 2"));
+        mapaPitanjaOdgovora.put("Pumpe na opštini Milići", new PitanjeOdgovorModel("Pumpe na opštini Milići", "Odgovor na pitanje 1"));
+        mapaPitanjaOdgovora.put("Apoteke na opštini Milići", new PitanjeOdgovorModel("Apoteke na opštini Milići", "Odgovor na pitanje 2"));
+        mapaPitanjaOdgovora.put("Banke na opštini Milići", new PitanjeOdgovorModel("Banke na opštini Milići", "Odgovor na pitanje 3"));
+        mapaPitanjaOdgovora.put("Marketi na opštini Milići", new PitanjeOdgovorModel("Marketi na opštini Milići", "Odgovor na pitanje 4"));
+        mapaPitanjaOdgovora.put("Kafići na opštini Milići", new PitanjeOdgovorModel("Kafići na opštini Milići", "Odgovor na pitanje 5"));
+        mapaPitanjaOdgovora.put("Pošta na opštini Milići", new PitanjeOdgovorModel("Pošta na opštini Milići", "Odgovor na pitanje 6"));
+        mapaPitanjaOdgovora.put("Godišnji događaji na  opštini Milići", new PitanjeOdgovorModel("Godišnji događaji na  opštini Milići", "Odgovor na pitanje 7"));
+        mapaPitanjaOdgovora.put("Autobuske linije koje prolaze kroz opštinu Milići", new PitanjeOdgovorModel("Autobuske linije koje prolaze kroz opštinu Milići", "Odgovor na pitanje 8"));
+        mapaPitanjaOdgovora.put("Hitne službe na opštini Milići", new PitanjeOdgovorModel("Hitne službe na opštini Milići", "Odgovor na pitanje 9"));
+        mapaPitanjaOdgovora.put("Pitanje 10", new PitanjeOdgovorModel("Pitanje 10", "Odgovor na pitanje 10"));
         // Dodajte još pitanja i odgovora prema potrebi...
 
         return new PitajAdapter(requireContext(), listaPitanja, mapaPitanjaOdgovora);

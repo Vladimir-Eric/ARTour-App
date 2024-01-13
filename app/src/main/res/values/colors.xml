@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pozadina">#fffddd</color>
     <color name="linija">#0041c7</color>
+    <color name="aktivna">#0ff0ff</color>
 </resources>
