@@ -64,9 +64,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|top"
+                        android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoftbold"
                         android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
-                        android:textSize="15dp"
+                        android:textSize="12dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
