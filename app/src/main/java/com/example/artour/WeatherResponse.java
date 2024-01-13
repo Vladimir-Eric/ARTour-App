@@ -35,6 +35,12 @@ public class WeatherResponse {
         @SerializedName("humidity")
         private int humidity;
 
+        @SerializedName("temp_min")
+        private double minTemperature;
+
+        @SerializedName("temp_max")
+        private double maxTemperature;
+
         public double getTemperature() {
             return temperature;
         }
@@ -42,6 +48,7 @@ public class WeatherResponse {
         public int getHumidity() {
             return humidity;
         }
+
     }
 
     public static class WeatherInfo {
@@ -55,12 +62,12 @@ public class WeatherResponse {
             return weatherMain;
         }
 
-        @SerializedName("icon")
+        /*@SerializedName("icon")
         private String weatherIcon;
 
         public String getWeatherIcon() {
             return weatherIcon;
-        }
+        }*/
 
     }
 

@@ -52,47 +52,78 @@ public class PocetnaFragment extends Fragment {
     }
 
     private void displayTemperature(double temperature) {
-        temperatureTextView.setText("Temperature: " + temperature);
+        int temperatureInCelsius = (int) (temperature - 273.15);
+        temperatureTextView.setText(temperatureInCelsius + "°C");
     }
 
     private void displayHumidity(int humidity) {
-        humidityTextView.setText("Humidity: " + humidity + "%");
+        humidityTextView.setText(humidity + "%");
     }
 
     private void displayWeatherInfo(String weatherInfo) {
-        weatherInfoTextView.setText("Weather: " + weatherInfo);
+        weatherInfoTextView.setText(weatherInfo);
     }
 
     private void displayWindSpeed(double windSpeed) {
-        windSpeedTextView.setText("Wind Speed: " + windSpeed + " m/s");
+        windSpeedTextView.setText(windSpeed + " m/s");
     }
 
-    private void displayWeatherIcon(String weatherIcon) {
+    /*private void displayWeatherIcon(String weatherIcon) {
         String iconUrl = "https://openweathermap.org/img/wn/" + weatherIcon + ".png";
         Picasso.get().load(iconUrl).into(weatherIconImageView);
-    }
+    }*/
 
     private void displayWeatherData(WeatherResponse weatherResponse) {
-        double temperature = weatherResponse.getMainInfo().getTemperature();
+        double temperatureInCelsius = weatherResponse.getMainInfo().getTemperature();
         int humidity = weatherResponse.getMainInfo().getHumidity();
         String weatherInfo = weatherResponse.getWeatherInfo()[0].getWeatherMain();
         double windSpeed = weatherResponse.getWindInfo().getWindSpeed();
-        String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
+        //String weatherIcon = weatherResponse.getWeatherInfo()[0].getWeatherIcon();
 
-        DecimalFormat decimalFormat = new DecimalFormat("00.0");
 
-        double kelvin = 273.15;
+        if (weatherInfo.contains("Clouds")) {
+            weatherInfo = "Oblačno";
+            weatherIconImageView.setImageResource(R.drawable.clouds);
+        } else if (weatherInfo.contains("Clear")) {
+            weatherInfo = "Vedro";
+            weatherIconImageView.setImageResource(R.drawable.clear);
+        } else if (weatherInfo.contains("Mist") && weatherInfo.contains("Haze")) {
+            weatherInfo = "Izmaglica";
+            weatherIconImageView.setImageResource(R.drawable.fog);
+        } else if (weatherInfo.contains("Smoke")) {
+            weatherInfo = "Dim";
+            weatherIconImageView.setImageResource(R.drawable.fog);
+        } else if (weatherInfo.contains("Dust") && weatherInfo.contains("Sand")) {
+            weatherInfo = "Prašina";
+            weatherIconImageView.setImageResource(R.drawable.fog);
+        } else if (weatherInfo.contains("Fog")) {
+            weatherInfo = "Magla";
+            weatherIconImageView.setImageResource(R.drawable.fog);
+        } else if (weatherInfo.contains("Squall")) {
+            weatherInfo = "Jak vjetar";
+            weatherIconImageView.setImageResource(R.drawable.windy);
+        } else if (weatherInfo.contains("Tornado")) {
+            weatherInfo = "Tornado";
+            weatherIconImageView.setImageResource(R.drawable.hurricane);
+        } else if (weatherInfo.contains("Snow")) {
+            weatherInfo = "Snijeg";
+            weatherIconImageView.setImageResource(R.drawable.snowy);
+        } else if (weatherInfo.contains("Rain")) {
+            weatherInfo = "Kiša";
+            weatherIconImageView.setImageResource(R.drawable.rain);
+        } else if (weatherInfo.contains("Drizzle")) {
+            weatherInfo = "Sitna kiša";
+            weatherIconImageView.setImageResource(R.drawable.drizzle);
+        } else if (weatherInfo.contains("Thunderstorm")) {
+            weatherInfo = "Grmljavina";
+            weatherIconImageView.setImageResource(R.drawable.storm);
+        }
 
-        double temperatureInCelsius = temperature - kelvin;
-
-        // Formatiranje temperature sa dve decimale
-        String formattedTemperature = decimalFormat.format(temperatureInCelsius);
-
-        displayTemperature(Double.parseDouble(formattedTemperature));
+        displayTemperature(temperatureInCelsius);
         displayHumidity(humidity);
         displayWeatherInfo(weatherInfo);
         displayWindSpeed(windSpeed);
-        displayWeatherIcon(weatherIcon);
+        //displayWeatherIcon(weatherIcon);
     }
 
     @SuppressLint("MissingInflatedId")
