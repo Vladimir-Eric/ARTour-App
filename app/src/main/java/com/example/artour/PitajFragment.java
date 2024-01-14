@@ -27,6 +27,18 @@ public class PitajFragment extends Fragment {
         PitajAdapter adapter = createPitajAdapter();
         expandableListView.setAdapter(adapter);
 
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                // Zatvori sve ostale grupe osim trenutno proširene
+                for (int i = 0; i < adapter.getGroupCount(); i++) {
+                    if (i != groupPosition && expandableListView.isGroupExpanded(i)) {
+                        expandableListView.collapseGroup(i);
+                    }
+                }
+            }
+        });
+
         return view;
     }
 

@@ -10,29 +10,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Popis najkorisnijih informacija koje vam mogu koristiti u istraživanju naše opštine"
-            android:textSize="20sp"
             android:fontFamily="@font/carossoftextrabold"
-            android:textAlignment="center"/>
+            android:paddingHorizontal="20dp"
+            android:text="Info Centar"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/carossoftbold"
+            android:paddingHorizontal="20dp"
+            android:text="Korisne informacije iz lokalne perspektive"
+            android:textAlignment="center"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="?android:attr/listDivider"/>
+        android:background="?android:attr/listDivider" />
 
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
 

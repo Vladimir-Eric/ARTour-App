@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
+import androidx.core.content.res.ResourcesCompat;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -69,6 +71,7 @@ public class PitajAdapter extends BaseExpandableListAdapter {
         }
 
         TextView txtPitanje = convertView.findViewById(R.id.txtPitanje);
+        txtPitanje.setTypeface(ResourcesCompat.getFont(context, R.font.carossoft));
         txtPitanje.setText(pitanje);
 
         return convertView;
@@ -85,6 +88,7 @@ public class PitajAdapter extends BaseExpandableListAdapter {
         }
 
         TextView txtOdgovor = convertView.findViewById(R.id.txtOdgovor);
+        txtOdgovor.setTypeface(ResourcesCompat.getFont(context, R.font.carossoft));
         txtOdgovor.setText(model.getOdgovor());
 
         return convertView;
