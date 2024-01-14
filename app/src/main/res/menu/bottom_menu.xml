@@ -4,7 +4,7 @@
     <item
         android:id="@+id/chatgpt"
         android:title="Info"
-        android:icon="@drawable/commentsquestion"/>
+        android:icon="@drawable/commentsquestion" />
 
     <item
         android:id="@+id/location"

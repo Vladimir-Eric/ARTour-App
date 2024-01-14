@@ -3,4 +3,8 @@
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@color/aktivna</item>
     </style>
+    <style name="BottomNavStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/carossoftextrabold</item>
+        <!-- Dodajte ostale stilove prema vašim potrebama -->
+    </style>
 </resources>
