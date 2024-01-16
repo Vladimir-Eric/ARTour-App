@@ -2,8 +2,10 @@ package com.example.artour;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,22 +24,22 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.schema.Model;
+import org.tensorflow.lite.support.model.Model;
 import org.tensorflow.lite.support.image.TensorImage;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
+import org.tensorflow.lite.Interpreter;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.Arrays;
 
 public class ARFragment extends Fragment implements View.OnClickListener {
-    @Override
-    public void onClick(View view) {
-
-    }//ovu metodu mozes izbrisati samo otkomentarisi ovo dolje
 
 
-   /* private static final String TAG = ARFragment.class.getSimpleName();
+   private static final String TAG = ARFragment.class.getSimpleName();
 
     // Add other variables from MainActivity here
     private static final int PERMISSION_STATE = 0;
@@ -94,29 +96,47 @@ public class ARFragment extends Fragment implements View.OnClickListener {
 
 
 
-    public void predict() { Log.d(TAG,"predict()");
+    public void predict() {
+        Log.d(TAG, "predict()");
         bitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true);
-        try { Log.d(TAG,"try");
-            Model model = Model.newInstance(requireContext());
-            // Creates inputs for reference.
+        try {
+            // Učitajte model koristeći Interpreter
+            Interpreter interpreter = new Interpreter(loadModelFile(requireContext(), "your_model.tflite"));
+
+            // Kreirajte ulazni TensorBuffer i postavite ulazne podatke
             TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.UINT8);
             TensorImage tensorImage = new TensorImage(DataType.UINT8);
             tensorImage.load(bitmap);
             ByteBuffer byteBuffer = tensorImage.getBuffer();
-
             inputFeature0.loadBuffer(byteBuffer);
-            // Runs model inference and gets result.
-            Model.Outputs outputs = model.process(inputFeature0);
-            TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
-            // Releases model resources if no longer used.
-            model.close();
-            txtPrediction.setText(getMax(outputFeature0.getFloatArray()));//txtPrediction.setText(outputFeature0.getFloatArray()[0] + "\n" + outputFeature0.getFloatArray()[1] + "\n" + outputFeature0.getFloatArray()[2]);
-            getMax(outputFeature0.getFloatArray());
-            Log.d("Result",Arrays.toString(outputFeature0.getFloatArray()));
+
+            // Definišite izlazne tensorBuffer-e
+            TensorBuffer outputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 7}, DataType.FLOAT32);
+
+            // Pokrenite model inferenciju
+            interpreter.run(inputFeature0.getBuffer(), outputFeature0.getBuffer().rewind());
+
+            // Oslobodite resurse
+            interpreter.close();
+
+            // Prikazivanje rezultata
+            txtPrediction.setText(getMax(outputFeature0.getFloatArray()));
+            Log.d("Result", Arrays.toString(outputFeature0.getFloatArray()));
         } catch (IOException e) {
-            Log.e(TAG,"IOException " + e.getMessage());
+            Log.e(TAG, "IOException " + e.getMessage());
         }
     }
+
+    // Funkcija za učitavanje modela iz resursa
+    private MappedByteBuffer loadModelFile(Context context, String modelFileName) throws IOException {
+        AssetFileDescriptor fileDescriptor = context.getAssets().openFd(modelFileName);
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
+    }
+
 
     private String getMax(float [] outputs) { Log.d(TAG,"getMax( " + Arrays.toString(outputs) + ")");
         if (outputs.length != 0 & outputs[0] > outputs[1] & outputs[0] > outputs[2] & outputs[0] > outputs[3]) {
@@ -195,6 +215,6 @@ public class ARFragment extends Fragment implements View.OnClickListener {
             bitmap = (Bitmap) data.getExtras().get("data");
             imgResult.setImageBitmap(bitmap);
         }
-    }*/
+    }
 
 }
