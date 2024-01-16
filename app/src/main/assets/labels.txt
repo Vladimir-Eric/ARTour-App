@@ -1,0 +1,6 @@
+0 Bager
+1 Buldozer
+2 Bušilica
+3 Damper
+4 Utovarivač
+5 Toranj
