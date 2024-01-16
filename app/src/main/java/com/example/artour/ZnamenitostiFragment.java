@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,7 +32,7 @@ public class ZnamenitostiFragment extends Fragment {
 
         ImageView znamenitostImageView = view.findViewById(R.id.znamenitostImageView);
         TextView znamenitostTextView = view.findViewById(R.id.znamenitostTextView);
-        ImageButton backButton = view.findViewById(R.id.backButton);
+        Button backButton = view.findViewById(R.id.backButton);
         backButton.setOnClickListener(v -> requireActivity().getSupportFragmentManager().popBackStack());
 
         // Dohvati destinationId

@@ -7,4 +7,8 @@
         <item name="fontFamily">@font/carossoftextrabold</item>
         <!-- Dodajte ostale stilove prema vašim potrebama -->
     </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
 </resources>
