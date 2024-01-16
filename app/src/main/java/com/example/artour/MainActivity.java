@@ -1,6 +1,7 @@
 package com.example.artour;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        //EDGE TO EDGE
+        //WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
 
         replaceFragment(new PocetnaFragment());
         binding.bottomNavigationView.setBackground(null);

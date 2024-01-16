@@ -2,7 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pozadina">#fffddd</color>
     <color name="linija">#0041c7</color>
     <color name="aktivna">#0ff0ff</color>
+    <color name="akcent">#95caff</color>
+    <color name="white50">#80FFFFFF</color> <!-- bijela boja sa 50% opacity -->
 </resources>

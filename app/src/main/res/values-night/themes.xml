@@ -1,8 +1,30 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- night\themes.xml -->
+<resources>
+
     <!-- Base application theme. -->
     <style name="Base.Theme.ARTour" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <item name="colorPrimary">@color/material_dynamic_primary90</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Ikone statusne linije da budu svijetle (bijele) -->
+        <item name="android:windowLightStatusBar">false</item>
+
     </style>
+
+    <style name="BottomNavStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/carossoftextrabold</item>
+        <!-- Dodajte ostale stilove prema vašim potrebama -->
+    </style>
+
+    <style name="Theme.ARTour" parent="Base.Theme.ARTour">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
 </resources>

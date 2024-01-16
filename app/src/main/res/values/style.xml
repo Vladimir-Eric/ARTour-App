@@ -1,14 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- styles.xml -->
 <resources>
+
+    <!-- Stil za prilagođeni indikator BottomNavigationView -->
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/aktivna</item>
-    </style>
-    <style name="BottomNavStyle" parent="Widget.Design.BottomNavigationView">
-        <item name="fontFamily">@font/carossoftextrabold</item>
-        <!-- Dodajte ostale stilove prema vašim potrebama -->
+        <item name="android:color">@color/akcent</item>
+        <item name="iconTint">@color/white</item>
     </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Osnovni stil za aplikaciju -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Postavke ekrana sa izrezom (notch) -->
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <!-- Transparentna boja navigacione trake -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Transparentna boja statusne trake -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Sistemski temni stil za statusnu traku -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Dodatni stili i postavke prema potrebi -->
     </style>
+
 </resources>
