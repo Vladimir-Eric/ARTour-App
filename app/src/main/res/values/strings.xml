@@ -8,7 +8,22 @@
     <string name="previous">Previous</string>
 
     <!-- ovo je moje kada sam radio destinacije -->
-        <string name="dest1">Opis destinacije 1</string>
+    <string name="spomenik1">Spomenik podignut 2000. godine predstavlja trajan spomen hrabrim
+        pojedincima koji su dali svoje živote u periodu od 1991. do 1996. godine, tokom
+        otadžbinskog sukoba u Bosni i Hercegovini.\n\n\nHrabrosti i Žrtve u Milićima\n\nSmješten
+        u sklopu parka ruskih velikana, spomenik zapadno je od Doma rudara, a istočno od Ljetne
+        pozornice u Milićima. \nOvaj impresivan spomenik predstavlja simbol hrabrosti i žrtve,
+        podsjećajući na teška vremena i odražavajući posvećenost očuvanju sećanja na one koji su
+        dali najvišu žrtvu za svoju domovinu.\n\n\nIndividualnost i Doprinos\n\nCentralni spomenik,
+        okružen prirodnim okolišem parka, nosi ugravirana imena žrtava.\nOvaj pijetetni gest
+        poštuje individualnost i doprinos svakog pojedinca, naglašavajući važnost sećanja na živote
+        izgubljene tokom ratnih godina.\n\n\nMjesto Odavanja Počasti i Podsticanje Razmišljanja
+        \n\nSpomenik ne samo da predstavlja mesto odavanja počasti palima, već i podstiče razmišljanje
+        o značaju mira i pomirenja u zajednici.\nKroz svoj simbolizam i arhitektonski izraz,
+        spomenik ostaje trajna uspomena na prošlost, pružajući istovremeno prostor za
+        kontemplaciju i nadu u bolju budućnost.
+    </string>
+
         <string name="dest2">Opis destinacije 2</string>
         <string name="dest3">Opis destinacije 3</string>
         <string name="dest4">Opis destinacije 4</string>
@@ -45,4 +60,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="api">AIzaSyAACm4l9AUxJIOzZReIte6wLt98wfoMYTQ</string>
+
+    <!--TEKSTOVI ZA LOKACIJE-->
+
 </resources>

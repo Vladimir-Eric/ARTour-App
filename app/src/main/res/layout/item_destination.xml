@@ -27,14 +27,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <!-- Atributi za naslov destinacije -->
             <TextView
                 android:id="@+id/destinationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -43,7 +43,8 @@
                 android:id="@+id/destinationDescription"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp" />
+                android:ellipsize="end"
+                android:maxLines="3" />
 
             <!-- Ovo je .xml fajl za formatiranje kartičnog izgleda destinacija
                 Ovdje se pravi izgled kartice, slika, naslov i tekst -->

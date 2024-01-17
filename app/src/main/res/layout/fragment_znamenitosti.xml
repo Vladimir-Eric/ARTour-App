@@ -1,45 +1,45 @@
 <!-- fragment_znamenitosti.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical">
 
-    <!-- Defaultna slika, zameni je po potrebi -->
-
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/znamenitostImageView"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:contentDescription="@string/znamenitost_slika"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/backButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="30dp"
-            android:background="@drawable/arrow_small_left"
-            app:backgroundTint="@android:color/white" />
+            <ImageView
+                android:id="@+id/znamenitostImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/znamenitost_slika"
+                android:src="@drawable/ic_launcher_foreground"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
 
-    </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/arrow_small_left"
+                app:backgroundTint="@android:color/white" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/znamenitostTextView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/carossoft"
+            android:padding="16dp"
             android:text="@string/opis_znamenitosti" />
-    </ScrollView>
-
-    <!-- Defaultni tekst, zameni ga po potrebi -->
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

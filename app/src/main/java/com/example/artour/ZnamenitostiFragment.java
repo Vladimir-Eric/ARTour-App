@@ -42,8 +42,8 @@ public class ZnamenitostiFragment extends Fragment {
         // Postavi slike i tekstove na osnovu destinationId
         switch (destinationId) {
             case 1:
-                znamenitostImageView.setImageResource(R.drawable.toranj);
-                znamenitostTextView.setText(getString(R.string.dest1));
+                znamenitostImageView.setImageResource(R.drawable.slika_spomenik1);
+                znamenitostTextView.setText(getString(R.string.spomenik1));
                 break;
             case 2:
                 znamenitostImageView.setImageResource(R.drawable.default_image);

@@ -9,6 +9,9 @@
 
     <!-- Osnovni stil za aplikaciju -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Tekst font -->
+        <item name="fontFamily">@font/carossoft</item>
+
         <!-- Postavke ekrana sa izrezom (notch) -->
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
 
