@@ -110,7 +110,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap.addMarker(new MarkerOptions().position(crkva_koprivno).title("Crkva Svetih Apostola Petra i Pavla Koprivno").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng dzamija = new LatLng(44.2156, 19.1065);
-        myMap.addMarker(new MarkerOptions().position(dzamija).title("Rajkov toranj").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(dzamija).title("Musa Pašina džamija Nova Kasaba").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng rudnik = new LatLng(44.0746, 19.1916);
         myMap.addMarker(new MarkerOptions().position(rudnik).title("Rudnik Boksita").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));

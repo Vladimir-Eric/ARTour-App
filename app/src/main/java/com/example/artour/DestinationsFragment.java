@@ -43,28 +43,34 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
 
     private List<Destination> createDestinationList() {
         List<Destination> destinations = new ArrayList<>();
-        destinations.add(new Destination(1, "Spomenik palim srpskim borcima", R.drawable.slika, "U odbrambeno-otadžbinskom ratu"));
-        destinations.add(new Destination(2, "Spomenik palim borcima", R.drawable.slika, "U Drugom svjetskom ratu"));
-        destinations.add(new Destination(3, "Muzej rudarstva", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(4, "Muzej rudarstva na otvorenom", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(5, "Rajkov toranj", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(6, "Stećci", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(7, "Tvrđava grad Komić", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(8, "Jerinin grad", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(9, "Crkva Svetog Nikole", R.drawable.slika, "Milići"));
-        destinations.add(new Destination(10, "Crkva Svetog Ilije", R.drawable.slika, "Kasaba"));
-        destinations.add(new Destination(11, "Crkva Svetog Apostola Petra i Pavla", R.drawable.slika, "Koprivno"));
-        destinations.add(new Destination(12, "Crkva Svetog Joakima i Ane", R.drawable.slika, "Vukšić Polje"));
-        destinations.add(new Destination(13, "Musa pašina Džamija", R.drawable.slika, "Kasaba"));
-        destinations.add(new Destination(14, "Park srpskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(15, "Park ruskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(16, "Park Evropskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(17, "Park Kineskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(18, "Park Indijskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(19, "Botanički rezervat 'Tisovljak' ", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(20, "Bazeni Milići", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(21, "Rudnik boksita", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(22, "Sportski centar", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(1, "Spomenik palim Srpskim borcima Milići", R.drawable.slika, "U odbrambeno-otadžbinskom ratu"));
+        destinations.add(new Destination(2, "Spomen ploča palim Srpskim borcima Derventa", R.drawable.slika, "Derventa"));
+        destinations.add(new Destination(3, "Spomen ploča palim Srpskim borcima Bukovičko brdo", R.drawable.slika, "Milići"));
+        destinations.add(new Destination(4, "Spomen ploča palim Srpskim borcima Buljevići", R.drawable.slika, "Buljevići"));
+        destinations.add(new Destination(5, "Spomen kosturnica poginulim partizanima Derventa", R.drawable.slika, "Derventa"));
+        destinations.add(new Destination(6, "Spomenik palim borcima", R.drawable.slika, "U Drugom svjetskom ratu"));
+        destinations.add(new Destination(7, "Muzej rudarstva", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(8, "Muzej rudarstva na otvorenom", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(9, "Rajkov toranj", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(10, "Stećci", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(11, "Tvrđava grad Komić", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(12, "Ukleti Jerinin grad", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(13, "Crkva Svetog Nikole", R.drawable.slika, "Milići"));
+        destinations.add(new Destination(14, "Crkva Svete Trojice", R.drawable.slika, "Derventa"));
+        destinations.add(new Destination(15, "Crkva Svetog Prokopija ", R.drawable.slika, "Dukići"));
+        destinations.add(new Destination(16, "Crkva Svetog Ilije", R.drawable.slika, "Kasaba"));
+        destinations.add(new Destination(17, "Crkva Svetih Apostola Petra i Pavla", R.drawable.slika, "Koprivno"));
+        destinations.add(new Destination(18, "Crkva Svetog Joakima i Ane", R.drawable.slika, "Vukšić Polje"));
+        destinations.add(new Destination(19, "Musa pašina Džamija", R.drawable.slika, "Kasaba"));
+        destinations.add(new Destination(20, "Park srpskih velikana", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(21, "Park ruskih velikana", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(22, "Park Evropskih velikana", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(23, "Park Kineskih velikana", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(24, "Park Indijskih velikana", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(25, "Botanički rezervat 'Tisovljak' ", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(26, "Bazeni Milići", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(27, "Rudnik boksita", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(28, "Sportski centar", R.drawable.slika, "Opis destinacije"));
         // Dodajte остале дестинације...
 
         return destinations;

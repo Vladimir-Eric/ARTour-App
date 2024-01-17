@@ -1,6 +1,7 @@
 package com.example.artour;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -34,6 +35,7 @@ public class ARFragment extends Fragment {
     ImageView imageView;
     Button picture;
     int imageSize = 224;
+    Model model;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -62,9 +64,9 @@ public class ARFragment extends Fragment {
         return view;
     }
 
+    @SuppressLint("DefaultLocale")
     public void classifyImage(Bitmap image){
         try {
-            Model model = null;
             if (getActivity() != null) {
                 model = Model.newInstance(getActivity().getApplicationContext());
             } else {
@@ -104,11 +106,11 @@ public class ARFragment extends Fragment {
 
                 result.setText(classes[maxPos]);
 
-                String s = "";
+                StringBuilder s = new StringBuilder();
                 for (int i = 0; i < classes.length; i++) {
-                    s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
+                    s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
                 }
-                confidence.setText(s);
+                confidence.setText(s.toString());
 
             }
             // Releases model resources if no longer used.

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MapaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Mapa -->
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,10 @@
         android:layout_height="150dp"
         android:elevation="0dp"
         app:cardBackgroundColor="#80FFFFFF"
-        android:layout_marginLeft="10dp">
+        android:layout_gravity="top|end"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_bottom_navigation_bar">
     <!-- Legenda -->
     <LinearLayout
         android:layout_width="wrap_content"
