@@ -82,14 +82,29 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         LatLng dom_rudara = new LatLng(44.1698, 19.0788);
         myMap.addMarker(new MarkerOptions().position(dom_rudara).title("Dom rudara Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng spomenik_drugi_svjetski_rat = new LatLng(44.1685, 19.07822);
-        myMap.addMarker(new MarkerOptions().position(spomenik_drugi_svjetski_rat).title("Spomenik palim borcima u drugom svjetskom ratu").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        LatLng spomenik_drugi_svjetski_rat_milici = new LatLng(44.1685, 19.07822);
+        myMap.addMarker(new MarkerOptions().position(spomenik_drugi_svjetski_rat_milici).title("Spomenik palim borcima u drugom svjetskom ratu").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng spomenik_prethodni_rat = new LatLng(44.16974, 19.0781);
-        myMap.addMarker(new MarkerOptions().position(spomenik_prethodni_rat).title("Spomenik palim borcima u prethodnom ratu").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        LatLng spomen_kosturnica_derventa = new LatLng(44.12643, 19.13523);
+        myMap.addMarker(new MarkerOptions().position(spomen_kosturnica_derventa).title("Spomen kosturnica poginulim partizanima Derventa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng spomen_ploca_bukovica = new LatLng(44.13667, 19.17325);
+        myMap.addMarker(new MarkerOptions().position(spomen_ploca_bukovica).title("Spomen ploča palim Srpskim borcimna Donja Bukovica").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng spomen_ploca_derventa = new LatLng(44.12644, 19.13508);
+        myMap.addMarker(new MarkerOptions().position(spomen_ploca_derventa).title("Spomen ploča palim Srpskim borcima Derventa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng spomenik_prethodni_rat_milici = new LatLng(44.16974, 19.0781);
+        myMap.addMarker(new MarkerOptions().position(spomenik_prethodni_rat_milici).title("Spomenik palim borcima u prethodnom ratu Milići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng spomen_ploca_buljevici = new LatLng(44.22877, 19.03753);
+        myMap.addMarker(new MarkerOptions().position(spomen_ploca_buljevici).title("Spomen ploča palim borcima Buljevići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng spomen_cesma_misici = new LatLng(44.15991, 19.09854);
+        myMap.addMarker(new MarkerOptions().position(spomen_cesma_misici).title("Spomen česma palim Srpskim borcima Mišići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng komic = new LatLng(44.1542, 19.0415);
-        myMap.addMarker(new MarkerOptions().position(komic).title("Tvrdjava grad Komic").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(komic).title("Tvrdjava grad Komić").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng crkva_milici = new LatLng(44.1663, 19.0889);
         myMap.addMarker(new MarkerOptions().position(crkva_milici).title("Crkva Svetog Nikole Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));

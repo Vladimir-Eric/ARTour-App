@@ -69,7 +69,7 @@ public class ARFragment extends Fragment {
         try {
             if (getActivity() != null) {
                 model = Model.newInstance(getActivity().getApplicationContext());
-            } else {
+            } else if(getActivity() == null) {
                 // Creates inputs for reference.
                 TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
                 ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
@@ -112,7 +112,11 @@ public class ARFragment extends Fragment {
                 }
                 confidence.setText(s.toString());
 
+            }else{
+                StringBuilder s = new StringBuilder();
+                result.setText("Neki tekst");
             }
+
             // Releases model resources if no longer used.
             model.close();
         } catch (IOException e) {
