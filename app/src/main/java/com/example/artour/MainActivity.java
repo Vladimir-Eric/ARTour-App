@@ -8,8 +8,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import com.example.artour.databinding.ActivityMainBinding;
-
-
+import android.view.View;
+import android.view.WindowInsets;
+import android.view.WindowInsetsController;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        View decorView = getWindow().getDecorView();
+
+        // Postavljanje prozora da omogući prikazivanje status bara
+        WindowInsetsController insetsController = decorView.getWindowInsetsController();
+        if (insetsController != null) {
+            insetsController.setSystemBarsBehavior(WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+            insetsController.hide(WindowInsets.Type.navigationBars());
+        }
 
         //EDGE TO EDGE
         //WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
