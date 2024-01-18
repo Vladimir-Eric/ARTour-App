@@ -6,4 +6,5 @@
     <color name="aktivna">#0ff0ff</color>
     <color name="akcent">#95caff</color>
     <color name="white50">#80FFFFFF</color> <!-- bijela boja sa 50% opacity -->
+    <color name="ghost_white">#f8f8ff</color>
 </resources>

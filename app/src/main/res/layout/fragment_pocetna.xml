@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="0dp"
-    tools:context=".PocetnaFragment">
+    tools:context=".PocetnaFragment"
+    android:background="@color/ghost_white">
 
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:visibility="visible"
-            app:cardBackgroundColor="#00000000"
+            app:cardBackgroundColor="#FFFFFF"
             app:cardElevation="0dp"
             app:cardMaxElevation="0dp">
 
@@ -97,27 +97,50 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
             android:foregroundGravity="center"
-            app:cardBackgroundColor="#00FFFFFF"
-            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
             app:cardMaxElevation="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
 
-                <TextView
-                    android:id="@+id/kategorije2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:autoSizeMinTextSize="14sp"
-                    android:fontFamily="@font/carossoft"
-                    android:text="Trenutno u Milićima"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="30dp">
+
+                    <TextView
+                        android:id="@+id/trenutnoumilicima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:fontFamily="@font/carossoft"
+                        android:text="Trenutno u Milićima"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:autoSizeMinTextSize="14sp"
+                        android:fontFamily="@font/carossoft"
+                        android:foregroundGravity="bottom"
+                        android:gravity="bottom|right"
+                        android:text="dan"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -494,8 +517,8 @@
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_anchor="@+id/frame_layout"
-                    android:orientation="horizontal"/>
+                    android:orientation="horizontal"
+                    app:layout_anchor="@+id/frame_layout" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

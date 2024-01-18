@@ -24,6 +24,12 @@ import retrofit2.Response;
 
 import java.text.DecimalFormat;
 import java.util.Random;
+import java.util.List;
+
+import java.time.DayOfWeek;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 
 public class PocetnaFragment extends Fragment {
 
@@ -72,6 +78,33 @@ public class PocetnaFragment extends Fragment {
         String iconUrl = "https://openweathermap.org/img/wn/" + weatherIcon + ".png";
         Picasso.get().load(iconUrl).into(weatherIconImageView);
     }*/
+
+    private String getDayOfWeek(double lat, double lon) {
+        // Implementacija za dobijanje vremenske zone na osnovu geografskih koordinata.
+        // Ova funkcija bi trebalo da vrati dan u sedmici na osnovu trenutnog vremena u odabranoj vremenskoj zoni.
+
+        ZoneId zoneId = getZoneId(lat, lon);
+        Instant now = Instant.now();
+        LocalDate localDate = now.atZone(zoneId).toLocalDate();
+        return localDate.getDayOfWeek().toString();
+    }
+
+    private ZoneId getZoneId(double lat, double lon) {
+        // Implementacija za dobijanje vremenske zone na osnovu geografskih koordinata.
+        // Ova funkcija bi trebalo da vrati odgovarajuću vremensku zonu na osnovu latitude i longitude.
+
+        // Primer implementacije:
+        // Zamenite ovu implementaciju sa stvarnom logikom za dobijanje vremenske zone.
+        // Ako koristite Android, možete razmotriti korišćenje LocationManager-a za dobijanje vremenske zone.
+        // Na primer, možete koristiti LocationManager.getLastKnownLocation() sa GPS_PROVIDER.
+
+        // Povratna vrednost je ZoneId za vremensku zonu na osnovu latitude i longitude.
+        // Ako ne možete dobiti preciznu vremensku zonu, možete koristiti neku podrazumevanu vremensku zonu.
+
+        // Primer:
+        // return ZoneId.of("Europe/Belgrade"); // Podrazumevana vremenska zona za Beograd
+        return ZoneId.systemDefault(); // Povratna vrednost podrazumevane vremenske zone
+    }
 
     private void displayWeatherData(WeatherResponse weatherResponse) {
         double temperatureInCelsius = weatherResponse.getMainInfo().getTemperature();
@@ -168,6 +201,27 @@ public class PocetnaFragment extends Fragment {
         } else {
             displayWeatherData(cachedWeatherResponse);
         }
+
+        TextView danTextView = view.findViewById(R.id.dan);
+        double latitude = 44.17016;
+        double longitude = 19.09195;
+        String dayOfWeek = getDayOfWeek(latitude, longitude);
+        if (dayOfWeek.contains("MONDAY")) {
+            dayOfWeek = "Ponedjeljak";
+        } else if (dayOfWeek.contains("TUESDAY")) {
+            dayOfWeek = "Utorak";
+        } else if (dayOfWeek.contains("WEDNESDAY")) {
+            dayOfWeek = "Srijeda";
+        } else if (dayOfWeek.contains("THURSDAY")) {
+            dayOfWeek = "Četvrtak";
+        } else if (dayOfWeek.contains("FRIDAY")) {
+            dayOfWeek = "Petak";
+        } else if (dayOfWeek.contains("SATURDAY")) {
+            dayOfWeek = "Subota";
+        } else if (dayOfWeek.contains("SUNDAY")) {
+            dayOfWeek = "Nedjelja";
+        }
+        danTextView.setText(dayOfWeek);
 
         viewPager = view.findViewById(R.id.viewPager);
         viewPagerAdapter = new ViewPagerAdapter(getContext());
