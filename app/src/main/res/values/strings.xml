@@ -27,6 +27,14 @@
         <string name="dest2">Opis destinacije 2</string>
         <string name="dest3">Opis destinacije 3</string>
         <string name="dest4">Opis destinacije 4</string>
+    <string name="dest30">Sportski centar Milići je najsavremeniji prostor u RS namjenjen profesionalnim sportistima
+        i rekreativcima koji mogu koristiti otvorene i zatvorene terene za sve vidove sportova. \n\n
+        U okviru sportsko - rekreativnog centra u Milićima nalazi se nova sportska dvorana kapaciteta 4.070 m2 korisnog prostora,
+        raspolaže sa:  dvije dvorane, trim salom, šest svlačionica, ostavama za sportske rekvizite, radionicom, ljekarskom prostorijom,
+        pokretnim tribinama које primaju 1.200 gledalaca, te 350 fiksiranih sjedećih mjesta. \n\n
+        Ovaj objekat je omogućio da se realizuje niz događaja i obezbjedi uslove za održavanje različitih sadržaja, što se odnosi na sportska
+        i društveno-kulturna dešavanja. \n\n
+        U okviru ovog centra nalazi se i fudbalski stadion, tereni za košarku, mali fudbal, rukomet, odbojku</string>
         <!-- Dodajte ostale destinacije... -->
 
         <string name="default_opis">Defaultni opis</string>

@@ -103,6 +103,9 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         LatLng spomen_cesma_misici = new LatLng(44.15991, 19.09854);
         myMap.addMarker(new MarkerOptions().position(spomen_cesma_misici).title("Spomen česma palim Srpskim borcima Mišići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
+        LatLng spomen_soba_milici = new LatLng(44.16670, 19.08904);
+        myMap.addMarker(new MarkerOptions().position(spomen_soba_milici).title("Spomen soba palim borcima Milići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
         LatLng komic = new LatLng(44.1542, 19.0415);
         myMap.addMarker(new MarkerOptions().position(komic).title("Tvrdjava grad Komić").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
@@ -124,8 +127,11 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         LatLng crkva_koprivno = new LatLng(44.1469, 19.1548);
         myMap.addMarker(new MarkerOptions().position(crkva_koprivno).title("Crkva Svetih Apostola Petra i Pavla Koprivno").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng dzamija = new LatLng(44.2156, 19.1065);
+        LatLng dzamija = new LatLng(44.16950, 19.07873);
         myMap.addMarker(new MarkerOptions().position(dzamija).title("Musa Pašina džamija Nova Kasaba").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+
+        LatLng biblioteka = new LatLng(44.1663, 19.0889);
+        myMap.addMarker(new MarkerOptions().position(biblioteka).title("Narodna biblioteka Milići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng rudnik = new LatLng(44.0746, 19.1916);
         myMap.addMarker(new MarkerOptions().position(rudnik).title("Rudnik Boksita").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
@@ -140,7 +146,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap.addMarker(new MarkerOptions().position(sportski_centar).title("Sportski centar Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng vatrogasci = new LatLng(44.1630, 19.0691);
-        myMap.addMarker(new MarkerOptions().position(vatrogasci).title("Teritorijalna vatrogasn jedinica Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(vatrogasci).title("Teritorijalna vatrogasna jedinica Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng policija = new LatLng(44.1701, 19.0784);
         myMap.addMarker(new MarkerOptions().position(policija).title("Policijska stanica Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));

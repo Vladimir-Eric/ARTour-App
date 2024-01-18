@@ -67,61 +67,63 @@ public class ARFragment extends Fragment {
     @SuppressLint("DefaultLocale")
     public void classifyImage(Bitmap image){
         try {
-            if (getActivity() != null) {
-                model = Model.newInstance(getActivity().getApplicationContext());
-            } else if(getActivity() == null) {
-                // Creates inputs for reference.
-                TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
-                ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
-                byteBuffer.order(ByteOrder.nativeOrder());
+            model = Model.newInstance(requireContext());
 
-                int[] intValues = new int[imageSize * imageSize];
-                image.getPixels(intValues, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
-                int pixel = 0;
-                for (int i = 0; i < imageSize; i++) {
-                    for (int j = 0; i < imageSize; j++) {
-                        int val = intValues[pixel++];
-                        byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.f / 255.f));
-                        byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.f / 255.f));
-                        byteBuffer.putFloat(((val & 0xFF)) * (1.f / 255.f));
-                    }
+            // Creates inputs for reference.
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
+            ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
+            byteBuffer.order(ByteOrder.nativeOrder());
+
+            int[] intValues = new int[imageSize * imageSize];
+            image.getPixels(intValues, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
+            int pixel = 0;
+            for (int i = 0; i < imageSize; i++) {
+                for (int j = 0; j < imageSize; j++) {
+                    int val = intValues[pixel++];
+                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.f / 255.f));
+                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.f / 255.f));
+                    byteBuffer.putFloat(((val & 0xFF)) * (1.f / 255.f));
                 }
-
-                inputFeature0.loadBuffer(byteBuffer);
-
-                // Runs model inference and gets result.
-                Model.Outputs outputs = model.process(inputFeature0);
-                TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
-
-                float[] confidences = outputFeature0.getFloatArray();
-                int maxPos = 0;
-                float maxConfidence = 0;
-                for (int i = 0; i < confidences.length; i++) {
-                    if (confidences[i] > maxConfidence) {
-                        maxConfidence = confidences[i];
-                        maxPos = i;
-                    }
-                }
-                String[] classes = {"Bager", "Buldozer", "Bušilica", "Damper", "Rudarska lokomotiva", "Utovarivač", "Rajkov toranj"};
-
-                result.setText(classes[maxPos]);
-
-                StringBuilder s = new StringBuilder();
-                for (int i = 0; i < classes.length; i++) {
-                    s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
-                }
-                confidence.setText(s.toString());
-
-            }else{
-                StringBuilder s = new StringBuilder();
-                result.setText("Neki tekst");
             }
 
-            // Releases model resources if no longer used.
-            model.close();
+            inputFeature0.loadBuffer(byteBuffer);
+
+            // Runs model inference and gets result.
+            Model.Outputs outputs = model.process(inputFeature0);
+            TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
+
+            float[] confidences = outputFeature0.getFloatArray();
+            int maxPos = 0;
+            float maxConfidence = 0;
+            for (int i = 0; i < confidences.length; i++) {
+                if (confidences[i] > maxConfidence) {
+                    maxConfidence = confidences[i];
+                    maxPos = i;
+                }
+            }
+
+            displayResult(maxPos, confidences);
+
         } catch (IOException e) {
             // TODO Handle the exception
+        } finally {
+            // Releases model resources if no longer used.
+            if (model != null) {
+                model.close();
+            }
         }
+    }
+
+    private void displayResult(int maxPos, float[] confidences) {
+        String[] classes = {"Bager", "Buldozer", "Bušilica", "Damper", "Rudarska lokomotiva", "Utovarivač", "Rajkov toranj"};
+
+        result.setText(classes[maxPos]);
+
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < classes.length; i++) {
+            s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
+        }
+        confidence.setText(s.toString());
     }
 
     @Override

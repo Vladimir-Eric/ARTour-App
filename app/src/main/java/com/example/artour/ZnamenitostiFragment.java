@@ -57,6 +57,110 @@ public class ZnamenitostiFragment extends Fragment {
                 znamenitostImageView.setImageResource(R.drawable.default_image);
                 znamenitostTextView.setText(getString(R.string.dest4));
                 break;
+            case 5:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 6:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 7:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 8:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 9:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 10:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 11:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 12:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 13:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 14:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 15:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 16:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 17:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 18:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 19:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 20:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 21:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 22:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 23:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 24:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 25:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 26:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 27:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 28:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 29:
+                znamenitostImageView.setImageResource(R.drawable.default_image);
+                znamenitostTextView.setText(getString(R.string.dest4));
+                break;
+            case 30:
+                znamenitostImageView.setImageResource(R.drawable.sportski_centar);
+                znamenitostTextView.setText(getString(R.string.dest30));
+                break;
             // Dodajte ostale destinacije...
             default:
                 // Defaultne slike i tekstovi
