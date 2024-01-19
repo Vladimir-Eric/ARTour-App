@@ -134,28 +134,28 @@ public class ZnamenitostiFragment extends Fragment {
                 znamenitostTextView.setText(getString(R.string.dest4));
                 break;
             case 24:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.park_evropskih_velikana);
+                znamenitostTextView.setText(getString(R.string.dest24));
                 break;
             case 25:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.park_indijskih_velikana);
+                znamenitostTextView.setText(getString(R.string.dest25));
                 break;
             case 26:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.park_kineskih_velikana);
+                znamenitostTextView.setText(getString(R.string.dest26));
                 break;
             case 27:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.panciceva_omorika);
+                znamenitostTextView.setText(getString(R.string.dest27));
                 break;
             case 28:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.bazeni);
+                znamenitostTextView.setText(getString(R.string.dest28));
                 break;
             case 29:
-                znamenitostImageView.setImageResource(R.drawable.default_image);
-                znamenitostTextView.setText(getString(R.string.dest4));
+                znamenitostImageView.setImageResource(R.drawable.boksit);
+                znamenitostTextView.setText(getString(R.string.dest29));
                 break;
             case 30:
                 znamenitostImageView.setImageResource(R.drawable.sportski_centar);

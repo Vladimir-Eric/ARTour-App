@@ -66,13 +66,13 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
         destinations.add(new Destination(21, "Musa pašina Džamija", R.drawable.slika, "Kasaba"));
         destinations.add(new Destination(22, "Park srpskih velikana", R.drawable.slika, "Opis destinacije"));
         destinations.add(new Destination(23, "Park ruskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(24, "Park Evropskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(25, "Park Kineskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(26, "Park Indijskih velikana", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(27, "Botanički rezervat 'Tisovljak' ", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(28, "Bazeni Milići", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(29, "Rudnik boksita", R.drawable.slika, "Opis destinacije"));
-        destinations.add(new Destination(30, "Sportski centar", R.drawable.slika, "Opis destinacije"));
+        destinations.add(new Destination(24, "Park Evropskih velikana", R.drawable.park_evropskih_velikana, "Park Evropskih velikana"));
+        destinations.add(new Destination(25, "Park Indijskih velikana", R.drawable.park_indijskih_velikana, "Park Indijskih velikana"));
+        destinations.add(new Destination(26, "Park Kineskih velikana", R.drawable.park_kineskih_velikana, "Park Kineskih velikana"));
+        destinations.add(new Destination(27, "Botanički rezervat 'Tisovljak' ", R.drawable.panciceva_omorika, "Stanište Pančićeve omorike"));
+        destinations.add(new Destination(28, "Bazeni Milići", R.drawable.bazeni, "Odmorite se i opustite na bazenima"));
+        destinations.add(new Destination(29, "Rudnik boksita", R.drawable.boksit, "Nekada najveći rudarski kop Evrope"));
+        destinations.add(new Destination(30, "Sportski centar", R.drawable.sportski_centar, "Vrijeme je za sport!"));
         // Dodajte остале дестинације...
 
         return destinations;
