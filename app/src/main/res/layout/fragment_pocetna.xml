@@ -18,23 +18,21 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:visibility="visible"
             app:cardBackgroundColor="@color/primarna"
-            app:cardElevation="0dp"
-            app:cardMaxElevation="0dp">
+            app:cardCornerRadius="0dp"
+            app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:elevation="8dp"
-                android:orientation="horizontal"
-                android:visibility="visible">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/menu"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/baseline_menu_24"
@@ -52,11 +50,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:layout_marginTop="8dp"
                         android:autoSizeMaxTextSize="35dp"
                         android:autoSizeMinTextSize="20dp"
                         android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoftbold"
+                        android:gravity="center"
                         android:text="ARTour"
                         android:textColor="@color/white"
                         android:textSize="30dp"
@@ -68,8 +66,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center|top"
+                        android:layout_marginBottom="5dp"
                         android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoftbold"
+                        android:gravity="center"
                         android:text="Turistički vodič opštine Milići"
                         android:textColor="@color/white"
                         android:textSize="10dp" />
@@ -84,32 +84,30 @@
                     android:src="@drawable/minilogo" />
 
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
 
         <View
             android:id="@+id/divider"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
             android:background="?android:attr/listDivider" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
-            android:foregroundGravity="center"
+            android:translationZ="1dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
-            app:cardElevation="1dp"
-            app:cardMaxElevation="0dp">
+            app:cardElevation="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingVertical="10dp">
+                android:paddingVertical="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -126,6 +124,7 @@
                         android:autoSizeMinTextSize="14sp"
                         android:fontFamily="@font/carossoft"
                         android:text="Trenutno u Milićima"
+                        android:textColor="@color/primarna"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -140,6 +139,7 @@
                         android:foregroundGravity="bottom"
                         android:gravity="bottom|right"
                         android:text="dan"
+                        android:textColor="@color/primarna"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -147,7 +147,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -160,8 +160,8 @@
 
                         <ImageView
                             android:id="@+id/weatherIconImageView"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_below="@id/windSpeedTextView"
                             android:layout_gravity="center|center_horizontal|center_vertical" />
                     </LinearLayout>
@@ -181,7 +181,7 @@
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
                             android:text="N/A"
-                            android:textColor="@color/black"
+                            android:textColor="@color/primarna_tekst"
                             android:textSize="30sp" />
 
                         <TextView
@@ -192,7 +192,7 @@
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
                             android:text="N/A"
-                            android:textColor="@color/black"
+                            android:textColor="@color/primarna_tekst"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -225,7 +225,7 @@
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
                                 android:text="N/A"
-                                android:textColor="@color/black"
+                                android:textColor="@color/primarna_tekst"
                                 android:textSize="15sp" />
 
                             <ImageView
@@ -234,7 +234,8 @@
                                 android:layout_height="15dp"
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
-                                android:src="@drawable/raindrops" />
+                                android:src="@drawable/raindrops"
+                                android:tint="@color/primarna" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -254,7 +255,7 @@
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
                                 android:text="N/A"
-                                android:textColor="@color/black"
+                                android:textColor="@color/primarna_tekst"
                                 android:textSize="15sp" />
 
                             <ImageView
@@ -263,7 +264,8 @@
                                 android:layout_height="15dp"
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
-                                android:src="@drawable/wind" />
+                                android:src="@drawable/wind"
+                                android:tint="@color/primarna" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -271,32 +273,34 @@
 
                 </LinearLayout>
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            app:cardBackgroundColor="#00000000"
-            app:cardElevation="0dp"
-            app:cardMaxElevation="0dp">
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:translationZ="1dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingVertical="15dp">
 
                 <TextView
                     android:id="@+id/kategorije"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
                     android:autoSizeMaxTextSize="20sp"
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
                     android:text="Kategorije"
+                    android:textColor="@color/primarna"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -304,6 +308,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
                     android:clipToPadding="false"
                     android:orientation="horizontal">
 
@@ -321,8 +326,11 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center|top"
                             android:background="@drawable/round_btn"
+                            android:backgroundTint="@color/ghost_white"
+                            android:elevation="2dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/baseline_forest_24"
+                            android:tint="@color/primarna_blaga"
                             app:layout_anchor="@id/frame_layout"
                             app:layout_anchorGravity="center|center_horizontal|center_vertical" />
 
@@ -337,6 +345,7 @@
                             android:fontFamily="@font/carossoftlight"
                             android:gravity="bottom|center"
                             android:text="Priroda"
+                            android:textColor="@color/primarna"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:layout_anchor="@+id/frame1"
@@ -358,8 +367,11 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center|top"
                             android:background="@drawable/round_btn"
+                            android:backgroundTint="@color/ghost_white"
+                            android:elevation="2dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/baseline_local_cafe_24"
+                            android:tint="@color/primarna_blaga"
                             app:layout_anchor="@id/frame_layout"
                             app:layout_anchorGravity="center|center_horizontal|center_vertical" />
 
@@ -374,6 +386,7 @@
                             android:fontFamily="@font/carossoftlight"
                             android:gravity="bottom|center"
                             android:text="Objekti"
+                            android:textColor="@color/primarna"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:layout_anchor="@+id/frame1"
@@ -395,8 +408,11 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center|top"
                             android:background="@drawable/round_btn"
+                            android:backgroundTint="@color/ghost_white"
+                            android:elevation="2dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/baseline_church_24"
+                            android:tint="@color/primarna_blaga"
                             app:layout_anchor="@id/frame_layout"
                             app:layout_anchorGravity="center|center_horizontal|center_vertical" />
 
@@ -410,6 +426,7 @@
                             android:fontFamily="@font/carossoftlight"
                             android:gravity="bottom|center"
                             android:text="Spomenici"
+                            android:textColor="@color/primarna"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:layout_anchor="@+id/frame1"
@@ -430,11 +447,14 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center|top"
                             android:background="@drawable/round_btn"
+                            android:backgroundTint="@color/ghost_white"
+                            android:contentDescription="TODO"
+                            android:elevation="2dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/baseline_hotel_24"
+                            android:tint="@color/primarna_blaga"
                             app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|top"
-                            android:contentDescription="TODO" />
+                            app:layout_anchorGravity="center|top" />
 
                         <TextView
                             android:id="@+id/tekst4"
@@ -446,6 +466,7 @@
                             android:fontFamily="@font/carossoftlight"
                             android:gravity="bottom|center"
                             android:text="Objekti"
+                            android:textColor="@color/primarna"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:layout_anchor="@+id/frame1"
@@ -466,11 +487,14 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center|top"
                             android:background="@drawable/round_btn"
+                            android:backgroundTint="@color/ghost_white"
+                            android:contentDescription="TODO"
+                            android:elevation="2dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/baseline_place_24"
+                            android:tint="@color/primarna_blaga"
                             app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|top"
-                            android:contentDescription="TODO" />
+                            app:layout_anchorGravity="center|top" />
 
                         <TextView
                             android:id="@+id/tekst5"
@@ -482,6 +506,7 @@
                             android:fontFamily="@font/carossoftlight"
                             android:gravity="bottom|center"
                             android:text="Objekti"
+                            android:textColor="@color/primarna"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:layout_anchor="@+id/frame1"
@@ -495,7 +520,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:outlineAmbientShadowColor="#100F0F"
+            android:layout_marginTop="10dp"
+            android:outlineAmbientShadowColor="#00100F0F"
             app:cardBackgroundColor="#00000000"
             app:cardElevation="0dp"
             app:cardMaxElevation="0dp">
@@ -510,11 +536,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="50dp"
-                    android:layout_marginBottom="10dp"
                     android:autoSizeMaxTextSize="20sp"
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
                     android:text="Izdvojene Lokacije"
+                    android:textColor="@color/primarna"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 

@@ -1,12 +1,6 @@
 <!-- styles.xml -->
 <resources>
 
-    <!-- Stil za prilagođeni indikator BottomNavigationView -->
-    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/akcent</item>
-        <item name="iconTint">@color/white</item>
-    </style>
-
     <!-- Osnovni stil za aplikaciju -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <!-- Tekst font -->
@@ -25,6 +19,12 @@
         <item name="android:windowLightStatusBar">false</item>
 
         <!-- Dodatni stili i postavke prema potrebi -->
+    </style>
+
+    <!-- Stil za prilagođeni indikator BottomNavigationView -->
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primarna_blaga</item>
+
     </style>
 
 </resources>
