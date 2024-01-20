@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/baseline_menu_24" />
 
     <TextView
-        android:id="@+id/glavniNaslov"
+        android:id="@+id/Naslov"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

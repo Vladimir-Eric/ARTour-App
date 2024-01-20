@@ -33,29 +33,29 @@
 
                 <ImageButton
                     android:id="@+id/menu"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center|left"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
+                    android:contentDescription="TODO"
                     app:srcCompat="@drawable/baseline_menu_24"
-                    app:tint="@color/white"
-                    android:contentDescription="TODO" />
+                    app:tint="@color/white" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/glavniNaslov"
+                        android:id="@+id/Naslov"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:autoSizeMaxTextSize="35dp"
-                        android:autoSizeMinTextSize="20dp"
+                        android:autoSizeMaxTextSize="35sp"
+                        android:autoSizeMinTextSize="20sp"
                         android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoftbold"
                         android:gravity="center"
@@ -72,7 +72,7 @@
                         android:layout_gravity="center|top"
                         android:layout_marginBottom="5dp"
                         android:autoSizeTextType="uniform"
-                        android:fontFamily="@font/carossoftbold"
+                        android:fontFamily="@font/carossoft"
                         android:gravity="center"
                         android:text="Turistički vodič opštine Milići"
                         android:textColor="@color/white"
@@ -84,7 +84,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center|right"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:src="@drawable/artour_logo_white" />
 
