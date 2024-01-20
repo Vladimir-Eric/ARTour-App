@@ -24,11 +24,138 @@
         kontemplaciju i nadu u bolju budućnost.
     </string>
 
-        <string name="dest2">Opis destinacije 2</string>
-        <string name="dest3">Opis destinacije 3</string>
-        <string name="dest4">Opis destinacije 4</string>
+        <string name="dest2">Spomen ploča palim borcima sa predjela Bukovice i Koprivna podignuta je 2004. godine pored groblja na Bukovičkom Brdu.</string>
 
-    <string name="dest24">U našem mjestu prostire se Park evropskih velikana, jedinstveno mjesto koje slavi
+        <string name="dest3">U milićkoj Mjesnoj zajednici Buljevići nalazi se spomen ploča za 15 boraca Vojske RS i civila sa tog područja koji su poginuli u proteklom otadžbinskom ratu.</string>
+
+        <string name="dest4">Spomen česma Mišići palim borcima u prethodnom ratu</string>
+
+    <string name="dest5">Spomen česma i kosturnica palim Partizanima u Drugom Svjetskom ratu.</string>
+
+    <string name="dest6">Spomenik je podignut 6. avgusta 1978. godine.\n\n
+        Na ovom mjestu, pod nebeskim svodom koji svjedoči o vječnom trajanju, stoji spomenik koji odaje počast hrabrim muškarcima i ženama
+        koji su položili svoje živote u borbi za slobodu i pravdu tokom Drugog Svjetskog rata.\n\n
+        Na spomeniku stoji ugravirano: "Titovim borcima Milića Nove Kasabe i Dervente koji u narodnooslobodilčkom ratu dadoše svoje živote za slobodu zbratimljenu socijalističku samoupravnu Jugoslaviju".</string>
+
+    <string name="dest7">JU "Narodna biblioteka Milići" samostalno je kao ustanova počela sa radom 1. septembra 2002. godine, nadovezujući se na
+        dvadesetčetvorogodišnji rad biblioteke Rudnika boksita iz Milića. Pažljivo biranim i dobro planiranim nabavkama, sa fondom od oko 25.000 publikacija,
+        biblioteka u potpunosti pokriva kako potrebe tako i ukuse bibliotečkih korisnika. 22.09.2015. godine potpisan je Ugovor sa Narodnom i univerzitetskom
+        bibliotekom RS  o punopravnom članstvu biblioteke u bibliotečko – informacionom sistemu COBISS.RS. Tako je sada biblioteka uvezana
+        u najsavremeniji informacioni sistem obrade knjiga u regionu.\n\n
+        Kratka istorija:\n
+        Građani Milića su svoju prvu javnu biblioteku dobili tek 1979 godine. Hronološki gledano 21. decembra 1978. godine, na Dan rudara, „Rudnici boksita“ iz
+        Milića su otvorili svoj objekat namjenjen kulturi - Dom rudara, u kome se nalazio i prostor predviđen za biblioteku , površine 70 m2. Naredne godine,
+        na isti dan, biblioteka je počela sa radom , a zvala se Biblioteka rudnika boksita – Milići. Tako će ostati sve do aprila 2002. godine kada kompanija
+        Boksit, vlasništvo nad prostorom i knjižnim fondom prenosi na Opštinu Milići, a ona pak osniva Narodnu biblioteku Milići.</string>
+
+    <string name="dest8">Godine 2009. na tri prostora postavljena je trajna muzejska postavka Kompanije „Boksit“, otvorena povodom
+        50 godina postojanja ove Kompanije. U parkovima, na otvorenom prostoru nalaze se sredstva za rad, korištena tokom proteklih decenija,
+        od zaprežnih kola, kojima je 1959. godine izvlačena ruda, do utovarno transportnih mašina, impozantnih gabarita, postavka je obogaćena 2016 godine
+        kada su u postavku dodate još 4 mašine.\n\n
+        Ono što izdvaja opštinu Milići je srpski grb u ovom parku, s obzirom da je ovo jedino mjesto gdje još uvijek ponosno stoji prvi grb RS.</string>
+
+    <string name="dest9">Drugi dio postavke je u samom Domu rudara, u Muzeju rudarstva, gdje su pored zbirke minerala, alata, opreme,
+             priručnih sredstava, korištenih u procesima rada, izložena i određena priznanja, kao i drugi dokumenti važni za nastanak i trajanje Kompanije.</string>
+
+    <string name="dest10">Rajkov toranj se nalazi u samom centru gradića Milići, na adresi Trg rudara 1. Toranj je otvoren 5.
+        decembra 2009. godine povodom 50 godina rada preduzeća „Boksit“ a.d.[2] Visina tornja je 77 metara.\n\n
+        Pored kulturne važnosti, toranj ima i komercijalno-turističku funkciju. U prizemlju se nalazi bife i Muzej rudarstva, a na vrhu kafe-bar sa
+        terasom-vidikovcem, sa koga se posetiocima pruža panoramski pogled na širu okolinu Milića. Toranj predstavlja deo muzejske postavke Muzeja rudarstva
+        u Milićima, koji se nalazi u zgradi tornja, a posvećen je rudarskoj tradiciji ovog dela Republike Srpske. Objekat nosi ime po srpskom privredniku i
+        predsjedniku upravnog odbara preduzeća „Boksit“ Rajku Dukiću. Ovaj toranj posećuje sve više turista iz Republike Srpske, BiH ali i drugih zemalja.\n\n
+        U okviru Letnjeg festivala kulture i sporta u Milićima, održava se trka stepenicama do vrha Rajkovog tornja u muškoj i ženskoj konkurenciji.
+        Najuspešnijim takmičarima se dodeljuju novčane nagrade i diplome.\n\n
+        Na vrhu tornja se nalazi i treći dio postavke muzeja rudarstva, gdje je kroz 50 fotografija, a pod nazivom „Nekad i sad“ prikazano 50 godina razvoja i prožimanja „Boksit-a“
+        kao savremenog privrednog subjekta i Milića kao savremene urbane sredine.</string>
+
+    <string name="dest11">O životu na ovim prostorima svjedoče prisutni stećci koji se nalaze na cijeloj teritoriji opštine.\n\n
+        Na teritoriji opštine Milići nalazi se ukupno 11 nekropola i 388 stećaka koji su uvršteni u nacionalnu baštinu i Bosne i Hercegovine. Pored ovih
+        11 nekropola i 388 stećaka nalazi se jo pozamašan broj stećaka na opštini koji nisu uvršteni u nacionalnu baštinua, a među njima treba izdvojiti nekropolu
+        sa humkama (tumulusi) u Šošarima (Vukšići).</string>
+
+    <string name="dest12">Komić je srednjovjekovni grad u Republici Srpskoj podignut na nepristupačnom terenu nedaleko od Han Pijeska
+        kod sela Zagrađe, u opštini Milići. \n\n
+        Grad je pripadao srpskoj plemićkoj porodici Pavlović i predstavljao je jedan od njihovih graničnih gradova. Turci su ga zauzeli
+        i porušili 1463. i odmah napustili, jer se u kasnijim izvorima ne pominje.godine. \n\n
+        Komić se nalazi nešto sjeveroistočnije od Han Pijeska u Kraljevoj Gori. Sagrađen je na teško pristupačnom terenu u obliku nepravilnog petougla.
+        Da bi dodatno otežali pristup tvrđavi, neimari su izgradili samotalne zrakaste bedeme koji štite prilaz gradu, na istočnoj, zapadnoj i južnoj strani.
+        Tvrđava je datirana u kasni srednji vijek.</string>
+
+    <string name="dest13">Iznad sela Gerovi postoje ostaci grada-tvrđave koju je sredinom 15. veka, po predanju izgradila Jerina (Irina),
+        Srpska despotica grčkog porijekla iz porodice kantakuzena, žena despota Đurađa Brankovića.\n\n</string>
+
+    <string name="dest14">Pravoslavna crkva u Milićima je podignuta 1871. godine u vizantijskom stilu, na temeljjima stare crkve
+        brvnare, a posvećena je Svetom Ocu Nikoli.\n\n
+        Gradnja crkve započeta je 1871. godine, kada je Mitropolit dabrobosanski Nikolaj Mandić osvetio temelje. Sazidana je od kamena,
+        pokrivena je limom i ima zvonik sa dva zvona. Kada je gradnja završena 1872. godine, Mitropolit dabrobosanski Nikolaj Mandić osvetio je hram.\n\n
+        Prema predanju, na mjestu sadašnjeg hrama nalazila se crkva brvnara. Ona je srušena i podignut je sadašnji hram.\n\n
+        Tokom Drugog svjetskog rata ustaše su zapalile hram. Prva obnova hrama uslijedila je 1947. godine. Sljedeće dvije obnove hrama izvršene su 1967. i 1974. godine,
+        kada je postavljen mermer i ikonostas od obične daske sa ikonama naslikanim na platnu. Generalna obnova hrama počela je 2010. godine i ona je završena 2017. godine.</string>
+
+    <string name="dest15">Crkva Presvete Trojice jednobrodna je građevina u selu Derventa kod Milića, Republika Srpska.
+        Pripada eparhiji zvorničko-tuzlanskoj, a posvećena je Presvetoj Trojici.\n\n
+        Gradnja crkve započeta je 22. juna 1989. godine, a temelje je osvetio Episkop zvorničko-tuzlanski Vasilije.
+        Sazidana je od sitne cigle, dimenzija je 14,5 × 8,5 m, pokrivena je bakrom i ima zvonik sa dva zvona. Kada je gradnja završena,
+        Episkop zvorničko-tuzlanski Vasilije osvetio je hram 5. septembra 1999. godine. Ova crkva je sada parohijska, iako u parohiji postoji
+        i starija crkva Svetih apostola Petra i Pavla, koja je ranije bila parohijska, a sada filijalna.\n\n
+        Crkvu je u periodu 1999—2004 živopisao Gojko Ristanović iz Beograda, a ikonostas je izrađen u duborezu od hrastovog drveta od strane Radeta Pantića
+        iz Milića. Ikone je oslikao nastavnik likovne kulture iz Vlasenice, Njegoš Arnaut.\n\n</string>
+
+    <string name="dest16">Hram/crkva brvnara u selu Dukići podignut je 2010. godine.</string>
+
+    <string name="dest17">Hram Svetog proroka Ilije u naselju Nova Kasaba. Hram je dimenzija 12,5h7 metara.
+        Gradnja hrama počela je 1998. godine. Temelje je osveštao episkop zvorničko-tuzlanski g. Vasilije 01. novembra 1998.
+        godine. Gradnja je završena 1999. godine. Hram je osveštao nadležni arhijerej g. Vasilije 04. juna 2000. godine.
+        Ikonostas u duborezu od hrastovine izradio je Rade Pantić iz Milića 2000. godine. Ikone na ikonostasu živopisao
+        je Aleksandar Vasiljević iz Doboja 2000. godine.</string>
+
+    <string name="dest18">Pravoslavna crkva u Koprivnu je podignuta 1896. godine na starom crkvišu i posvećena je apostolima
+        Petru i Pavlu.(kamen temeljac datira iz 1838. godine)\n\n
+        "U ime oca i sina i svetoga Duha Hram Svetih apostola Petra i Pavla osnova se 1896. Pri vladanju cara Franca Josifa I, srpskog mitropolita dabrobosanskoga gospodine Nikole Mandića,
+        srpskoj pravoslavnoj crkvenoj opštini jeremićkoj prilozima srpsko-pravoslavnoga naroda bosanskoga, trudom mjesnog paroha Jovana Brežančića" - originalni tekst sa crkve.</string>
+
+    <string name="dest19">U Vukšić Polju se nalazi crkva – kapela, zadužbina Neđe Cvetkovića podignuta 1939. godine i posvećena
+        je sv. Joakimu i Ani.\n\n
+        Prema predanju, na mestu današnje crkve ranije je postojala starija i veća crkva koju su Turci srušili, a materijal potom
+        iskoristili za gradnju džamije, ali ne postoje pouzdani podaci koji bi to potvrdili. Tokom Drugog svetskog rata ustaše su
+        zapalile crkvu, koja je 1965. godine obnovljena. Crkva je u potpunosti obnovljena u periodu 2009—2012. godine, kada je
+        stari zvonik zamenjen novim i zamenjena dotrajala ploča i malter na crkvi.\n\n
+        Crkva nije živopisana, a ikonostas u duborezu od brestovog drveta izradio je Rade Pantić iz Milića. Ikone na lipovom drvetu
+        izradili su Marija Davidović iz Milića i izvesna Ljiljana iz Šapca.</string>
+
+    <string name="dest20">Musa-pašina dţamija u Novoj Kasabi je izgrađena 1643. godine.
+        Izgradnja ove džamije vezuje se za ime velikog vezira i budimskog namjesnika Musa-paše. Rješenjem
+        Zavoda za zaštitu kulturno-istorijskog i prirodnog nasleđa Musa-pašina džamija je 1951. godine stavljena
+        pod zaštitu države. U toku rata je bila porušena, a 2010. godine je obnovljena u autentiĉnom obliku, kada
+        je i otvorena.\n\n
+        Opis: Musa-pašina džamija u Novoj Kasabi pripada tipološkoj seriji jednoprostornih džamija sa masivnim kamenim zidovima,
+        četverovodnim krovom, trijemom i kamenom munarom. Munara je u konstruktivnom smislu karakteristična što njen bačvasti,
+        odnosno mnogougaoni podnožni dio ne izrasta iz tla, nego iz posebnog kamenog četverouglastog postamenta koji se stepenasto uzdiže prema centru.
+        Visine oko 26,5 m. Ono što daje posebnu karakteristiku objektu je građevinski materijal od koga je bio djelomično izveden. To je kamen posebne zelene boje.\n\n
+        Pored džamije nalazi se i groblje iz osmanskog perioda: groblje Musa-pašine džamije.</string>
+
+    <string name="dest21">Prvi park koji ćemo predstaviti je park naših najvećih i najistaknutijih ličnosti u njemu možete pronaći biste kao što su:\n\n
+        Najistaknutiji srpski car Dušan Nemanjić, osnivača Srpske pravoslavne crkve Svetog Savu,
+        vojvode i vojskovođe Živojina Mišića, vođe Prvog srpskog ustanka Petra Petrovića Karađorđa, najpoznatijeg crnogorskog vladara Petra II Petrovića Njegoša,
+        kneza Valjevske nahije koji je rodom sa teritorije opštine Milići Ilije Birčanina, neke od najpoznatijih naučnika kao što su Milutin Milanković, Nikola Tesla i Mihajlo Pupin,
+        srpskog reformatora i tvorca ćirilice Vuka Stefanoivića Karadžića, mnoštvo pisaca i pjesnika kao što su: Miloš Crnjanski, Ivo Andrić, Desanka Maksimović, Petar Kočić i Dobrica Ćosić,
+        jednog od najvećih slikara Savu Šumanovića, najvećeg kompozitora Stevana Stojanovića Mokranjca, najznačajnijeg operskog vokalnog umjetnika Miroslava Čangalovića,
+        srpskog heroja Gavrila Principa, jednog od najcjenjenijih Srpskih matematičara u svijetu i Evropi Miku Petrovića Alasa i možda najznačajnijeg među njima za našu opštinu Aleksu Jakšića.\n\n
+        Park srpskih velikana postaje mjesto gdje se prošlost i sadašnjost susreću, pružajući prostor za divljenje i inspiraciju,
+        dok se biste ovih velikih ličnosti uzdižu kao spomenici njihovom neizbrisivom naslijeđu.</string>
+
+    <string name="dest22">U parku nedaleko od centra našeg grada smješten je Park ruskih velikana,
+        jedinstveno mjesto koje slavi bogato naslijeđe i doprinos nekoliko ključnih ličnosti ruske istorije i kulture.\n\n
+        U ovom parku možete naći biste poznatog hemičara Dimitrija Ivanoviča Mendejeljeva, monarha i svetitelja Svetog Sergeja,
+        operskog pjevača Fjodora Ivanoviča Šaljapina, najpoznatijeg ruskog kompozitora Petra Iljiča Čajkovskog,
+        neke od najvećih Ruskih vojskovođa kao Georgija Konstantinoviča Žukova i Mihaila Ilarionoviča Kutuzova,
+        cara nekadašnje carske Rusije Petra Velikog, prvog ruskog kosmonauta Julija Aleksejeviča Gagarina,
+        najveće ruske pisce kao Lava Nikolajeviča Tolstoja, Aleksandra Sergejeviča Puškina, Aleksandra Sergejeviča Jesenjina i Fjodora Mihailoviča Dostojevskog,
+        kao i prdsjednika današnje Rusije Vladimira Vladimiroviča Putina.\n\n
+        Sve ove biste zajedno stvaraju atmosferu koja odražava veličanstvenost ruske istoeije, kulture i doprinosa svijetu.
+        Park ruskih velikana postaje prostor gdje posjetioci mogu otkriti i poštovati raznovrsnost i naslijeđe ovih izuzetnih pojedinaca koji su obogatili rusku baštinu</string>
+
+    <string name="dest23">U našem mjestu prostire se Park evropskih velikana, jedinstveno mjesto koje slavi
         izuzetne pojedince poput Aristotela, Mozarta, Isaaca Newtona, Marie Curie, Pabla Picassa, Alberta Einsteina,
         Leonarda da Vincija i Williama Shakespearea. Ovaj izvanredni park predstavlja spoj kulturne raznolikosti i
         naslijeđa nekoliko ključnih europskih ličnosti.\n\n
@@ -36,21 +163,21 @@
         Biste postavljene jedna pored druge stvaraju atmosferu koja potiče na razmišljanje o bogatstvu europske kulture i doprinosu
         ovih velikana razvoju umjetnosti, nauke i filozofije.</string>
 
-    <string name="dest25">U srcu našeg grada smjestio se Indijski park velikana, jedinstveno mjesto koje odašilje duh i
+    <string name="dest24">U srcu našeg grada smjestio se Indijski park velikana, jedinstveno mjesto koje odašilje duh i
         naslijeđe dva nevjerojatna lidera - Mahatme Gandhija i Rabindranatha Tagorea. Ovaj impozantni park predstavlja
         spomenik posvećen životima i doprinosima ova dva velikana koji su oblikovali indijsku istoriju.\n\n
         Indijski park velikana postaje mjesto gdje posjetioci mogu uroniti u bogatu baštinu ova dva poznata pojedinca.
         S bistama Mahatme Gandhija i Rabindranatha Tagorea smještenim jedna pored druge, park pruža priliku za refleksiju o
         naslijeđu Gandhija i Tagorea, naglašavajući važnost njihovih ideala u suvremenom svijetu.</string>
 
-    <string name="dest26">U blizini parka Indijskih velikana, nalazi se i Park kineskih velikana, posebno mjesto
+    <string name="dest25">U blizini parka Indijskih velikana, nalazi se i Park kineskih velikana, posebno mjesto
         koje odaje počast dvojici poznatih kineskih lidera - Konfučiju i Deng Sjaopingu. Ovaj očaravajući park
         predstavlja spomenik posvećen životima i doprinosima ova dva ključna lika kineske istorije.\n\n
         Park kineskih velikana postaje mjesto gdje posjetioci mogu uživati u kulturnom bogatstvu ova dva poznata lika.
         Biste Konfučija i Deng Sjaopinga, smještene jedna pored druge, naglašavaju važnost njihovih doprinosa u
         oblikovanju kineskog društva i istorije, pružajući priliku za razmišljanje o naslijeđu koje su ostavili za buduće generacije.</string>
 
-    <string name="dest27">Istorijat:  Ovo  nalazište  prvi  pominje  Plavšić (1936a), navodeći da ima mještana koji
+    <string name="dest26">Istorijat:  Ovo  nalazište  prvi  pominje  Plavšić (1936a), navodeći da ima mještana koji
         pamte da su ovdje rasle  tise, pa otuda i sam  naziv „Tisovljakˮ. Njegov  opis  ukazuje  na  izuzetno  visoka
         stabla (do 55 m) sa prečnikom najdebljeg 65 cm, te procjenom broja od oko 300 stabala. Lokalitet opisuje kao prašumsko
         stanište omorike, sa preko 200  godina  starim  stablima, kao i  sa  dosta njih koja leže na zemlji i trunu, uz napomenu
@@ -73,16 +200,16 @@
         (eventualno trajnih)  stadijuma razvoja omoriki-nih šuma, s obzirom na to da nije bilo značajnijih i ozbiljnijih negativnih uticaja u prošlosti. Takve
         sastojine  su  danas veoma  rijetke.  Moglo  bi se zaključiti da je sastojina stabilna, ali sa obzirom na nedostatak podmlatka, omorika ovdje potencijalno nema dugoročnu budućnost.</string>
 
-    <string name="dest28">U sklopu motelskog kompleksa nalazi se idealan prostor za savršen odmor i osvježenje. \n\n
+    <string name="dest27">U sklopu motelskog kompleksa nalazi se idealan prostor za savršen odmor i osvježenje. \n\n
         U ponudi se nalaze dva prostrana bazena, prilagođena svim uzrastima i potrebama. \n\nPrvi bazen namijenjen je najmlađima,
         pružajući im siguran i ugodan prostor za igru i učenje plivanja. S posebnim pažnjom dizajniran, ovaj bazen je opremljen dodatnim sigurnosnim
         mjerama kako bi roditelji mogli biti potpuno opušteni dok uživaju u suncu.\n\n
         Za one koji žele opuštajući boravak, tu je drugi bazen namijenjen odraslima. Ovaj elegantni bazen pruža mirnu atmosferu i prostor za opuštanje,
         bilo da želite plivati ili jednostavno uživati u sunčanju na rubu bazena.</string>
 
-    <string name="dest29">a</string>
+    <string name="dest28">a</string>
 
-    <string name="dest30">Sportski centar Milići je najsavremeniji prostor u RS namjenjen profesionalnim sportistima
+    <string name="dest29">Sportski centar Milići je najsavremeniji prostor u RS namjenjen profesionalnim sportistima
         i rekreativcima koji mogu koristiti otvorene i zatvorene terene za sve vidove sportova. \n\n
         U okviru sportsko - rekreativnog centra u Milićima nalazi se nova sportska dvorana kapaciteta 4.070 m2 korisnog prostora,
         raspolaže sa:  dvije dvorane, trim salom, šest svlačionica, ostavama za sportske rekvizite, radionicom, ljekarskom prostorijom,
