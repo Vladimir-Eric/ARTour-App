@@ -1,5 +1,6 @@
 package com.example.artour;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,14 @@ import com.example.artour.databinding.ActivityMainBinding;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
+
+import android.app.UiModeManager;
+import android.content.Context;
+import android.content.res.Configuration;
+import android.os.Build;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -55,6 +64,35 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
         binding.bottomNavigationView.setSelectedItemId(R.id.pocetna);
+
+        OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
+            @Override
+            public void handleOnBackPressed() {
+                // Ovde možete dodatno obraditi pritisak na dugme "nazad"
+                // Ako želite uobičajeno ponašanje, možete pozvati super.handleOnBackPressed();
+
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                int count = fragmentManager.getBackStackEntryCount();
+
+                if (count == 0) {
+                    Fragment currentFragment = fragmentManager.findFragmentById(R.id.frame_layout);
+
+                    if (currentFragment instanceof PocetnaFragment) {
+                        // Ako smo već na PocetnaFragment, izlazak iz aplikacije
+                        finish();
+                    } else {
+                        // Ako nismo na PocetnaFragment, zamijeni fragment s PocetnaFragment
+                        replaceFragment(new PocetnaFragment());
+                    }
+                } else {
+                    // Ako ima prethodnih fragmenata, vrati se na prethodni fragment
+                    fragmentManager.popBackStack();
+                }
+            }
+        };
+
+        // Aktivirajte callback
+        getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
     private void replaceFragment(Fragment fragment) {
