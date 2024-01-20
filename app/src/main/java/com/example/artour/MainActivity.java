@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         // Ako nismo na PocetnaFragment, zamijeni fragment s PocetnaFragment
                         replaceFragment(new PocetnaFragment());
+                        binding.bottomNavigationView.setSelectedItemId(R.id.pocetna);
                     }
                 } else {
                     // Ako ima prethodnih fragmenata, vrati se na prethodni fragment
