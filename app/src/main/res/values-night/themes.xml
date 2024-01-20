@@ -5,13 +5,20 @@
     <style name="Base.Theme.ARTour" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="fragment_pozadina">@color/dark_theme</item>
+        <item name="naslovna_linija">@color/dark_theme_top_menu</item>
+        <item name="kartica">@color/dark_theme_card</item>
+        <item name="heading_text">@color/dark_theme_text</item>
+        <item name="kategorije_ikonice">@color/white_10</item>
+        <item name="slicice">@color/primarna_100</item>
+        <item name="kartica_nova">@color/white_05</item>
+        <item name="theme_text">@color/white</item>
 
         <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <!-- Ikone statusne linije da budu svijetle (bijele) -->
+        <item name="android:statusBarColor">@color/dark_theme_top_menu</item>
         <item name="android:windowLightStatusBar">false</item>
-
     </style>
 
     <style name="BottomNavStyle" parent="Widget.Design.BottomNavigationView">
@@ -21,10 +28,12 @@
 
     <style name="Theme.ARTour" parent="Base.Theme.ARTour">
         <!-- Transparent system bars for edge-to-edge. -->
+        <!--
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/dark_theme</item>
         <item name="android:windowLightStatusBar">false</item>
+        -->
     </style>
 
 </resources>

@@ -3,6 +3,17 @@
 
     <!-- Osnovni stil za aplikaciju -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+
+        <item name="fragment_pozadina">?attr/fragment_pozadina</item>
+        <!-- Ostale postavke stila fragmenta -->
+        <item name="naslovna_linija">?attr/naslovna_linija</item>
+        <item name="kartica">?attr/kartica</item>
+        <item name="heading_text">?attr/heading_text</item>
+        <item name="kategorije_ikonice">?attr/kategorije_ikonice</item>
+        <item name="slicice">?attr/slicice</item>
+        <item name="kartica_nova">?attr/kartica_nova</item>
+        <item name="theme_text">?attr/theme_text</item>
+
         <!-- Tekst font -->
         <item name="fontFamily">@font/carossoft</item>
 
@@ -23,8 +34,12 @@
 
     <!-- Stil za prilagođeni indikator BottomNavigationView -->
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/primarna_blaga</item>
+        <item name="android:color">@color/primarna_900</item>
+        <item name="itemTextColor">@color/white</item>
 
     </style>
+
+
+
 
 </resources>

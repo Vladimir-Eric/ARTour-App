@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/attrs.xml -->
+<resources>
+    <attr name="fragment_pozadina" format="reference|color"/>
+    <attr name="naslovna_linija" format="reference|color"/>
+    <attr name="naslovna_linija_tekst" format="reference|color"/>
+    <attr name="kartica" format="color"/>
+    <attr name="kartica_nova" format="color"/>
+    <attr name="heading_text" format="color"/>
+    <attr name="kategorije_ikonice" format="color"/>
+    <attr name="slicice" format="color"/>
+    <attr name="theme_text" format="color"/>
+    <attr name="itemTextColor"/>
+    <!-- Dodajte ostale atribute prema potrebi -->
+</resources>

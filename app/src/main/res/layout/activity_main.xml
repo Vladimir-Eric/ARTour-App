@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/fragment_pozadina"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
+        android:layout_height="match_parent" />
+
     <!--<com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -37,6 +38,17 @@
         android:visibility="visible">
 
         <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center|center_horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_bottom_navigation_bar"
+            android:backgroundTint="@color/black"
+            android:visibility="visible" />
+
+        <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -44,6 +56,7 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/rounded_bottom_navigation_bar"
+            android:backgroundTint="?attr/naslovna_linija"
             android:elevation="8dp"
             android:visibility="visible" />
 
@@ -59,9 +72,9 @@
             app:elevation="8dp"
             app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_menu">
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+            app:menu="@menu/bottom_menu"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white" />
     </FrameLayout>
 
 
@@ -73,61 +86,63 @@
         android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
         android:translationY="-260dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <TextView
         android:id="@+id/kartice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IZDVOJENE LOKACIJE"
         android:fontFamily="sans-serif-condensed"
+        android:text="IZDVOJENE LOKACIJE"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
         android:translationY="-180dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="410dp"
         android:layout_height="210dp"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
         android:translationY="-50dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <ImageView
         android:id="@+id/ikona1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:translationX="-155dp"
+        android:translationY="80dp"
+        android:visibility="gone"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_forest_24"
-        android:translationY="80dp"
-        android:translationX="-155dp"
-        android:visibility="gone"/>
+        app:srcCompat="@drawable/baseline_forest_24" />
+
     <ImageView
         android:id="@+id/ikona2"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:translationX="-95dp"
+        android:translationY="80dp"
+        android:visibility="gone"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_local_cafe_24"
-        android:translationY="80dp"
-        android:translationX="-95dp"
-        android:visibility="gone"/>
+        app:srcCompat="@drawable/baseline_local_cafe_24" />
+
     <ImageView
         android:id="@+id/ikona3"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:translationX="-35dp"
+        android:translationY="80dp"
+        android:visibility="gone"
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_church_24"
-        android:translationY="80dp"
-        android:translationX="-35dp"
-        android:visibility="gone"/>
+        app:srcCompat="@drawable/baseline_church_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

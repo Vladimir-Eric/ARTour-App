@@ -21,7 +21,8 @@
             android:paddingHorizontal="20dp"
             android:text="Info Centar"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="?attr/theme_text"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -32,7 +33,9 @@
             android:paddingHorizontal="20dp"
             android:text="Korisne informacije iz lokalne perspektive"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="?attr/theme_text"/>
+
     </LinearLayout>
 
     <View

@@ -10,4 +10,24 @@
     <color name="primarna">#4074ea</color>
     <color name="primarna_blaga">#4fa5ff</color>
     <color name="primarna_tekst">#3c40b7</color>
+    <color name="dark_theme">#121212</color>
+    <color name="dark_theme_top_menu">#17FFFFFF</color>
+    <color name="dark_theme_text">#FFFFFF</color>
+    <color name="dark_theme_card">#0DFFFFFF</color>
+    <color name="white_10">#0DFFFFFF</color>
+
+    <color name="white_05">#0DFFFFFF</color>
+
+    <color name="boya">#148c94</color>
+
+    <color name="primarna_100">#bfdfff</color>
+    <color name="primarna_200">#95cbff</color>
+    <color name="primarna_300">#6bb6ff</color>
+    <color name="primarna_400">#4fa5ff</color>
+    <color name="primarna_500">#3f96ff</color>
+    <color name="primarna_600">#4187ff</color>
+    <color name="primarna_700">#4074ea</color>
+    <color name="primarna_800">#3f62d7</color>
+    <color name="primarna_900">#3c40b7</color>
+
 </resources>

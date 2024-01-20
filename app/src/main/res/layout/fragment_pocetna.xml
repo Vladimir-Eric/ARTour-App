@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PocetnaFragment"
-    android:background="@color/ghost_white">
+    android:background="?attr/fragment_pozadina">
 
 
     <LinearLayout
@@ -18,26 +18,29 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            app:cardBackgroundColor="@color/primarna"
+            app:cardBackgroundColor="?attr/naslovna_linija"
             app:cardCornerRadius="0dp"
-            app:cardElevation="5dp">
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:elevation="8dp"
+                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/menu"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@color/primarna"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center|left"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/baseline_menu_24"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    android:contentDescription="TODO" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -58,14 +61,14 @@
                         android:gravity="center"
                         android:text="ARTour"
                         android:textColor="@color/white"
-                        android:textSize="30dp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
 
 
                     <TextView
                         android:id="@+id/naslov"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center|top"
                         android:layout_marginBottom="5dp"
                         android:autoSizeTextType="uniform"
@@ -73,16 +76,17 @@
                         android:gravity="center"
                         android:text="Turistički vodič opštine Milići"
                         android:textColor="@color/white"
-                        android:textSize="10dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/ikonica"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/minilogo" />
+                    android:src="@drawable/artour_logo_white" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -99,10 +103,12 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
             android:translationZ="1dp"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="?attr/kartica"
             app:cardCornerRadius="20dp"
-            app:cardElevation="1dp">
+            app:cardElevation="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,7 +131,7 @@
                         android:autoSizeMinTextSize="14sp"
                         android:fontFamily="@font/carossoft"
                         android:text="Trenutno u Milićima"
-                        android:textColor="@color/primarna"
+                        android:textColor="?attr/heading_text"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -140,7 +146,7 @@
                         android:foregroundGravity="bottom"
                         android:gravity="bottom|right"
                         android:text="dan"
-                        android:textColor="@color/primarna"
+                        android:textColor="?attr/heading_text"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -161,8 +167,8 @@
 
                         <ImageView
                             android:id="@+id/weatherIconImageView"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_below="@id/windSpeedTextView"
                             android:layout_gravity="center|center_horizontal|center_vertical" />
                     </LinearLayout>
@@ -182,7 +188,7 @@
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
                             android:text="N/A"
-                            android:textColor="@color/primarna_tekst"
+                            android:textColor="?attr/heading_text"
                             android:textSize="30sp" />
 
                         <TextView
@@ -193,7 +199,7 @@
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
                             android:text="N/A"
-                            android:textColor="@color/primarna_tekst"
+                            android:textColor="?attr/heading_text"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -226,7 +232,7 @@
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
                                 android:text="N/A"
-                                android:textColor="@color/primarna_tekst"
+                                android:textColor="?attr/heading_text"
                                 android:textSize="15sp" />
 
                             <ImageView
@@ -236,7 +242,7 @@
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
                                 android:src="@drawable/raindrops"
-                                android:tint="@color/primarna" />
+                                app:tint="?attr/slicice" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -256,7 +262,7 @@
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
                                 android:text="N/A"
-                                android:textColor="@color/primarna_tekst"
+                                android:textColor="?attr/heading_text"
                                 android:textSize="15sp" />
 
                             <ImageView
@@ -266,7 +272,7 @@
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
                                 android:src="@drawable/wind"
-                                android:tint="@color/primarna" />
+                                app:tint="?attr/slicice" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -281,10 +287,12 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="10dp"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
             android:translationZ="1dp"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="?attr/kartica"
             app:cardCornerRadius="20dp"
-            app:cardElevation="1dp">
+            app:cardElevation="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -301,13 +309,13 @@
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
                     android:text="Kategorije"
-                    android:textColor="@color/primarna"
+                    android:textColor="?attr/heading_text"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
                     android:clipToPadding="false"
@@ -315,203 +323,249 @@
 
                     <FrameLayout
                         android:id="@+id/frame1"
-                        android:layout_width="60dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:translationX="0dp"
                         android:translationY="0dp">
 
-                        <ImageButton
-                            android:id="@+id/dugme1"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center|top"
-                            android:background="@drawable/round_btn"
-                            android:backgroundTint="@color/ghost_white"
-                            android:elevation="2dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/baseline_forest_24"
-                            android:tint="@color/primarna_blaga"
-                            app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|center_horizontal|center_vertical" />
-
-                        <TextView
-                            android:id="@+id/tekst1"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:autoSizeMaxTextSize="12sp"
-                            android:autoSizeMinTextSize="5sp"
-                            android:autoSizePresetSizes="12sp"
-                            android:fontFamily="@font/carossoftlight"
-                            android:gravity="bottom|center"
-                            android:text="Priroda"
-                            android:textColor="@color/primarna"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:layout_anchor="@+id/frame1"
-                            app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/dugme1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/round_btn"
+                                android:backgroundTint="?attr/kategorije_ikonice"
+                                android:contentDescription="TODO"
+                                android:elevation="2dp"
+                                android:outlineSpotShadowColor="#00000000"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baseline_forest_24"
+                                app:layout_anchor="@id/frame_layout"
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical"
+                                app:tint="@color/primarna_blaga" />
+
+                            <TextView
+                                android:id="@+id/tekst1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizePresetSizes="12sp"
+                                android:fontFamily="@font/carossoftlight"
+                                android:gravity="bottom|center"
+                                android:text="Priroda"
+                                android:textColor="?attr/heading_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                app:layout_anchor="@+id/frame1"
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                        </LinearLayout>
 
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/frame2"
-                        android:layout_width="60dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:translationX="0dp"
                         android:translationY="0dp">
 
-                        <ImageButton
-                            android:id="@+id/dugme2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center|top"
-                            android:background="@drawable/round_btn"
-                            android:backgroundTint="@color/ghost_white"
-                            android:elevation="2dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/baseline_local_cafe_24"
-                            android:tint="@color/primarna_blaga"
-                            app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|center_horizontal|center_vertical" />
-
-                        <TextView
-                            android:id="@+id/tekst2"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:autoSizeMaxTextSize="12sp"
-                            android:autoSizeMinTextSize="5sp"
-                            android:autoSizePresetSizes="12sp"
-                            android:fontFamily="@font/carossoftlight"
-                            android:gravity="bottom|center"
-                            android:text="Objekti"
-                            android:textColor="@color/primarna"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:layout_anchor="@+id/frame1"
-                            app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/dugme2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/round_btn"
+                                android:backgroundTint="?attr/kategorije_ikonice"
+                                android:contentDescription="TODO"
+                                android:elevation="2dp"
+                                android:outlineSpotShadowColor="#00000000"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baseline_local_cafe_24"
+                                app:layout_anchor="@id/frame_layout"
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical"
+                                app:tint="@color/primarna_blaga" />
+
+                            <TextView
+                                android:id="@+id/tekst2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizePresetSizes="12sp"
+                                android:fontFamily="@font/carossoftlight"
+                                android:gravity="bottom|center"
+                                android:text="Objekti"
+                                android:textColor="?attr/heading_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                app:layout_anchor="@+id/frame1"
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                        </LinearLayout>
 
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/frame3"
-                        android:layout_width="60dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:translationX="0dp"
                         android:translationY="0dp">
 
-                        <ImageButton
-                            android:id="@+id/dugme3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center|top"
-                            android:background="@drawable/round_btn"
-                            android:backgroundTint="@color/ghost_white"
-                            android:elevation="2dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/baseline_church_24"
-                            android:tint="@color/primarna_blaga"
-                            app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|center_horizontal|center_vertical" />
-
-                        <TextView
-                            android:id="@+id/tekst3"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:autoSizeMaxTextSize="12sp"
-                            android:autoSizeMinTextSize="5sp"
-                            android:autoSizePresetSizes="12sp"
-                            android:fontFamily="@font/carossoftlight"
-                            android:gravity="bottom|center"
-                            android:text="Spomenici"
-                            android:textColor="@color/primarna"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:layout_anchor="@+id/frame1"
-                            app:layout_anchorGravity="bottom|center" />
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/dugme3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/round_btn"
+                                android:backgroundTint="?attr/kategorije_ikonice"
+                                android:contentDescription="TODO"
+                                android:elevation="2dp"
+                                android:outlineSpotShadowColor="#00000000"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baseline_church_24"
+                                app:layout_anchor="@id/frame_layout"
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical"
+                                app:tint="@color/primarna_blaga" />
+
+                            <TextView
+                                android:id="@+id/tekst3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizePresetSizes="12sp"
+                                android:fontFamily="@font/carossoftlight"
+                                android:gravity="bottom|center"
+                                android:text="Spomenici"
+                                android:textColor="?attr/heading_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                app:layout_anchor="@+id/frame1"
+                                app:layout_anchorGravity="bottom|center" />
+                        </LinearLayout>
+
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/frame4"
-                        android:layout_width="60dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:translationX="0dp"
                         android:translationY="0dp">
 
-                        <ImageButton
-                            android:id="@+id/dugme4"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center|top"
-                            android:background="@drawable/round_btn"
-                            android:backgroundTint="@color/ghost_white"
-                            android:contentDescription="TODO"
-                            android:elevation="2dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/baseline_hotel_24"
-                            android:tint="@color/primarna_blaga"
-                            app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|top" />
-
-                        <TextView
-                            android:id="@+id/tekst4"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:autoSizeMaxTextSize="12sp"
-                            android:autoSizeMinTextSize="5sp"
-                            android:autoSizePresetSizes="12sp"
-                            android:fontFamily="@font/carossoftlight"
-                            android:gravity="bottom|center"
-                            android:text="Objekti"
-                            android:textColor="@color/primarna"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:layout_anchor="@+id/frame1"
-                            app:layout_anchorGravity="bottom|center" />
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/dugme4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/round_btn"
+                                android:backgroundTint="?attr/kategorije_ikonice"
+                                android:contentDescription="TODO"
+                                android:elevation="2dp"
+                                android:outlineSpotShadowColor="#00000000"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baseline_hotel_24"
+                                app:layout_anchor="@id/frame_layout"
+                                app:layout_anchorGravity="center|top"
+                                app:tint="@color/primarna_blaga" />
+
+                            <TextView
+                                android:id="@+id/tekst4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizePresetSizes="12sp"
+                                android:fontFamily="@font/carossoftlight"
+                                android:gravity="bottom|center"
+                                android:text="Objekti"
+                                android:textColor="?attr/heading_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                app:layout_anchor="@+id/frame1"
+                                app:layout_anchorGravity="bottom|center" />
+                        </LinearLayout>
+
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/frame5"
-                        android:layout_width="60dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:translationX="0dp"
                         android:translationY="0dp">
 
-                        <ImageButton
-                            android:id="@+id/dugme5"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center|top"
-                            android:background="@drawable/round_btn"
-                            android:backgroundTint="@color/ghost_white"
-                            android:contentDescription="TODO"
-                            android:elevation="2dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/baseline_place_24"
-                            android:tint="@color/primarna_blaga"
-                            app:layout_anchor="@id/frame_layout"
-                            app:layout_anchorGravity="center|top" />
-
-                        <TextView
-                            android:id="@+id/tekst5"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:autoSizeMaxTextSize="12sp"
-                            android:autoSizeMinTextSize="5sp"
-                            android:autoSizePresetSizes="12sp"
-                            android:fontFamily="@font/carossoftlight"
-                            android:gravity="bottom|center"
-                            android:text="Objekti"
-                            android:textColor="@color/primarna"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:layout_anchor="@+id/frame1"
-                            app:layout_anchorGravity="bottom|center" />
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/dugme5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/round_btn"
+                                android:backgroundTint="?attr/kategorije_ikonice"
+                                android:contentDescription="TODO"
+                                android:elevation="2dp"
+                                android:outlineSpotShadowColor="#00000000"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/baseline_place_24"
+                                app:layout_anchor="@id/frame_layout"
+                                app:layout_anchorGravity="center|top"
+                                app:tint="@color/primarna_blaga" />
+
+                            <TextView
+                                android:id="@+id/tekst5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="12sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizePresetSizes="12sp"
+                                android:fontFamily="@font/carossoftlight"
+                                android:gravity="bottom|center"
+                                android:text="Objekti"
+                                android:textColor="?attr/heading_text"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                app:layout_anchor="@+id/frame1"
+                                app:layout_anchorGravity="bottom|center" />
+                        </LinearLayout>
+
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -541,7 +595,7 @@
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
                     android:text="Izdvojene Lokacije"
-                    android:textColor="@color/primarna"
+                    android:textColor="?attr/heading_text"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
