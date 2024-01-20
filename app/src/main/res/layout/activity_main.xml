@@ -56,7 +56,7 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/rounded_bottom_navigation_bar"
-            android:backgroundTint="?attr/naslovna_linija"
+            android:backgroundTint="?attr/nav_meni"
             android:elevation="8dp"
             android:visibility="visible" />
 

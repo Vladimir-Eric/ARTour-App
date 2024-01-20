@@ -11,5 +11,6 @@
     <attr name="slicice" format="color"/>
     <attr name="theme_text" format="color"/>
     <attr name="itemTextColor"/>
+    <attr name="nav_meni"/>
     <!-- Dodajte ostale atribute prema potrebi -->
 </resources>

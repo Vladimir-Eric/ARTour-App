@@ -13,6 +13,7 @@
         <item name="slicice">?attr/slicice</item>
         <item name="kartica_nova">?attr/kartica_nova</item>
         <item name="theme_text">?attr/theme_text</item>
+        <item name="nav_meni">?attr/nav_meni</item>
 
         <!-- Tekst font -->
         <item name="fontFamily">@font/carossoft</item>
@@ -34,7 +35,7 @@
 
     <!-- Stil za prilagođeni indikator BottomNavigationView -->
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/primarna_900</item>
+        <item name="android:color">@color/primarna_700</item>
         <item name="itemTextColor">@color/white</item>
 
     </style>
