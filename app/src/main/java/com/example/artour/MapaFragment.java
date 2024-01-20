@@ -13,6 +13,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapaFragment extends Fragment implements OnMapReadyCallback {
@@ -45,6 +46,28 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap = googleMap;
         float zoomLevel = 15.0f;//mijenjanje visine prikaza
         myMap.setMapType(GoogleMap.MAP_TYPE_HYBRID); //vrsta prikaza
+
+
+        // Postavite minimalni i maksimalni nivo zumiranja
+        myMap.setMinZoomPreference(10.0f); // Postavite željeni minimalni nivo zumiranja
+        myMap.setMaxZoomPreference(20.0f); // Postavite željeni maksimalni nivo zumiranja
+
+        // Definirajte granice (bounds)
+        LatLngBounds bounds = new LatLngBounds(
+                new LatLng(44.04, 19.02), // Južozapadni kut
+                new LatLng(44.27, 19.24)  // Sjeveroistočni kut
+        );
+
+        if (zoomLevel == 10.0f) {
+            LatLng southwestCorner = new LatLng(44.22, 19.00); // Jugozapadni ugao
+            LatLng northeastCorner = new LatLng(44.25, 19.15); // Sjeveroistočni ugao
+        } else if (zoomLevel == 20.0f) {
+            LatLng southwestCorner = new LatLng(44.04, 19.02); // Jugozapadni ugao
+            LatLng northeastCorner = new LatLng(44.27, 19.24); // Sjeveroistočni ugao
+        }
+
+        // Postavite granice karte
+        myMap.setLatLngBoundsForCameraTarget(bounds);
 
         LatLng muzej = new LatLng(44.1696, 19.0787);
         myMap.addMarker(new MarkerOptions().position(muzej).title("Muzej rudarstva").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
