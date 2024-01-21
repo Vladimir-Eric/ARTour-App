@@ -12,11 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!--<com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:headerLayout="@layout/top_toolbar"
-        android:layout_gravity="start"/>Privremeno uklonjen-->
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"

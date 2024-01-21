@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="category1Layout" type="id"/>
+    <item name="category2Layout" type="id"/>
+    <item name="category3Layout" type="id"/>
+    <item name="category4Layout" type="id"/>
+    <item name="category5Layout" type="id"/>
+    <item name="allCategoriesLayout" type="id"/>
+</resources>

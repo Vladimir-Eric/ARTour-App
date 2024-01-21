@@ -16,6 +16,20 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
+    <ImageButton
+        android:id="@+id/legendImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:src="@drawable/info"
+        app:tint="@color/primarna_blaga"
+        android:background="@drawable/round_btn"/>
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,25 +83,29 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/legendCardView"
         android:layout_width="110dp"
-        android:layout_height="150dp"
+        android:layout_height="160dp"
         android:elevation="0dp"
+        android:visibility="invisible"
         app:cardBackgroundColor="#80FFFFFF"
-        android:layout_gravity="top|end"
+        android:layout_gravity="bottom|end"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="190dp"
         android:background="@drawable/rounded_bottom_navigation_bar">
     <!-- Legenda -->
     <LinearLayout
+        android:id="@+id/category1Layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:orientation="vertical">
 
         <TextView
+            android:onClick="onCategoryClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Legenda"
@@ -100,7 +118,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
 
             <View
                 android:layout_width="10dp"
@@ -118,10 +137,12 @@
 
         <!-- Zelena boja -->
         <LinearLayout
+            android:id="@+id/category2Layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
 
             <View
                 android:layout_width="10dp"
@@ -138,16 +159,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/category3Layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
 
             <View
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_marginTop="8dp"
-                android:background="#FFFF00" /> <!-- Zelena -->
+                android:background="#FFFF00" /> <!-- Zuta -->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -158,10 +181,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/category4Layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
 
             <View
                 android:layout_width="10dp"
@@ -178,10 +203,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/category5Layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
 
             <View
                 android:layout_width="10dp"
@@ -195,6 +222,22 @@
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
                 android:text="Kategorija 5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allCategoriesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:text="Sve kategorije"/>
         </LinearLayout>
 
         <!-- Dodajte još View i TextView elemenata prema potrebi za ostale boje i kategorije -->

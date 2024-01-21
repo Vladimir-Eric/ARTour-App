@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -19,12 +21,17 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap myMap;
+    private ImageButton legendImageButton;
+    private CardView legendCardView;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_mapa, container, false);
+
+        legendCardView = rootView.findViewById(R.id.legendCardView);
 
         // Pronađite SupportMapFragment u rasporedu fragmenta
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
@@ -38,7 +45,27 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         // Učitajte mapu asinkrono
         mapFragment.getMapAsync(this);
 
+        legendImageButton = rootView.findViewById(R.id.legendImageButton);
+        legendCardView = rootView.findViewById(R.id.legendCardView);
+
+        legendImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toggleLegendVisibility();
+            }
+        });
+
         return rootView;
+    }
+
+    private void toggleLegendVisibility() {
+        if (legendCardView.getVisibility() == View.VISIBLE) {
+            // Ako je trenutno vidljiva, sakrij
+            legendCardView.setVisibility(View.GONE);
+        } else {
+            // Ako je trenutno nevidljiva, prikaži
+            legendCardView.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -76,10 +103,10 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap.addMarker(new MarkerOptions().position(dom_zdravlja).title("Dom zdravlja Sveti Nikola").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng park_velikih_masina = new LatLng(44.1691, 19.0754);
-        myMap.addMarker(new MarkerOptions().position(park_velikih_masina).title("Muzej rudarstva na otvorenom").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        myMap.addMarker(new MarkerOptions().position(park_velikih_masina).title("Muzej rudarstva na otvorenom").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
 
         LatLng motel = new LatLng(44.1682, 19.0753);
-        myMap.addMarker(new MarkerOptions().position(motel).title("Motel Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(motel).title("Motel Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
 
         LatLng motel_crystal = new LatLng(44.1924, 19.0717);
         myMap.addMarker(new MarkerOptions().position(motel_crystal).title("Motel Crystal Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
@@ -103,7 +130,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap.addMarker(new MarkerOptions().position(park_evropskih_velikana).title("Park Evropskih velikana").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng dom_rudara = new LatLng(44.1698, 19.0788);
-        myMap.addMarker(new MarkerOptions().position(dom_rudara).title("Dom rudara Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(dom_rudara).title("Dom rudara Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
         LatLng spomenik_drugi_svjetski_rat_milici = new LatLng(44.1685, 19.07822);
         myMap.addMarker(new MarkerOptions().position(spomenik_drugi_svjetski_rat_milici).title("Spomenik palim borcima u drugom svjetskom ratu").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
@@ -138,22 +165,22 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         LatLng crkva_derventa = new LatLng(44.1277, 19.1393);
         myMap.addMarker(new MarkerOptions().position(crkva_derventa).title("Crkva Svete Trojice Derventa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng crkva_kasaba = new LatLng(44.2138, 19.1072);
+        LatLng crkva_kasaba = new LatLng(44.21368, 19.10719);
         myMap.addMarker(new MarkerOptions().position(crkva_kasaba).title("Crkva Svetog Ilije Nova Kasaba").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng crkva_dukici = new LatLng(44.14577, 19.1275);
         myMap.addMarker(new MarkerOptions().position(crkva_dukici).title("Crkva Svetog velikomucenika Prokopija").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng crkva_sosari = new LatLng(44.2012, 19.0943);
-        myMap.addMarker(new MarkerOptions().position(crkva_sosari).title("Crkva Svetog Joakima i Ane Vukscic Polje").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        myMap.addMarker(new MarkerOptions().position(crkva_sosari).title("Crkva Svetog Joakima i Ane Vukscic Polje").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
 
         LatLng crkva_koprivno = new LatLng(44.1469, 19.1548);
         myMap.addMarker(new MarkerOptions().position(crkva_koprivno).title("Crkva Svetih Apostola Petra i Pavla Koprivno").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng dzamija = new LatLng(44.16950, 19.07873);
+        LatLng dzamija = new LatLng(44.21556, 19.10670);
         myMap.addMarker(new MarkerOptions().position(dzamija).title("Musa Pašina džamija Nova Kasaba").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-        LatLng biblioteka = new LatLng(44.1663, 19.0889);
+        LatLng biblioteka = new LatLng(44.16944, 19.07867);
         myMap.addMarker(new MarkerOptions().position(biblioteka).title("Narodna biblioteka Milići").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
         LatLng rudnik = new LatLng(44.0746, 19.1916);
@@ -174,7 +201,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         LatLng policija = new LatLng(44.1701, 19.0784);
         myMap.addMarker(new MarkerOptions().position(policija).title("Policijska stanica Milici").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
-
         myMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rajkov_toranj, zoomLevel));
     }
+
 }
