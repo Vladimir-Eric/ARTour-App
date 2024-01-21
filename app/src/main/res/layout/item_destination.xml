@@ -37,6 +37,8 @@
                 android:id="@+id/destinationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizePresetSizes="18sp"
                 android:fontFamily="@font/carossoftbold"
                 android:textSize="18sp" />
 
