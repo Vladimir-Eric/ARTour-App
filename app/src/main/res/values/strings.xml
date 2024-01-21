@@ -24,17 +24,42 @@
         kontemplaciju i nadu u bolju budućnost.
     </string>
 
-    <string name="dest2">Spomen česma Mišići palim borcima u prethodnom ratu</string>
+    <string name="dest2">Spomen česma u mjesnoj zajednici Mišići stoji kao nijemi svjedok hrabrosti i žrtve palih boraca iz prethodnog rata.
+        Ova česma, podignuta kao simbol poštovanja i sećanja, predstavlja mesto gde se isprepliću voda života i hrabrosti, odajući počast onima koji su
+        dali svoje živote za slobodu i mir.\n\n
+        Ovaj miran kutak postao je mjesto gdje se okupljaju porodice, prijatelji i sugrađani kako bi odali počast svojim herojima. Neka spomen česma u Mišićima
+        bude podsećanje na važnost sećanja, poštovanja prema žrtvama, te mjesto gdje teče ne samo voda života već i duboka zahvalnost prema onima koji su hrabro kročili stazom slobode.
+    </string>
 
-    <string name="dest3">Spomen ploča palim borcima sa predjela Bukovice i Koprivna podignuta je 2004. godine pored groblja na Bukovičkom Brdu.</string>
+    <string name="dest3">U spokojnom okruženju sela Donja Bukovica, pored groblja, uzdiže se spomen-ploča posvećena palim borcima sa predjela Bukovice i Koprivna. Ovaj pijetetni spomenik, podignut s ljubavlju i poštovanjem,
+        nosi u sebi sećanja na hrabre pojedince koji su dali najveću žrtvu za slobodu i mir svoje zajednice.\n\n
+        Postavljena 2004. godine, spomen-ploča postaje centralno mesto gde se okupljaju porodice, prijatelji i sugrađani kako bi odali počast onima koji su hrabro stali u odbranu svoje domovine. Imena palih boraca urezana su u kamen,
+        postajući večna svedočanstva njihove hrabrosti i odanosti.\n\n
+        Ovo mesto nije samo fizički spomenik; to je duhovno središte gde se održava sećanje na žrtve i gde se prenose vrednosti hrabrosti i solidarnosti na nove generacije. Neka spomen-ploča palim borcima bude podsetnik da cene mir, poštuju žrtve prošlosti i
+        zajedno grade budućnost utemeljenu na jedinstvu i ljubavi prema domovini.</string>
 
-    <string name="dest4">spomenik Zutica</string>
+    <string name="dest4">Na ovom mirnom mjestu, osam imena su urezana u kamen, sjećajući nas na osobe koje su nevino izgubile svoje živote u teškom periodu, periodu prethodnog Odrbrambeno-otadžbinskog rata.\n\n
+        Spomen-ploča postaje simbol jedinstva u tugi i podseća nas da cene mir, složnost i zajedništvo. Neka ova svjedočanstva hrabrosti budu podsećanje
+        na to koliko je važno čuvati sećanje na one koji su nevino stradali, te nastaviti raditi zajedno kako bi izgradili budućnost punu solidarnosti i poštovanja.
+    </string>
 
-    <string name="dest5">U milićkoj Mjesnoj zajednici Buljevići nalazi se spomen ploča za 15 boraca Vojske RS i civila sa tog područja koji su poginuli u proteklom otadžbinskom ratu.</string>
+    <string name="dest5">U srcu Milićke Mjesne zajednice Buljevići, ponosno stoji spomen-ploča koja odašilje snažnu poruku sećanja i poštovanja prema 15 hrabrim borcima Vojske Republike Srpske i civilima sa ovog područja,
+        žrtvama proteklog otadžbinskog rata. Njihova žrtva i odanost domovini ostavili su dubok trag u istoriji ovog zajedničkog naselja.\n\n
+        Spomen-ploča ne samo da fizički obeležava mesto sećanja, već i simbolizuje zajedništvo i hrabrost onih koji su dali najveću žrtvu za svoju zemlju. Njihova imena, urezana u kamen, postaju deo kolektivnog sećanja, podsećajući nas na važnost čuvanja
+        istorijskog nasleđa i pijeteta prema onima koji su položili svoje živote za slobodu i mir.\n\n
+        Ova spomen-ploča je mesto gde se generacije susreću, odaju počast i iznova oživljavaju uspomene na hrabre pojedince čiji duh živi dalje u srcima zajednice. Neka ova svedočanstva hrabrosti budu podsticaj za buduće generacije da cene mir i jedinstvo, te da se sećaju i
+        poštuju žrtve koje su dovele do današnjeg mirnog života.
+    </string>
 
-    <string name="dest6">Spomen česma i kosturnica palim Partizanima u Drugom Svjetskom ratu.</string>
+    <string name="dest6">Uz impozantnu Spomen-kosturnicu u srcu Dervente, gotovo kao suza koja kapi sa lica kamena, nalazi se drugi spomenik - Spomen-česma. Nije riječ samo o izvoru pitke vode, već
+        o biseru sjećanja, priči ispisanoj u mramoru i šumu vode o žrtvama dva svjetska rata i Odbrambeno-otadžbinskog rata.\n\n
+        Danas, Spomen-česma stoji kao most između prošlosti i sadašnjosti. Njena voda i dalje teče, kapi po kapi, pričajući o onima koji su dali sve za slobodu. Ptice piju s njenog ruba, djeca
+        se igraju oko nje. Česma je svjedok novog života, mira i radosti, ali i podsjetnik na krhku prirodu slobode i važnost sjećanja na one koji su je branili.
+    </string>
 
-    <string name="dest7">Spomen kosturnica</string>
+    <string name="dest7">Ova monumentalna kosturnica posvećena je herojima Prvog i Drugog svjetskog rata, njihova žrtva zauvijek upisana u kamen i pamćenje građana Dervente i opštine Milići.\n\n
+        Spomen-kosturnica nije samo mjesto sjećanja, već i prostor okupljanja i promišljanja. Svakog 9. maja, na Dan pobijede, građani Dervente se sakupljaju kod spomenika da polože cvijeće i odade počast palima herojima.
+        Mladi naraštaji dolaze ovde da nauče o prošlosti i razumeju žrtvu prethodnih generacija.\n\n</string>
 
     <string name="dest8">Spomenik je podignut 6. avgusta 1978. godine.\n\n
         Na ovom mjestu, pod nebeskim svodom koji svjedoči o vječnom trajanju, stoji spomenik koji odaje počast hrabrim muškarcima i ženama
@@ -54,10 +79,21 @@
         Da bi dodatno otežali pristup tvrđavi, neimari su izgradili samotalne zrakaste bedeme koji štite prilaz gradu, na istočnoj, zapadnoj i južnoj strani.
         Tvrđava je datirana u kasni srednji vijek.</string>
 
-    <string name="dest11">Iznad sela Gerovi postoje ostaci grada-tvrđave koju je sredinom 15. veka, po predanju izgradila Jerina (Irina),
-        Srpska despotica grčkog porijekla iz porodice kantakuzena, žena despota Đurađa Brankovića.\n\n</string>
+    <string name="dest11">
+        Iznad slikovitog sela Gerovi ostaju ostaci nekadašnjeg grada-tvrđave, čije je temelje, prema predanju, postavila Jerina (Irina) sredinom 15. veka. Jerina, despotica srpskog porekla grčkog roda iz ugledne porodice Kantakuzena,
+        bila je supruga despota Đurađa Brankovića.\n\n
+        Ovi impresivni ostaci predstavljaju ne samo materijalne svedočanstva o prošlosti, već i verno odražavaju duh vremena kada je tvrđava bila simbol snage i uticaja. Njena izgradnja, povezana s ličnošću Jerine, dodatno obogaćuje istorijsku
+        priču ovog kraja.\n\n
+        Ovaj lokalitet ne samo da svjedoči o burnim vremenima, već i čuva priču o hrabrosti i vizionarstvu Jerine, koja je ostavila neizbrisiv trag na ovim istorijskim prostorima.\n\n</string>
 
-    <string name="dest12">Dom rudara</string>
+    <string name="dest12">Dom rudara, kao istaknuti kulturni centar opštine, predstavlja ne samo arhitektonski spomenik, već i srce lokalne zajednice koje pulsira kreativnošću
+        i zajedništvom. Otvoren 6. avgusta 1978. godine na mestu nekadašnjeg Zadružnog doma, postao je nezaobilazna destinacija za ljubitelje umetnosti i okupljanja.\n\n
+        Dvorana sa 300 mesta u Domu rudara nije samo prostor za kulturne događaje, već i mesto gde se susreću raznovrsni umetnički izrazi. Od koncerata i pozorišnih predstava do izložbi
+        i književnih večeri, ovaj prostor pruža platformu za bogat spektar kulturnih programa.\n\n
+        Sastavni deo kompleksa Doma rudara je čarobna ljetna pozornica, smeštena duž obale Studenog Jadra, koja je izgrađena 1978. godine. Ovaj pitoreskni ambijent dodatno obogaćuje kulturne
+        doživljaje, pružajući posetiocima nezaboravna iskustva pod otvorenim nebom.\n\n
+        Vrijedi napomenuti da su u Domu rudara održane osnivačke skupštine Udruženje ljekara (07.04.1993. godine), književnika (31.10.1993. godine), likovnih umjetnika (12.01.1994. godine) i
+        Udruženje novinara Republike Srpske</string>
 
     <string name="dest13">JU "Narodna biblioteka Milići" samostalno je kao ustanova počela sa radom 1. septembra 2002. godine, nadovezujući se na
         dvadesetčetvorogodišnji rad biblioteke Rudnika boksita iz Milića. Pažljivo biranim i dobro planiranim nabavkama, sa fondom od oko 25.000 publikacija,
@@ -206,7 +242,22 @@
         (eventualno trajnih)  stadijuma razvoja omoriki-nih šuma, s obzirom na to da nije bilo značajnijih i ozbiljnijih negativnih uticaja u prošlosti. Takve
         sastojine  su  danas veoma  rijetke.  Moglo  bi se zaključiti da je sastojina stabilna, ali sa obzirom na nedostatak podmlatka, omorika ovdje potencijalno nema dugoročnu budućnost.</string>
 
-    <string name="dest30">a</string>
+    <string name="dest30">Rudnik boksita u Milićima nalazi se u istočnom dijelu Republike Srpske, u opštini Milići. Rad na rudniku je počeo 1959. godine, a danas je on jedan od najvećih i najznačajnijih
+        rudnika boksita u ovom dijelu Evrope.\n\n
+        Prva istraživanja rude boksita na području Milića obavljena su još 1938. godine, ali je eksploatacija započela tek 21 godinu kasnije. Rudnik je imao značajnu ulogu u razvoju Milića i šire regije Birač.
+        Zahvaljujući prihodima od eksploatacije boksita, u Milićima je izgrađena infrastruktura, razvijena industrija, a poboljšan je i standard života stanovnika.\n\n
+        Rudnik Milići raspolaže značajnim rezervama boksita, koje se procenjuju na oko 30 miliona tona. Eksploatacija se vrši metodom otkrivke, sa više terasa. Najveća dubina kopa dostiže 120 metara, dok je najveća
+        visina preko 300 metara. Godišnje se na rudniku proizvede oko 400.000 tona boksita.\n\n
+        Rudnik boksita u Milićima ima veliki značaj za privredu Republike Srpske. On zapošljava više stotina radnika, a njegova proizvodnja je važna sirovina za aluminijumsku industriju. Osim toga, rudnik doprinosi
+        i razvoju infrastrukture i lokalne zajednice.\n\n
+        Rudnik boksita u Milićima je značajan ne samo za privredu Republike Srpske, već i za razvoj lokalne zajednice. On predstavlja važan deo industrijskog nasleđa ovog kraja i ima potencijal da i u budućnosti bude
+        značajan faktor razvoja.\n\n
+        Zanimljivosti:\n
+        U okviru rudnika nalazi se i manji muzej posvećen istoriji eksploatacije boksita u Milićima.\n
+        Rudnik je više puta bio nagrađivan za svoje rezultate u oblasti zaštite životne sredine.\n
+        Rudnik je poznat i po svojim jedinstvenim pejzažima. Najveći deo kopa je otkriven, tako da se ruda dobija vađenjem zemlje. To je stvorilo jedinstvenu pejzažnu konfiguraciju, sa visokim stenama i terasastim površinama.
+        Ovaj pejzaž je često upoređivan sa pejzažima rudnika boksita u Australiji i Brazilu.\n\n
+        Rudnik boksita u Milićima je značajan ne samo za privredu Republike Srpske, već i za razvoj lokalne zajednice. On predstavlja važan deo industrijskog nasleđa ovog kraja i ima potencijal da i u budućnosti bude značajan faktor razvoja.</string>
 
     <string name="dest31">U sklopu motelskog kompleksa nalazi se idealan prostor za savršen odmor i osvježenje. \n\n
         U ponudi se nalaze dva prostrana bazena, prilagođena svim uzrastima i potrebama. \n\nPrvi bazen namijenjen je najmlađima,
