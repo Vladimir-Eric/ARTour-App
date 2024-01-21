@@ -16,6 +16,7 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
     private final List<Destination> destinationList;
     private final OnDestinationClickListener onDestinationClickListener;
 
+
     public DestinationAdapter(List<Destination> destinationList, OnDestinationClickListener onDestinationClickListener) {
         this.destinationList = destinationList;
         this.onDestinationClickListener = onDestinationClickListener;
@@ -41,6 +42,8 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         holder.destinationTitle.setText(destination.getTitle());
         holder.destinationImage.setImageResource(destination.getImageResource());
         holder.destinationDescription.setText(destination.getDescription());
+        holder.extraText.setText(destination.getExtraText());
+
 
         holder.itemView.setOnClickListener(view -> {
             if (onDestinationClickListener != null) {
@@ -58,12 +61,16 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         public ImageView destinationImage;
         public TextView destinationTitle;
         public TextView destinationDescription;
+        public TextView extraText;
+
 
         public ViewHolder(View view) {
             super(view);
             destinationImage = view.findViewById(R.id.destinationImage);
             destinationTitle = view.findViewById(R.id.destinationTitle);
             destinationDescription = view.findViewById(R.id.destinationDescription);
+            extraText = view.findViewById(R.id.extraText);
+
         }
     }
 }

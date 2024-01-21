@@ -32,6 +32,7 @@
 
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_gravity="bottom|center_horizontal"
@@ -71,10 +72,10 @@
             android:visibility="visible"
             app:elevation="8dp"
             app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_menu"
             app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white" />
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
     </FrameLayout>
 
 

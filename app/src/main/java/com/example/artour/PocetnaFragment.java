@@ -219,11 +219,11 @@ public class PocetnaFragment extends Fragment {
         viewPagerAdapter = new ViewPagerAdapter(getContext());
 
         // Dodajte slike i tekstove u adapter
-        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 1");
+        viewPagerAdapter.addSlide(R.drawable.placeholder_image, "Tekst 1");
         viewPagerAdapter.addSlide(R.drawable.toranj, "Tekst 2");
-        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 3");
+        viewPagerAdapter.addSlide(R.drawable.placeholder_image, "Tekst 3");
         viewPagerAdapter.addSlide(R.drawable.default_image, "Tekst 4");
-        viewPagerAdapter.addSlide(R.drawable.slika, "Tekst 5");
+        viewPagerAdapter.addSlide(R.drawable.placeholder_image, "Tekst 5");
 
         viewPager.setAdapter(viewPagerAdapter);
 

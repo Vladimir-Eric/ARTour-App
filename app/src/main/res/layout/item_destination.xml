@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:contentDescription="slika rezervacija"
             android:scaleType="centerCrop"
-            android:src="@drawable/slika" />
+            android:src="@drawable/placeholder_image" />
 
         <!-- Layout za tekst (vertikalni) -->
         <LinearLayout
@@ -32,20 +32,35 @@
             android:padding="10dp">
 
             <!-- Atributi za naslov destinacije -->
+
             <TextView
                 android:id="@+id/destinationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/carossoftbold"
+                android:textSize="18sp" />
 
             <!-- Atributi za opis destinacije -->
             <TextView
                 android:id="@+id/destinationDescription"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:fontFamily="@font/carossoft"
+                android:gravity="top"
                 android:maxLines="3" />
+
+            <TextView
+                android:id="@+id/extraText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/carossoft"
+                android:gravity="bottom|right"
+                android:text="TextView"
+                android:textColor="#808080" />
 
             <!-- Ovo je .xml fajl za formatiranje kartičnog izgleda destinacija
                 Ovdje se pravi izgled kartice, slika, naslov i tekst -->
