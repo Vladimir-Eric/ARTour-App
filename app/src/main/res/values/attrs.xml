@@ -12,5 +12,6 @@
     <attr name="theme_text" format="color"/>
     <attr name="itemTextColor"/>
     <attr name="nav_meni"/>
+    <attr name="shadow_menu"/>
     <!-- Dodajte ostale atribute prema potrebi -->
 </resources>

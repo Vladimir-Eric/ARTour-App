@@ -14,6 +14,7 @@
         <item name="kartica_nova">?attr/kartica_nova</item>
         <item name="theme_text">?attr/theme_text</item>
         <item name="nav_meni">?attr/nav_meni</item>
+        <item name="shadow_menu">*attr/shadow_menu</item>
 
         <!-- Tekst font -->
         <item name="fontFamily">@font/carossoft</item>
