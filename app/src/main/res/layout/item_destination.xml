@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="120dp"
     android:layout_marginHorizontal="20dp"
     android:layout_marginVertical="10dp"
     app:background="?attr/kartica_nova"
@@ -39,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:autoSizeMaxTextSize="15sp"
                 android:autoSizePresetSizes="15sp"
+                android:autoSizeTextType="uniform"
                 android:fontFamily="@font/carossoftbold"
                 android:textSize="15sp" />
 
@@ -49,10 +50,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:layout_weight="1"
+                android:autoSizeMaxTextSize="12sp"
                 android:ellipsize="end"
                 android:fontFamily="@font/carossoft"
                 android:gravity="top"
-                android:maxLines="3" />
+                android:maxLines="3"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/extraText"
@@ -62,7 +65,8 @@
                 android:fontFamily="@font/carossoft"
                 android:gravity="bottom|right"
                 android:text="TextView"
-                android:textColor="#808080" />
+                android:textColor="#808080"
+                android:textSize="13sp" />
 
             <!-- Ovo je .xml fajl za formatiranje kartičnog izgleda destinacija
                 Ovdje se pravi izgled kartice, slika, naslov i tekst -->
