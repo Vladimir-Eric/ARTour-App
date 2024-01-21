@@ -1,0 +1,18 @@
+<!-- res/drawable/promijeni_boju_drawable.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dodajte pozadinski bijeli pravokutnik (možete prilagoditi dimenzije) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Dodajte PNG sliku s primijenjenom tint bojom (crvena) -->
+    <item>
+        <bitmap
+            android:src="@drawable/clear"
+            android:tint="@color/primarna"/>
+    </item>
+
+</layer-list>

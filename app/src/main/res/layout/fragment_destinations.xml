@@ -32,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeMaxTextSize="24sp"
                     android:autoSizeMinTextSize="20sp"
                     android:autoSizeTextType="uniform"
                     android:fontFamily="@font/carossoftbold"
@@ -47,12 +47,13 @@
                     android:id="@+id/Podnaslov"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="15sp"
                     android:fontFamily="@font/carossoft"
                     android:includeFontPadding="false"
-                    android:text="Istražite pravu čar opštine Milići"
+                    android:text="Istražite opštinu Milići"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <View
@@ -71,7 +72,7 @@
             android:clipToPadding="false"
             android:paddingHorizontal="8dp"
             android:paddingTop="8dp"
-            android:paddingBottom="130dp"
+            android:paddingBottom="30dp"
             android:scrollbars="vertical" />
     </LinearLayout>
 

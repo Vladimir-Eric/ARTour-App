@@ -111,7 +111,7 @@ public class PocetnaFragment extends Fragment {
             weatherIconImageView.setImageResource(R.drawable.clouds);
         } else if (weatherInfo.contains("Clear")) {
             weatherInfo = "Vedro";
-            weatherIconImageView.setImageResource(R.drawable.clear);
+            weatherIconImageView.setImageResource(R.drawable.clear_drawable);
         } else if (weatherInfo.contains("Mist") && weatherInfo.contains("Haze")) {
             weatherInfo = "Izmaglica";
             weatherIconImageView.setImageResource(R.drawable.fog);

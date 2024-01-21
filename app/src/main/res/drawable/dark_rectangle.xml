@@ -1,4 +1,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="?attr/shadow_menu" /> <!-- Bijela boja u hex formatu -->
+    <solid android:color="@color/dark_theme" /> <!-- Bijela boja u hex formatu -->
 </shape>

@@ -10,15 +10,21 @@
     <color name="primarna">#4074ea</color>
     <color name="primarna_blaga">#4fa5ff</color>
     <color name="primarna_tekst">#3c40b7</color>
+
     <color name="dark_theme">#121212</color>
-    <color name="dark_theme_top_menu">#17FFFFFF</color>
+    <color name="dark_theme_top_menu">#0d264d</color>
     <color name="dark_theme_text">#FFFFFF</color>
     <color name="dark_theme_card">#0DFFFFFF</color>
     <color name="white_10">#0DFFFFFF</color>
+    <color name="dark_blue_theme">#101b2e</color>
+    <color name="dark_kartica">#1D283A</color>
+
+
+
+    <color name="fade_box">#121212</color>
 
     <color name="white_05">#0DFFFFFF</color>
 
-    <color name="boya">#148c94</color>
 
     <color name="primarna_100">#bfdfff</color>
     <color name="primarna_200">#95cbff</color>
