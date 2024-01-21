@@ -93,6 +93,9 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             LatLng northeastCorner = new LatLng(44.27, 19.24); // Sjeveroistočni ugao
         }
 
+        //Map toolbar-iskljucivanje
+        myMap.getUiSettings().setMapToolbarEnabled(false);
+
         // Postavite granice karte
         myMap.setLatLngBoundsForCameraTarget(bounds);
 
