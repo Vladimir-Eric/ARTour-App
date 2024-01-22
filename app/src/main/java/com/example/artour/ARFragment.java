@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -66,6 +67,24 @@ public class ARFragment extends Fragment {
 
     @SuppressLint("DefaultLocale")
     public void classifyImage(Bitmap image){
+        LinearLayout naslovLayout = getView().findViewById(R.id.tekst);
+        naslovLayout.setVisibility(View.GONE);
+
+        TextView upit1 = getView().findViewById(R.id.upit_text);
+        upit1.setVisibility(View.GONE);
+
+        TextView upit2 = getView().findViewById(R.id.upit_text2);
+        upit2.setVisibility(View.GONE);
+
+        TextView resultTextView = getView().findViewById(R.id.result);
+        resultTextView.setVisibility(View.VISIBLE);
+
+        TextView confidencesText = getView().findViewById(R.id.confidencesText);
+        confidencesText.setVisibility(View.VISIBLE);
+
+        TextView classifiedTextView = getView().findViewById(R.id.classified);
+        classifiedTextView.setVisibility(View.VISIBLE);
+
         try {
             model = Model.newInstance(requireContext());
 
@@ -117,13 +136,34 @@ public class ARFragment extends Fragment {
     private void displayResult(int maxPos, float[] confidences) {
         String[] classes = {"Bager", "Buldozer", "Bušilica", "Damper", "Rudarska lokomotiva", "Utovarivač", "Rajkov toranj"};
 
-        result.setText(classes[maxPos]);
+        int[] imageResources = {R.drawable.muzej, R.drawable.buldozer, R.drawable.busilica, R.drawable.damper, R.drawable.rudarska_lokomotiva, R.drawable.utovarivac, R.drawable.toranj_prikaz};
 
-        StringBuilder s = new StringBuilder();
-        for (int i = 0; i < classes.length; i++) {
-            s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
+        //Postavljanje teksta i slike date masine
+        if(maxPos == 0){
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        } else if (maxPos == 1) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        } else if (maxPos == 2) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        }else if (maxPos == 3) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        }else if (maxPos == 4) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        }else if (maxPos == 5) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
+        }else if (maxPos == 6) {
+            result.setText(classes[maxPos]);
+            imageView.setImageResource(imageResources[maxPos]);
         }
-        confidence.setText(s.toString());
+        //StringBuilder s = new StringBuilder();
+        //s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
+        //confidence.setText(s.toString());
     }
 
     @Override

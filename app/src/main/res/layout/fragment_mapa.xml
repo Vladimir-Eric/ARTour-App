@@ -94,8 +94,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/legendCardView"
-        android:layout_width="110dp"
-        android:layout_height="160dp"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
         android:elevation="0dp"
         android:visibility="invisible"
         app:cardBackgroundColor="#80FFFFFF"
@@ -120,6 +120,7 @@
             android:layout_height="wrap_content"
             android:text="Legenda"
             android:textColor="@color/white"
+            android:fontFamily="@font/carossoft"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -142,7 +143,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
-                android:text="Kategorija 1"/>
+                android:fontFamily="@font/carossoft"
+                android:text="Spomenici"/>
         </LinearLayout>
 
         <!-- Zelena boja -->
@@ -165,7 +167,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
-                android:text="Kategorija 2"/>
+                android:fontFamily="@font/carossoft"
+                android:text="V. objekti"/>
         </LinearLayout>
 
         <LinearLayout
@@ -187,7 +190,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
-                android:text="Kategorija 3"/>
+                android:fontFamily="@font/carossoft"
+                android:text="Biste"/>
         </LinearLayout>
 
         <LinearLayout
@@ -209,7 +213,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
-                android:text="Kategorija 4"/>
+                android:fontFamily="@font/carossoft"
+                android:text="Priroda"/>
         </LinearLayout>
 
         <LinearLayout
@@ -231,7 +236,31 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
-                android:text="Kategorija 5"/>
+                android:fontFamily="@font/carossoft"
+                android:text="Sport"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category6Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="onCategoryClick">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="8dp"
+                android:background="#069AF3" /> <!-- Azurna -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/carossoft"
+                android:text="Ostale lokacije"/>
         </LinearLayout>
 
         <LinearLayout
@@ -247,6 +276,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:textColor="@color/white"
+                android:fontFamily="@font/carossoft"
                 android:text="Sve kategorije"/>
         </LinearLayout>
 
