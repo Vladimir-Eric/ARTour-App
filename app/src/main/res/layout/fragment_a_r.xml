@@ -58,6 +58,68 @@
 
     </androidx.cardview.widget.CardView>
 
+    <LinearLayout
+        android:id="@+id/naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/upit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:autoSizeMaxTextSize="24sp"
+            android:fontFamily="@font/carossoftblack"
+            android:gravity="center|top"
+            android:text="Milići kroz objektiv!?"
+            android:textColor="@color/primarna_700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/upit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:autoSizeMaxTextSize="18sp"
+            android:fontFamily="@font/carossoftblack"
+            android:gravity="center|top"
+            android:text="Šta je to?"
+            android:textColor="@color/primarna_700"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_below="@id/naslov"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tuto_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="15sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Ova kamera skenira mašine-eksponate muzeja rudarstva na otvorenom u Milićima, ali i druge znamenitosti Milića koji kriju zaboravljene priče, oživljene fragmentima prošlosti.\nOtkrijte ih i upoznajte Miliće
+                \n\nŠta mi treba da bih koristio ovu kameru?\n\nSve što trebate je naša aplikacija. Ona sadrži sve što je potrebno za kameru i interakciju sa realnim prostorom.\n\n\nKako mogu da je koristim?\n\n~Klikom na dugme 'Slikaj':\n~Usmjerite kameru ka objektu koji vas zanima, pritisnite dugme za slikanje.\n~Ako se objekat jasno vidi, potvrdite je. Inače, ponovite prethodni korak.\n~Skeniran je? Super! Sada će vam odmah priča biti otkrivena o objektu i prošlosti ovog kraja."
+                android:textAlignment="textStart"
+                android:textSize="15sp" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/button"
         android:layout_width="50dp"
@@ -70,23 +132,24 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="370sp"
-        android:layout_height="370sp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/imageView"
-        android:layout_marginTop="10sp" />
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
 
     <TextView
+        android:id="@+id/classified"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
         android:text="Classified as:"
         android:textColor="@color/aktivna"
-        android:textStyle="bold"
         android:textSize="20sp"
-        android:id="@+id/classified"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="10sp" />
+        android:textStyle="bold"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="match_parent"
@@ -100,15 +163,16 @@
         android:layout_below="@+id/classified" />
 
     <TextView
+        android:id="@+id/confidencesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/confidencesText"
-        android:text="Confidences:"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/result"
-        android:layout_marginTop="30sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="Confidences:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -49,11 +49,11 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
         destinations.add(new Destination(4, "Spomen ploča", R.drawable.spomenik_zutica1, "ubijenim licima", "Žutica"));
         destinations.add(new Destination(5, "Spomen ploča", R.drawable.spomen_ploca_buljevici1, "palim srpskim borcima", "Buljevići"));
         destinations.add(new Destination(6, "Spomen česma", R.drawable.spomen_cesma_derventa1, "palim borcima u Prvom, Drugom i otadžbinskom ratu", "Derventa"));
-        destinations.add(new Destination(7, "Spomen kosturnica", R.drawable.spomen_kosturnica1, "poginulim partizanima", "Derventa"));
-        destinations.add(new Destination(8, "Spomenik palim borcima", R.drawable.spomenik_drugi_svjetski_rat1, "U Drugom svjetskom ratu", "Milići"));
-        destinations.add(new Destination(9, "Stećci", R.drawable.stecak_milici1, "Na prostoru opštine Milići", "Opština Milići"));
+        destinations.add(new Destination(7, "Spomen kosturnica", R.drawable.spomen_kosturnica1, "poginulim partizanima u Prvom, Drugom svjetskom ratu", "Derventa"));
+        destinations.add(new Destination(8, "Spomenik palim borcima", R.drawable.spomenik_drugi_svjetski_rat1, "u Drugom svjetskom ratu", "Milići"));
+        destinations.add(new Destination(9, "Stećci", R.drawable.stecak_milici1, "na prostoru opštine Milići", "Opština Milići"));
         destinations.add(new Destination(10, "Tvrđava grad", R.drawable.komic_grad1, "", "Komić"));
-        destinations.add(new Destination(11, "Jerinin grad", R.drawable.gerovi1, "Grad Proklete Jerine", "Gerovi"));
+        destinations.add(new Destination(11, "Jerinin grad", R.drawable.gerovi1, "Grad Proklete Jereine", "Gerovi"));
         destinations.add(new Destination(12, "Dom rudara", R.drawable.dom_rudara1, "poginulim partizanima u Prvom, Drugom svjetskom ratu", "Derventa"));
         destinations.add(new Destination(13, "Narodna biblioteka", R.drawable.biblioteka1, "Dom rudara", "Milići"));
         destinations.add(new Destination(14, "Muzej rudarstva na otvorenom", R.drawable.muzej21, "", "Milići"));

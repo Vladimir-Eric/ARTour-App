@@ -1,16 +1,21 @@
 package com.example.artour;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -39,6 +44,7 @@ public class PocetnaFragment extends Fragment {
     private TextView weatherInfoTextView;
     private TextView windSpeedTextView;
     private ImageView weatherIconImageView;
+    private View bottomSheetView;
 
     private boolean dataLoaded = false;
     private WeatherResponse cachedWeatherResponse;
@@ -160,6 +166,40 @@ public class PocetnaFragment extends Fragment {
         weatherInfoTextView = view.findViewById(R.id.weatherInfoTextView);
         windSpeedTextView = view.findViewById(R.id.windSpeedTextView);
         weatherIconImageView = view.findViewById(R.id.weatherIconImageView);
+
+        View menuButton = view.findViewById(R.id.menu);
+
+        final Window window = getActivity().getWindow(); // Preuzmite Window objekat izvan onClickListener-a
+
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity());
+                @SuppressLint("InflateParams") View bottomSheetView = getLayoutInflater().inflate(R.layout.bottom_sheet_layout, null);
+
+                // Postavite `BottomSheetBehavior` objekat u stanje `STATE_COLLAPSED` kada `bottomSheetDialog` bude prikazan:
+                bottomSheetDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                    @Override
+                    public void onShow(DialogInterface dialog) {
+                        BottomSheetBehavior<View> bottomSheetBehavior = BottomSheetBehavior.from((View) bottomSheetView.getParent());
+
+                        // Podesite maksimalnu visinu `bottomSheetView`-a na 2/3 visine ekrana:
+                        bottomSheetBehavior.setPeekHeight(window.getDecorView().getHeight()/ 3);
+
+                        // Podesite `bottomSheetView` u stanje `peek` na visini od 150dp:
+                        //bottomSheetBehavior.setPeekHeight(350);
+                    }
+                });
+
+                bottomSheetDialog.setContentView(bottomSheetView);
+                bottomSheetDialog.show();
+            }
+        });
+
+
+
+
+
 
         if (!dataLoaded) {
             Retrofit retrofit = new Retrofit.Builder()
