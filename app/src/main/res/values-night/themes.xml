@@ -17,6 +17,9 @@
         <item name="nav_meni">@color/dark_theme_top_menu</item>
         <item name="shadow_menu">@color/fade_box</item>
 
+        <item name="menu_heading_card">@color/dark_blue_theme</item>
+        <item name="handle">#0d264d</item>
+
         <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>

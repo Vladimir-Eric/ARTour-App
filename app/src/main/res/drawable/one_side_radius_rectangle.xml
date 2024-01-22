@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:layout_height="100dp">
+    <solid android:color="?attr/naslovna_linija" /> <!-- Bijela boja u hex formatu -->
+    <corners
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp" />
+</shape>

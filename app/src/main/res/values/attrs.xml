@@ -14,5 +14,7 @@
     <attr name="nav_meni"/>
     <attr name="shadow_menu"/>
     <attr name="theme_text_ghost"/>
+    <attr name="menu_heading_card"/>
+    <attr name="handle"/>
     <!-- Dodajte ostale atribute prema potrebi -->
 </resources>

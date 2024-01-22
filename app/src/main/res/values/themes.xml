@@ -17,6 +17,9 @@
         <item name="nav_meni">@color/primarna</item>
         <item name="shadow_menu">@color/ghost_white</item>
 
+        <item name="menu_heading_card">@color/primarna</item>
+        <item name="handle">#3f62d7</item>
+
         <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
         <item name="android:statusBarColor">@color/primarna</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>

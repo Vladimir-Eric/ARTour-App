@@ -28,6 +28,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import androidx.fragment.app.FragmentManager;
+
+
 public class PocetnaFragment extends Fragment {
 
     private ViewPager2 viewPager;
@@ -188,6 +191,30 @@ public class PocetnaFragment extends Fragment {
 
                         // Podesite `bottomSheetView` u stanje `peek` na visini od 150dp:
                         //bottomSheetBehavior.setPeekHeight(350);
+                    }
+                });
+
+                bottomSheetView.findViewById(R.id.opstina_menu).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.frame_layout, new FragmentOpstina())
+                                .addToBackStack(null)  // Add to back stack for navigation
+                                .commit();
+                        bottomSheetDialog.dismiss();  // Dismiss the bottom sheet dialog
+                    }
+                });
+
+                bottomSheetView.findViewById(R.id.aplikacija_menu).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.frame_layout, new FragmentOpstina())
+                                .addToBackStack(null)  // Add to back stack for navigation
+                                .commit();
+                        bottomSheetDialog.dismiss();  // Dismiss the bottom sheet dialog
                     }
                 });
 

@@ -43,7 +43,7 @@ public class ARFragment extends Fragment {
 
         result = view.findViewById(R.id.result);
         confidence = view.findViewById(R.id.confidence);
-        imageView = view.findViewById(R.id.imageView);
+        imageView = view.findViewById(R.id.menu_heading);
         picture = view.findViewById(R.id.button);
 
         picture.setOnClickListener(new View.OnClickListener() {

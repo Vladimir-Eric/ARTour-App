@@ -15,6 +15,9 @@
         <item name="theme_text">?attr/theme_text</item>
         <item name="nav_meni">?attr/nav_meni</item>
         <item name="shadow_menu">?attr/shadow_menu</item>
+        <item name="handle">?attr/handle</item>
+
+        <item name="menu_heading_card">?attr/menu_heading_card</item>
 
         <!-- Tekst font -->
         <item name="fontFamily">@font/carossoft</item>
@@ -41,7 +44,10 @@
 
     </style>
 
-
+    <style name="MyRoundedStyle">
+        <item name="android:background">@drawable/one_side_radius_rectangle</item>
+        <!-- Dodajte druge atribute stila prema potrebi -->
+    </style>
 
 
 </resources>

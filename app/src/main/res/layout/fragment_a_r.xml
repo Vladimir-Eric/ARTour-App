@@ -132,7 +132,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/menu_heading"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
@@ -142,7 +142,7 @@
         android:id="@+id/classified"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/menu_heading"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10sp"
         android:text="Classified as:"

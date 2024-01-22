@@ -10,29 +10,129 @@
         android:layout_height="600dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Ovo je tekst 1" />
 
-        <TextView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Ovo je tekst 2" />
+            android:layout_height="wrap_content">
 
-        <TextView
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:src="@drawable/one_side_radius_rectangle" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/rectangle_handle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginHorizontal="20dp"
+                    app:srcCompat="@drawable/artour_logo_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/aplikacija_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carossoftextrabold"
+                        android:text="ARTour"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:fontFamily="@font/carossoftbold"
+                        android:text="Turistički vodič opštine Milići"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:background="?android:attr/listDivider" />
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Ovo je tekst 3" />
+            android:layout_height="match_parent"
+            android:backgroundTint="?attr/fragment_pozadina"
+            >
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Dugme" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/opstina_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:fontFamily="@font/carossoftbold"
+                    android:onClick="prikaziOpstinu"
+                    android:padding="10dp"
+                    android:text="O opštini Milići"
+                    android:textColor="?attr/theme_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/aplikacija_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:fontFamily="@font/carossoftbold"
+                    android:padding="10dp"
+                    android:text="Ovo je tekst 2"
+                    android:textColor="?attr/theme_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:fontFamily="@font/carossoftbold"
+                    android:padding="10dp"
+                    android:text="Ovo je tekst 3"
+                    android:textColor="?attr/theme_text"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/dugmence"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Dugme" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
