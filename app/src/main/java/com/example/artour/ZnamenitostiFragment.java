@@ -9,8 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class ZnamenitostiFragment extends Fragment {
+    private ViewPager2 viewPager2;
+    private ViewPagerAdapter viewPagerAdapter;
 
     private static final String ARG_DESTINATION_ID = "destinationId";
 
@@ -98,7 +101,7 @@ public class ZnamenitostiFragment extends Fragment {
                 znamenitostTextView.setText(getString(R.string.dest13));
                 break;
             case 15:
-                znamenitostImageView.setImageResource(R.drawable.muzej);
+                znamenitostImageView.setImageResource(R.drawable.otvoreni_muzej0);
                 znamenitostTextView.setText(getString(R.string.dest14));
                 break;
             case 16:
@@ -182,6 +185,202 @@ public class ZnamenitostiFragment extends Fragment {
                 // Defaultne slike i tekstovi
                 znamenitostImageView.setImageResource(R.drawable.default_image);
                 znamenitostTextView.setText(getString(R.string.default_opis));
+        }
+
+        viewPager2 = view.findViewById(R.id.viewPager2);
+        viewPagerAdapter = new ViewPagerAdapter(getContext());
+
+        if(destinationId == 1){
+        viewPagerAdapter.addSlide(R.drawable.slika_spomenik1, "Tekst 1");
+        viewPagerAdapter.addSlide(R.drawable.spomenik_milici0, "Tekst 2");
+        viewPagerAdapter.addSlide(R.drawable.spomenik_milici00, "Tekst 3");
+        viewPagerAdapter.addSlide(R.drawable.spomenik_milici000, "Tekst 4");
+        viewPagerAdapter.addSlide(R.drawable.spomenik_milici0000, "Tekst 1");
+        viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 2) {
+            viewPagerAdapter.addSlide(R.drawable.spomen_cesma_misici1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.spomen_misici0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.spomen_misici00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.spomen_misici00, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 3) {
+            viewPagerAdapter.addSlide(R.drawable.spomenik_bukovica, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 4) {
+            viewPagerAdapter.addSlide(R.drawable.zutica0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.zutica2, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.zutica3, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.zutica4, "Tekst 4");
+            viewPagerAdapter.addSlide(R.drawable.zutica5, "Tekst 5");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 5) {
+            viewPagerAdapter.addSlide(R.drawable.spomen_ploca_buljevici1, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 6) {
+            viewPagerAdapter.addSlide(R.drawable.spomen_derventa0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.spomen_derventa000, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.spomen_derventa0000, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.spomen_derventa00, "Tekst 4");
+            viewPagerAdapter.addSlide(R.drawable.spomen_derventa00000, "Tekst 5");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 7) {
+            viewPagerAdapter.addSlide(R.drawable.spomen_kosturnica0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.spomen_kosturnica00, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.spomen_kosturnica000, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.spomen_kosturnica0000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 8) {
+            viewPagerAdapter.addSlide(R.drawable.drugi_svjetski_rat, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.drugi_svjetski_rat0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.drugi_svjetski_rat00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.drugi_svjetski_rat000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 9) {
+            viewPagerAdapter.addSlide(R.drawable.kapela_milici, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 10) {
+            viewPagerAdapter.addSlide(R.drawable.stecak_milici1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.stecak00, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 11) {
+            viewPagerAdapter.addSlide(R.drawable.komic_grad1, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 12) {
+            viewPagerAdapter.addSlide(R.drawable.gerovi1, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 13) {
+            viewPagerAdapter.addSlide(R.drawable.dom_rudara1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dom_rudara0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dom_rudara00, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dom_rudara000, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 14) {
+            viewPagerAdapter.addSlide(R.drawable.biblioteka1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.biblioteka0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.biblioteka00, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 15) {
+            viewPagerAdapter.addSlide(R.drawable.otvoreni_muzej0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.muzej21, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.buldozer0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.damper0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.busilica, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.rudarska_lokomotiva0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.utovarivac0, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 16) {
+            viewPagerAdapter.addSlide(R.drawable.muzej11, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.muzej0, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 17) {
+            viewPagerAdapter.addSlide(R.drawable.rajkov_toranj1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.rajkov_toranj0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.rajkova_toranj00, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.rajkov_toranj000, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.rajkov_toranj0000, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 18) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_milici1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.milici0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.milici00, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.milici000, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.milici0000, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 19) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_derventa1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.derventa0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.derventa00, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.derventa000, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 20) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_dukici1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dukici0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dukici00, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 21) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_nova_kasaba, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 22) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_koprivno1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.koprivno0, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 23) {
+            viewPagerAdapter.addSlide(R.drawable.crkva_vuksic_polje1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.vuksic_polje00, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 24) {
+            viewPagerAdapter.addSlide(R.drawable.musa_pasina_dzamija1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dzamija0, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 25) {
+            viewPagerAdapter.addSlide(R.drawable.park_srpskih_velikana1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.princip, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.bircanin, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.milankovic, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.sv_sava, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.tesla, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.aleksa, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 26) {
+            viewPagerAdapter.addSlide(R.drawable.park_ruskih_velikana1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.putin, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.gagarin, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.dostojevski, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.petar_veliki, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.sv_sergej, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 27) {
+            viewPagerAdapter.addSlide(R.drawable.park_evropskih_velikana1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.aristotel, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.da_vinci, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.mocart, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.sekspir, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.pikaso, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.njutn, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.ajnstajn, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.kiri, "Tekst 1");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 28) {
+            viewPagerAdapter.addSlide(R.drawable.park_indijskih_velikana1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.park_indijskih_velikana0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.park_indijskih_velikana00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.park_indijskih_velikana000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 29) {
+            viewPagerAdapter.addSlide(R.drawable.park_kineskih_velikana1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.park_kineskih_velikana0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.park_kineskih_velikana00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.park_kineskih_velikana000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 30) {
+            viewPagerAdapter.addSlide(R.drawable.panciceva_omorika1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.panciceva_omorika0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.panciceva_omorika00, "Tekst 3");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 31) {
+            viewPagerAdapter.addSlide(R.drawable.boksit1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.podbracan0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.podbracan00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.podbracan000, "Tekst 4");
+            viewPagerAdapter.addSlide(R.drawable.podbracan0000, "Tekst 5");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 32) {
+            viewPagerAdapter.addSlide(R.drawable.crvene_stijene0, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.crvene_stijene00, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.crvene_stijene000, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.crvene_stijene0000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 33) {
+            viewPagerAdapter.addSlide(R.drawable.bazeni1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.bazeni0, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.bazeni00, "Tekst 3");
+            viewPagerAdapter.addSlide(R.drawable.bazeni000, "Tekst 4");
+            viewPager2.setAdapter(viewPagerAdapter);
+        }else if (destinationId == 34) {
+            viewPagerAdapter.addSlide(R.drawable.sportski_centar1, "Tekst 1");
+            viewPagerAdapter.addSlide(R.drawable.sportski_centar00, "Tekst 2");
+            viewPagerAdapter.addSlide(R.drawable.sportski_centar000, "Tekst 3");
+            viewPager2.setAdapter(viewPagerAdapter);
         }
 
         return view;

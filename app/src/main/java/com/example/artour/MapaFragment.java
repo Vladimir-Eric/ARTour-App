@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.cardview.widget.CardView;
@@ -23,17 +24,24 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap myMap;
     private ImageButton legendImageButton;
     private CardView legendCardView;
+    private Button spomeniciButton;
+    private Button vObjektiButton;
+    private Button bisteButton;
+    private Button prirodaButton;
+    private Button sportButton;
+    private Button ostaleKategorijeButton;
+    private Button sveKategorijeButton;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+         //Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_mapa, container, false);
 
         legendCardView = rootView.findViewById(R.id.legendCardView);
 
-        // Pronađite SupportMapFragment u rasporedu fragmenta
+        //Pronađite SupportMapFragment u rasporedu fragmenta
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
 
         // Ako ne postoji, dodajte ga
@@ -55,8 +63,18 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             }
         });
 
+        spomeniciButton = rootView.findViewById(R.id.spomenici);
+        vObjektiButton = rootView.findViewById(R.id.v_objekti);
+        bisteButton = rootView.findViewById(R.id.biste);
+        prirodaButton = rootView.findViewById(R.id.priroda);
+        sportButton = rootView.findViewById(R.id.sport);
+        ostaleKategorijeButton = rootView.findViewById(R.id.ostale_kategorije);
+        sveKategorijeButton = rootView.findViewById(R.id.sve_kategorije);
+
         return rootView;
     }
+
+
 
     private void toggleLegendVisibility() {
         if (legendCardView.getVisibility() == View.VISIBLE) {
@@ -67,6 +85,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             legendCardView.setVisibility(View.VISIBLE);
         }
     }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {

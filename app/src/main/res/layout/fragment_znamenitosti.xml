@@ -1,5 +1,4 @@
-<!-- fragment_znamenitosti.xml -->
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +6,9 @@
     android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/scrl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="top"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,12 +34,53 @@
             <TextView
                 android:id="@+id/znamenitostTextView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/carossoft"
                 android:paddingHorizontal="16dp"
                 android:paddingTop="25dp"
-                android:paddingBottom="130dp"
-                android:text="@string/opis_znamenitosti" />
+                android:text="@string/opis_znamenitosti"
+                android:textColor="?attr/heading_text" />
+
+            <!-- Dodajte treći CardView ispod teksta -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:outlineAmbientShadowColor="#00100F0F"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/galerija"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:fontFamily="@font/carossoft"
+                        android:text="Galerija"
+                        android:textColor="?attr/heading_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Kraj trećeg CardView-a -->
+
         </LinearLayout>
     </ScrollView>
 
@@ -66,19 +105,16 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
         android:layout_marginBottom="100dp"
+        android:backgroundTint="?attr/shadow_menu"
         android:visibility="visible"
-        app:srcCompat="@drawable/gradient_rectangle"
-        android:backgroundTint="?attr/shadow_menu"/>
+        app:srcCompat="@drawable/gradient_rectangle"/>
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        app:srcCompat="@drawable/white_rectangle"
-        app:backgroundColor="?attr/shadow_menu"/>
+        app:srcCompat="@drawable/white_rectangle"/>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
