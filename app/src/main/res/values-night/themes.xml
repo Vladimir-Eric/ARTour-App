@@ -15,7 +15,7 @@
         <item name="theme_text">@color/white</item>
         <item name="theme_text_ghost">@color/ghost_white</item>
         <item name="nav_meni">@color/dark_theme_top_menu</item>
-        <item name="shadow_menu">@color/fade_box</item>
+        <item name="shadow_menu">@color/dark_blue_theme</item>
 
         <item name="menu_heading_card">@color/dark_blue_theme</item>
         <item name="handle">#0d264d</item>

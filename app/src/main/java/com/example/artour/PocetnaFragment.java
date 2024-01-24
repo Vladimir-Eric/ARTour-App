@@ -187,7 +187,7 @@ public class PocetnaFragment extends Fragment {
                         BottomSheetBehavior<View> bottomSheetBehavior = BottomSheetBehavior.from((View) bottomSheetView.getParent());
 
                         // Podesite maksimalnu visinu `bottomSheetView`-a na 2/3 visine ekrana:
-                        bottomSheetBehavior.setPeekHeight(window.getDecorView().getHeight()/ 3);
+                        bottomSheetBehavior.setPeekHeight(window.getDecorView().getHeight());
 
                         // Podesite `bottomSheetView` u stanje `peek` na visini od 150dp:
                         //bottomSheetBehavior.setPeekHeight(350);
@@ -197,26 +197,27 @@ public class PocetnaFragment extends Fragment {
                 bottomSheetView.findViewById(R.id.opstina_menu).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                        fragmentManager.beginTransaction()
-                                .replace(R.id.frame_layout, new FragmentOpstina())
-                                .addToBackStack(null)  // Add to back stack for navigation
-                                .commit();
-                        bottomSheetDialog.dismiss();  // Dismiss the bottom sheet dialog
+                        openAboutFragment("naslov_opstina", "podnaslov_opstina", "opstina_tekst");
+                        bottomSheetDialog.dismiss();
                     }
                 });
 
                 bottomSheetView.findViewById(R.id.aplikacija_menu).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                        fragmentManager.beginTransaction()
-                                .replace(R.id.frame_layout, new FragmentOpstina())
-                                .addToBackStack(null)  // Add to back stack for navigation
-                                .commit();
-                        bottomSheetDialog.dismiss();  // Dismiss the bottom sheet dialog
+                        openAboutFragment("naslov_aplikacija", "podnaslov_aplikacija", "aplikacija_tekst");
+                        bottomSheetDialog.dismiss();
                     }
                 });
+
+                bottomSheetView.findViewById(R.id.prava_menu).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openAboutFragment("naslov_prava", "podnaslov_prava", "prava_tekst");
+                        bottomSheetDialog.dismiss();
+                    }
+                });
+
 
                 bottomSheetDialog.setContentView(bottomSheetView);
                 bottomSheetDialog.show();
@@ -341,4 +342,23 @@ public class PocetnaFragment extends Fragment {
 
         return view;
     }
+
+    private void openAboutFragment(String naslovStringId, String podnaslovStringId, String tekstStringId) {
+        FragmentAbout fragmentAbout = new FragmentAbout();
+
+        // Prosleđivanje parametara fragmentu
+        Bundle bundle = new Bundle();
+        bundle.putString("naslovStringId", naslovStringId);
+        bundle.putString("podnaslovStringId", podnaslovStringId);
+        bundle.putString("tekstStringId", tekstStringId);
+        fragmentAbout.setArguments(bundle);
+
+        // Zamena trenutnog fragmenta sa FragmentAbout
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.frame_layout, fragmentAbout)
+                .addToBackStack(null)
+                .commit();
+    }
+
 }

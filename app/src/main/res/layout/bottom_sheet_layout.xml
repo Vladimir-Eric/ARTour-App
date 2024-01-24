@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="400dp"
         android:orientation="vertical">
 
 
@@ -88,49 +88,116 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="20dp"
-                android:paddingHorizontal="20dp">
+                android:padding="10dp">
 
-                <TextView
-                    android:id="@+id/opstina_menu"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:fontFamily="@font/carossoftbold"
-                    android:onClick="prikaziOpstinu"
-                    android:padding="10dp"
-                    android:text="O opštini Milići"
-                    android:textColor="?attr/theme_text"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/aplikacija_menu"
+                    <TextView
+                        android:id="@+id/opstina_menu"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:fontFamily="@font/carossoftbold"
+                        android:onClick="prikaziOpstinu"
+                        android:padding="15dp"
+                        android:text="O opštini Milići"
+                        android:textColor="?attr/theme_text"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/arrow_proceed" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:fontFamily="@font/carossoftbold"
-                    android:padding="10dp"
-                    android:text="Ovo je tekst 2"
-                    android:textColor="?attr/theme_text"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <TextView
+                    <TextView
+                        android:id="@+id/aplikacija_menu"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:fontFamily="@font/carossoftbold"
+                        android:padding="15dp"
+                        android:text="O aplikaciji"
+                        android:textColor="?attr/theme_text"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/arrow_proceed" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoSizeMaxTextSize="20sp"
-                    android:fontFamily="@font/carossoftbold"
-                    android:padding="10dp"
-                    android:text="Ovo je tekst 3"
-                    android:textColor="?attr/theme_text"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/dugmence"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Dugme" />
+                    <TextView
+                        android:id="@+id/prava_menu"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:fontFamily="@font/carossoftbold"
+                        android:padding="15dp"
+                        android:text="Autorska prava i Uslovi korišćenja"
+                        android:textColor="?attr/theme_text"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/arrow_proceed" />
+                </LinearLayout>
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="12sp"
+                    android:fontFamily="@font/carossoft"
+                    android:paddingLeft="10dp"
+                    android:text="ARTour©"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="12sp"
+                    android:fontFamily="@font/carossoft"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="S ponosom predstavljamo Miliće 🌍"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
