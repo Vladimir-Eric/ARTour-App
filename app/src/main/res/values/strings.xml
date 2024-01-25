@@ -129,11 +129,12 @@
     <string name="dest14">Godine 2009. na tri prostora postavljena je trajna muzejska postavka Kompanije „Boksit“, otvorena povodom
         50 godina postojanja ove Kompanije. U parkovima, na otvorenom prostoru nalaze se sredstva za rad, korištena tokom proteklih decenija,
         od zaprežnih kola, kojima je 1959. godine izvlačena ruda, do utovarno transportnih mašina, impozantnih gabarita, postavka je obogaćena 2016 godine
-        kada su u postavku dodate još 4 mašine.\n\n
-        Ono što izdvaja opštinu Milići je srpski grb u ovom parku, s obzirom da je ovo jedino mjesto gdje još uvijek ponosno stoji prvi grb RS.</string>
+        kada su u postavku dodate još 4 mašine.\n\nOno što izdvaja opštinu Milići je srpski grb u ovom parku, s obzirom da je ovo jedino mjesto gdje još uvijek ponosno stoji prvi grb RS.</string>
 
-    <string name="dest15">Drugi dio postavke je u samom Domu rudara, u Muzeju rudarstva, gdje su pored zbirke minerala, alata, opreme,
-             priručnih sredstava, korištenih u procesima rada, izložena i određena priznanja, kao i drugi dokumenti važni za nastanak i trajanje Kompanije.</string>
+    <string name="dest15">Drugi dio postavke dočekuje vas u samom srcu Domu rudara, u izvanrednom Muzeju rudarstva. Ovdje, između zbirke dragocjenih minerala, sofisticiranih alata i opreme korištenih u
+        procesima rada, kao i priručnih sredstava, otkrivate i vrijedne tragove istorije Kompanije.\n\nIzložena su ne samo fizička svjedočanstva o radnom okruženju, već i impresivna priznanja koja su odražavala
+        izuzetan doprinos zaposlenih. U ovom prostoru se čuvaju i dragoceni dokumenti, kao što su priznanja i drugi važni zapisi, koji su ključni za razumevanje ne samo porekla, već i dugovečnosti Kompanije. Svaki eksponat i
+        dokument ovdje su pažljivo postavljeni kako bi posjetioci imali uvid u bogatu i fascinantnu historiju i stekli dublje razumijevanje značaja ove ugledne institucije.</string>
 
     <string name="dest16">Rajkov toranj se nalazi u samom centru gradića Milići, na adresi Trg rudara 1. Toranj je otvoren 5.
         decembra 2009. godine povodom 50 godina rada preduzeća „Boksit“ a.d.[2] Visina tornja je 77 metara.\n\n
@@ -163,7 +164,9 @@
         Crkvu je u periodu 1999—2004 živopisao Gojko Ristanović iz Beograda, a ikonostas je izrađen u duborezu od hrastovog drveta od strane Radeta Pantića
         iz Milića. Ikone je oslikao nastavnik likovne kulture iz Vlasenice, Njegoš Arnaut.\n\n</string>
 
-    <string name="dest19">Hram/crkva brvnara u selu Dukići podignut je 2010. godine.</string>
+    <string name="dest19">Hram Svetog Prokopija u selu Dukići, podignut 2010. godine, predstavlja jedan od najljepših primera brvnarih crkava u Bosni i Hercegovini.
+        Crkva je naručena od strane mjesnog stanovništva, a finansirana je donacijama i dobrovoljnim radom. Građena je od drveta u tradicionalnom srpskom stilu,
+        sa dvostrešnim krovom pokrivenim šindrom. Unutrašnjost crkve je jednostavno ukrašena, sa ikonostasom i freskama koje prikazuju scene iz života Svetog Prokopija.</string>
 
     <string name="dest20">Hram Svetog proroka Ilije u naselju Nova Kasaba. Hram je dimenzija 12,5h7 metara.
         Gradnja hrama počela je 1998. godine. Temelje je osveštao episkop zvorničko-tuzlanski g. Vasilije 01. novembra 1998.
@@ -315,7 +318,65 @@
 
     <!-- do ovde -->
 
-    <!-- vremenska prognoza -->
+    <!--masine-->
+    <string name="bager">U središtu impozantnih mašina u opštini Milići uzdiže se monumentalni elektro-hidraulični bager - Orenštajn i Kopel RH-120E. Ova mašina, sa svojim masivnim postojanjem, nije samo artefakt rudarstva; ona je živopisan dio nasljeđa, ostavljajući neizbrisiv pečat u istorijskim hronikama.\n\n
+Proizveden 1990. godine u Njemačkoj, RH-120E je težak preko 300 tona i jedan je od najvećih rudarskih bagera koje je lokalna rudarska kompanija ikada posjedovala. Ova mašina je svedok mnogih radnih trenutaka, sa više od 20,000 sati rada na svom dugmetu. Patentirana inovacija njemačkog inženjeringa, RH-120E ne samo da kopa zemlju, već i urezuje priču o industrijskom procvatu.\n\n
+Sa snagom od 900 kW, ovaj gigant nosi svoju gromadnu masu dužine 13.2 metra, visine 7.00 metara, i širine 6.40 metara. Ali iza svake tehničke karakteristike krije se više od čelika i metala; RH-120E je predstavnik zajednice koja je čvrsto koračala kroz vjetrove vremena. Jedna od anegdota kaže samo da se ova mašina uključi potroši snage onoliko koliko čitav obližnji grad Zvornik potroši u tom trenutku što znači veoma ogromana energija je bila potreba uopšte da se pokrene.\n\n
+Sa kapacitetom utovara od 40 miliona tona, ovaj bager nije samo dizalica težine - on je nosilac ekonomske vitalnosti. Svaki od tih 40 miliona tona predstavlja napor i predanost radnika, koji su svojom rukom oblikovali krajolik Milića. RH-120E je ne samo mašina; on je nasljeđe, čuvar uspomena koje sežu u prošlost.\n\n
+Ovaj eksponat nije samo metalna konstrukcija; on je oživljeni spomenik radu, inovacijama i upornosti. Njegova prisutnost na horizontu Milića svjedoči ne samo o prošlim vremenima, već i o snazi i izdržljivosti zajednice koja stoji iza njega. Sa svakim radnim satom, RH-120E nije samo mašina; on je živopisna priča Milića koja traje, podsjećajući na put kojim je opština koračala kako bi oblikovala svoju budućnost.\n\n
+    Jedna zanimljivost za kraj je da se na mašini nalazio \"stočić za kafu\" na kome su radnici nakon odrađene smjene sjedili da pričaju i popiju po kafu.</string>
+
+    <string name="buldozer">U srcu zaleđenog Milića, u Bosni i Hercegovini, leži priča o jednom čvrstom stroju - buldozeru Caterpillar CAT D9L proizvedenom 1984. godine. Život mu je protekao na rudniku boksita, ogromnom otvorenom jami gdje se ovaj dragoceni mineral kopao decenijama. CAT D9L je bio nezamjenljiv u ovom teškom poslu. Njegova ogromna težina od preko 65 tona i snažni 460-konjski dizel motor činili su ga idealnim za raščelišćavanje tvrdih stijena i
+        premještanje masivnih količina zemlje.\n\n
+        Dan za danom, CAT D9L je grizlaо stijene, pravio puteve i pripremao teren za kopare. Operateri su ga poštovali i nazvali ga "Zver" zbog njegove neprekidne moći i izdržljivosti. Zima ili ljeto, on je gurtao boje i stvarao prostor za važno rudarstvo koje je pružalo sredstva za život mnogim Milićanima.\n\n
+        CAT D9L nije bio samo mašina; bio je simbol snage, odlučnosti i zajednice. Gledao je kako Milići raste i razvija se, svjedočio promjenama i bio čvrst dio života rudnika. Starim rudarima, njegovo grmenje i škrenut gusenica i danas izazivaju nostalgiju za onim danima.\n\n
+        Zanimljivosti o CAT D9L-u u Milićima:\n
+
+-Bio je prvi CAT D9L uvezen u tadašnju Jugoslaviju.\n
+-Prevozio je preko milion tona boksita tokom svog radnog života.\n
+-Nikad nije imao ozbiljnih kvarova i bio je poznat po izuzetnoj pouzdanosti.\n
+-Nakon završetka rada u rudniku, postavljen je kao eksponat u Parku mašina na otvorenom i predstavlja podsjetnik na rudarsku prošlost grada.\n
+    </string>
+
+    <string name="busilica">Bušilica Atlas Copco ROC-8120HCS je bila nezaobilazan deo rudnika boksita u Milićima. Ova mala ali pouzdana mašina, bila je ključna za vađenje boksita iz dubine zemlje.\n\n
+    Bušilica je bila opremljena snažnim hidrauličkim kandžama koje su grizle tvrdi kamen, kao i pneumatskim čekićem koji je udarao u stijene silinom od 35 džula. Ova kombinacija snage i preciznosti omogućila je bušilici da probije i najtvrđe stene.\n\n
+    Bušilica je bila u radu preko 25.000 sati i izdvojila je preko 645.000 metara boksita. Ova količina boksita je dovoljna za proizvodnju preko 50.000 tona aluminijuma.\n\n
+    Bušilica ROC-8120HCS je bila poznata po svojoj pouzdanosti i izdržljivosti. Nikada nije doživela ozbiljniji kvar i uvek je bila spremna za rad.\n\n
+        Bušilica ROC-8120HCS je simbol snage i izdržljivosti. Ona je bila ključna za razvoj rudarske industrije u Milićima i ostavila je neizbrisiv trag u istoriji ovog grada.\n\n
+    </string>
+
+    <string name="damper">FAUN K85-8: DiV Milićkog Boksita\n\n
+    Sa svojih impozantnih 5 metara visine i skoro 10 metara dužine, kamion za deponovanje FAUN K85-8 bio je prepoznatljiv prizor u rudniku boksita Milići u Bosni i Hercegovini. Ovaj nemak-zver iz Nemačke, proizveden 1978. godine, prevezao je bezbroj tona dragocenog boksita iz dubina rudnika, decenijama igrajući ključnu ulogu u ekonomiji grada.\n\n
+    FAUN K85-8 nije bio samo običan kamion za deponovanje. Ovaj 135-tonski kolos bio je pogonjen snažnim motorom od 312 konjskih snaga, što mu je omogućavalo da nosi neverovatnih 45 tona boksita. Njegova čvrsta šasija i ogromne gume od 2,5 metra mogle su da se bez problema nose sa najgrubljim terenom u rudniku, što je garantovalo gladak transport dragocenog ruda.\n\n
+    Za rudare Milića, FAUN K85-8 nije bio samo mašina, već bio je pouzdan radni konj. Njegova pouzdanost i nepokolebljive performanse bile su presudne za uspeh rudarske operacije. Hukot njegovog motora i stenjanje suspenzije postali su poznata pozadina života rudara, stalni podsjetnik na teški rad i odlučnost koji su pogonili njihovu zajednicu.\n\n
+    Danas, FAUN K85-8 stoji s ponosom kao spomenik rudarskoj prošlosti Milića. Izložen u Parku velikih mašina u centru Milića predstavljajući vitalnu ulogu koju je rudarstvo nekada imalo u njegovom razvoju.\n\n
+    FAUN K85-8 nije samo relikvija prošlosti; on je simbol Milićeve izdržljivosti i snalažljivosti. Njegova priča nas podsjeća na transformativnu moć industrije i trajno nasleđe koje ona ostavlja za sobom.</string>
+
+    <string name="rudarska_lokomotiva">Železna zver Milića: Rudarska lokomotiva u Parku Velikih Mašina\n\n
+    U srcu Parka Velikih Mašina u Milićima, pored divovskih kamiona i bušilica, stoji još jedan impresivni svjedok rudarske prošlosti grada – moćna rudarska lokomotiva. Ova čelična zvijer, proizvedena 1950-tih godina, vozila je bezbroj teretnih vagona kroz dubine rudnika Milići, prevozeći dragoceni boksit do površine.\n\n
+    Sa svojim jakim dizel motorom i robustnim željeznim točkovima, lokomotiva je lako savladavala uspone i krivine rudničkih tunela. Mogla je da povuče desetine tona boksita, omogućavajući efikasan transport ruda i igrajući vitalnu ulogu u proizvodnji.\n\n
+    Za rudare Milića, lokomotiva nije bila samo mašina, već simbol napretka i snage. Njen duboki zvuk predstavljao je otkucaj srca rudnika, a njeno svakodnevno krstarenje kroz tunele podsjećalo je na neumorne rudare koji su vadili boksit.\n\n
+    Danas, lokomotiva uživa zasluženu penziju u Parku velikih mašina. Očišćena i sa novim sjajem, ona stoji kao stalni podsjetnik na bogatu rudarsku istoriju Milića. Djeca se penju na njezino sjedište, maštajući o podzemnim avanturama, a stariji se prisjećaju dana kada je ona bila srce i duša rudnika.\n\n
+    Zanimljivosti:\n
+
+-Lokomotiva je proizvedena u Čehoslovačkoj.\n
+-Mogla je da vozi do 20 teretnih vagona.\n
+-Bila je u funkciji preko 40 godina.</string>
+    <string name="rajkov_toranj">U samom srcu Milića, uzdiže se impozantan Rajkov toranj, simbol grada i dugogodišnje rudarske tradicije. Ovaj 77 metara visoki divovik, otvoren 2009. godine, dominira panoramom i pruža pogled koji će vas ostaviti bez daha na okolni pejzaž.\n\n
+    Rajkov toranj nije samo turistička atrakcija. U njegovim zidovima se nalazi Muzej rudarstva, posvećen bogatoj rudarskoj prošlosti Milića. Izložbe, fotografije i eksponati oživljavaju priču o ljudima i mašinama koji su decenijama vadili boksit, vitalni rudar za proizvodnju aluminijuma.\n\n
+    Zanimljivosti o Rajkovom tornju:\n
+
+-Nazvan je po Rajku Dukiću, dugogodišnjem predsjedniku upravnog odbora kompanije Boksit, koja je imala ključnu ulogu u razvoju Milića.\n
+-Toranj je izgrađen od 12.000 kubika betona i 180 tona čelika.\n
+-Na vrhu se nalazi kafeterija sa panoramskom terasom, omiljeno mjesto za uživanje u pogledu i druženju sa prijateljima.\n
+-U okviru Letnjeg festivala kulture i sporta u Milićima, održava se trka stepenicama do vrha tornja, izazov za najizdržljivije takmičare.\n\n
+    Rajkov toranj je više od građevine; on je simbol poleta, razvoja i značajnog poglavlja u istoriji Milića. Njegova moćna silueta podsjeća na trud i upornost generacija rudara koji su gradili grad, a njegov vrh pruža pogled na budućnost, obećavajući nove poglavlja u priči o Milićima.</string>
+
+    <string name="utovarivac">CAT, moćni tovaritelj Milićkog boksita\n\n
+    Sa svojim impozantnim 4 metra visine i skoro 13 metara dužine, utovarivač Caterpilar CAT-992C bio je prepoznatljiv prizor u rudniku boksita Milići u Bosni i Hercegovini. Ovaj američki radni konj, proizveden 1986. godine, utovarivao je bezbroj tona dragocenog boksita na kamione, preko decenije igrajući ključnu ulogu u ekonomiji grada.\n\n
+    CAT-992C nije bio bilo koji utovarivač. Ova 48-tonska zver bila je pogonjena snažnim motorom od 690 konjskih snaga, što mu je omogućavalo da svakim zalogajem svoje ogromne kašike od 4,75 metara zahvati i utovari zapanjujućih 10,3 kubika boksita. Njegova čvrsta šasija i debele gume od 2,7 metara mogle su da se bez problema nose sa najgrubljim terenom u rudniku, što je garantovalo efikasan utovar dragocenog ruda.\n\n
+    Za rudare Milića, CAT-992C nije bio samo mašina, već bio je pouzdan partner. Njegova pouzdanost i nepokolebljive performanse bile su presudne za uspeh rudarske operacije. Hukot njegovog motora i stenjanje hidraulike postali su poznata pozadina života rudara, stalni podsjetnik na teški rad i odlučnost koji su pogonili njihovu zajednicu.\n\n
+        Danas, CAT-992C stoji s ponosom kao spomenik rudarskoj prošlosti Milića. Izložen u Parku velikih mašina u Milićima.</string><!-- vremenska prognoza -->
     <string name="clear">Vedro nebo</string>
     <string name="clouds">Prorijeđeni oblaci</string>
     <string name="scattered_clouds">Rasuti oblaci</string>
@@ -344,5 +405,112 @@
     <string name="api">AIzaSyAACm4l9AUxJIOzZReIte6wLt98wfoMYTQ</string>
 
     <!--TEKSTOVI ZA LOKACIJE-->
+    <string-array name="spomenici_coordinates">
+        <item>44.16956,19.07872,Muzej rudarstva</item>
+        <item>44.1691, 19.0754,Muzej rudarstva na otvorenom</item>
+        <item>44.16968, 19.07869,Rajkov toranj</item>
+        <item>44.16984, 19.07882,Dom rudara Milići</item>
+        <item>44.16854, 19.07820,Spomenik palim borcima u Drugom svjetskom ratu Milići</item>
+        <item>44.12635, 19.13530,Spomen kosturnica poginulim partizanima Derventa</item>
+        <item>44.13667, 19.17325,Spomen ploča palim Srpskim borcimna u Otadžbinskom ratu Donja Bukovica</item>
+        <item>44.12644, 19.13508,Spomen ploča palim Srpskim borcima u Prvom, Drugom i Otadžbinskom ratu Derventa</item>
+        <item>44.16974, 19.0781,Spomenik palim borcima u Otadžbinskom ratu Milići</item>
+        <item>44.22624, 19.04182,Spomen ploča palim borcima u Otadžbinskom ratu Buljevići</item>
+        <item>44.15991, 19.09854,Spomen česma borcima u Otadžbinskom ratu Mišići</item>
+        <item>44.16671, 19.08902,Kapela Svetog velikomučenika Dimitrija u Milićima</item>
+        <item>44.11014, 19.15912,Spomen ploča nastradalim civilima i vojnicima u Otadžbinskom ratu Žutica</item>
+        <item>44.11972, 19.05308,Tvrđava-grad Komić</item>
+        <item>44.14057, 19.05270,Ukleti Jerinin grad</item>
+        <item>44.16944, 19.07867,Narodna biblioteka Milići</item>
+    </string-array>
+
+    <string-array name="v_objekti_coordinates">
+        <item>44.16624, 19.08896, Hram Svetog Nikole Milići</item>
+        <item>44.12760, 19.13925, Crkva Svete Trojice Derventa</item>
+        <item>44.21369, 19.10718, Crkva Svetog Ilije Nova Kasaba</item>
+        <item>44.14568, 19.12758, Crkva Svetog velikomučenika Prokopija</item>
+        <item>44.20106, 19.09433, Crkva Svetog Joakima i Ane Vukšić Polje</item>
+        <item>44.14660, 19.15476, Crkva Svetih Apostola Petra i Pavla Koprivno</item>
+        <item>44.21556, 19.10670, Musa Pašina džamija Nova Kasaba</item>
+    </string-array>
+
+    <string-array name="biste_coordinates">
+        <item>44.1693, 19.0769, Park Srpskih velikana</item>
+        <item>44.16955, 19.07816, Park Ruskih velikana</item>
+        <item>44.17012, 19.07809, Park Indijskih velikana</item>
+        <item>44.16999, 19.07815, Park Kineskih velikana</item>
+        <item>44.16870, 19.07491, Park Evropskih velikana</item>
+    </string-array>
+
+    <string-array name="priroda_coordinates">
+        <item>44.12800, 19.12247, Površinski kop Crvene Stijene</item>
+        <item>44.07352, 19.19231, Rudnik Boksita površinski kop Braćan</item>
+        <item>44.09965, 19.14469, Botanički park Tisovljak</item>
+    </string-array>
+
+    <string-array name="sport_coordinates">
+        <item>44.16823, 19.07587, Bazeni Milići</item>
+        <item>44.16491, 19.07014, Sportski centar Milići</item>
+    </string-array>
+
+    <string-array name="ostale_kategorije_coordinates">
+        <item>44.1630, 19.0691, Teritorijalna vatrogasna jedinica Milići</item>
+        <item>44.17005, 19.07839, Policijska stanica Milići</item>
+        <item>44.1690, 19.0770, Dom zdravlja Sveti Nikola</item>
+        <item>44.16812, 19.07834, Osnovna škola "Aleksa Jakšić Milići"</item>
+        <item>44.1642, 19.0697, SŠC "Milutin Milankovic Milići"</item>
+        <item>44.17018, 19.07861, Parking kod policijske stanice</item>
+        <item>44.16922, 19.07745, Parking kod doma zdravlja</item>
+        <item>44.16516, 19.07032, Parking kod sportske dvorane</item>
+    </string-array>
+
+    <string-array name="all_coordinates">
+        <item>44.16956,19.07872,Muzej rudarstva</item>
+        <item>44.1691, 19.0754,Muzej rudarstva na otvorenom</item>
+        <item>44.16968, 19.07869,Rajkov toranj</item>
+        <item>44.16984, 19.07882,Dom rudara Milići</item>
+        <item>44.16854, 19.07820,Spomenik palim borcima u Drugom svjetskom ratu Milići</item>
+        <item>44.12635, 19.13530,Spomen kosturnica poginulim partizanima Derventa</item>
+        <item>44.13667, 19.17325,Spomen ploča palim Srpskim borcimna u Otadžbinskom ratu Donja Bukovica</item>
+        <item>44.12644, 19.13508,Spomen ploča palim Srpskim borcima u Prvom, Drugom i Otadžbinskom ratu Derventa</item>
+        <item>44.16974, 19.0781,Spomenik palim borcima u Otadžbinskom ratu Milići</item>
+        <item>44.22624, 19.04182,Spomen ploča palim borcima u Otadžbinskom ratu Buljevići</item>
+        <item>44.15991, 19.09854,Spomen česma borcima u Otadžbinskom ratu Mišići</item>
+        <item>44.16671, 19.08902,Kapela Svetog velikomučenika Dimitrija u Milićima</item>
+        <item>44.11014, 19.15912,Spomen ploča nastradalim civilima i vojnicima u Otadžbinskom ratu Žutica</item>
+        <item>44.11972, 19.05308,Tvrđava-grad Komić</item>
+        <item>44.14057, 19.05270,Ukleti Jerinin grad</item>
+        <item>44.16944, 19.07867,Narodna biblioteka Milići</item>
+
+        <item>44.16624, 19.08896, Hram Svetog Nikole Milići</item>
+        <item>44.12760, 19.13925, Crkva Svete Trojice Derventa</item>
+        <item>44.21369, 19.10718, Crkva Svetog Ilije Nova Kasaba</item>
+        <item>44.14568, 19.12758, Crkva Svetog velikomučenika Prokopija</item>
+        <item>44.20106, 19.09433, Crkva Svetog Joakima i Ane Vukšić Polje</item>
+        <item>44.14660, 19.15476, Crkva Svetih Apostola Petra i Pavla Koprivno</item>
+        <item>44.21556, 19.10670, Musa Pašina džamija Nova Kasaba</item>
+
+        <item>44.1693, 19.0769, Park Srpskih velikana</item>
+        <item>44.16955, 19.07816, Park Ruskih velikana</item>
+        <item>44.17012, 19.07809, Park Indijskih velikana</item>
+        <item>44.16999, 19.07815, Park Kineskih velikana</item>
+        <item>44.16870, 19.07491, Park Evropskih velikana</item>
+
+        <item>44.12800, 19.12247, Površinski kop Crvene Stijene</item>
+        <item>44.07352, 19.19231, Rudnik Boksita površinski kop Braćan</item>
+        <item>44.09965, 19.14469, Botanički park Tisovljak</item>
+
+        <item>44.16823, 19.07587, Bazeni Milići</item>
+        <item>44.16491, 19.07014, Sportski centar Milići</item>
+
+        <item>44.1630, 19.0691, Teritorijalna vatrogasna jedinica Milići</item>
+        <item>44.17005, 19.07839, Policijska stanica Milići</item>
+        <item>44.1690, 19.0770, Dom zdravlja Sveti Nikola</item>
+        <item>44.16812, 19.07834, Osnovna škola "Aleksa Jakšić Milići"</item>
+        <item>44.1642, 19.0697, SŠC "Milutin Milankovic Milići"</item>
+        <item>44.17018, 19.07861, Parking kod policijske stanice</item>
+        <item>44.16922, 19.07745, Parking kod doma zdravlja</item>
+        <item>44.16516, 19.07032, Parking kod sportske dvorane</item>
+    </string-array>
 
 </resources>

@@ -139,31 +139,36 @@ public class ARFragment extends Fragment {
         int[] imageResources = {R.drawable.muzej, R.drawable.buldozer, R.drawable.busilica, R.drawable.damper, R.drawable.rudarska_lokomotiva, R.drawable.utovarivac, R.drawable.toranj_prikaz};
 
         //Postavljanje teksta i slike date masine
+        StringBuilder s = new StringBuilder();
         if(maxPos == 0){
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.bager));
         } else if (maxPos == 1) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.buldozer));
         } else if (maxPos == 2) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.busilica));
         }else if (maxPos == 3) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.damper));
         }else if (maxPos == 4) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.rudarska_lokomotiva));
         }else if (maxPos == 5) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.utovarivac));
         }else if (maxPos == 6) {
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
+            confidence.setText(getString(R.string.rajkov_toranj));
         }
-        //StringBuilder s = new StringBuilder();
-        //s.append(String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100));
-        //confidence.setText(s.toString());
     }
 
     @Override

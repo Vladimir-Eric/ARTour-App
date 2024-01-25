@@ -1,5 +1,6 @@
 package com.example.artour;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,12 +9,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
@@ -31,6 +34,9 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     private Button sportButton;
     private Button ostaleKategorijeButton;
     private Button sveKategorijeButton;
+    private int[] colorResources = {
+            R.color.red, R.color.blue, R.color.green, R.color.yellow, R.color.orange, R.color.light_blue
+    };
 
 
     @Override
@@ -54,7 +60,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
 
         legendImageButton = rootView.findViewById(R.id.legendImageButton);
-        legendCardView = rootView.findViewById(R.id.legendCardView);
 
         legendImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +76,62 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         ostaleKategorijeButton = rootView.findViewById(R.id.ostale_kategorije);
         sveKategorijeButton = rootView.findViewById(R.id.sve_kategorije);
 
+        spomeniciButton.setOnClickListener(v -> showMarkers(R.id.spomenici));
+        vObjektiButton.setOnClickListener(v -> showMarkers(R.id.v_objekti));
+        bisteButton.setOnClickListener(v -> showMarkers(R.id.biste));
+        prirodaButton.setOnClickListener(v -> showMarkers(R.id.priroda));
+        sportButton.setOnClickListener(v -> showMarkers(R.id.sport));
+        ostaleKategorijeButton.setOnClickListener(v -> showMarkers(R.id.ostale_kategorije));
+        sveKategorijeButton.setOnClickListener(v -> showMarkers(R.id.sve_kategorije));
+
         return rootView;
+    }
+
+    private BitmapDescriptor createMarkerBitmapDescriptor(int color) {
+        float[] hsv = new float[3];
+        Color.colorToHSV(color, hsv);
+        hsv[2] *= 0.8f; // Reduce the saturation a bit to make the marker look better
+        return BitmapDescriptorFactory.defaultMarker(hsv[0]);
+    }
+    private void showMarkers(int categoryId) {
+        myMap.clear(); // Clear existing markers
+        int[] localColorResources;
+
+        if (categoryId == R.id.spomenici) {
+            addMarkers(R.array.spomenici_coordinates, R.color.red);
+        } else if (categoryId == R.id.v_objekti) {
+            addMarkers(R.array.v_objekti_coordinates, R.color.green);
+        } else if (categoryId == R.id.biste) {
+            addMarkers(R.array.biste_coordinates, R.color.yellow);
+        } else if (categoryId == R.id.priroda) {
+            addMarkers(R.array.priroda_coordinates, R.color.blue);
+        } else if (categoryId == R.id.sport) {
+            addMarkers(R.array.sport_coordinates, R.color.orange);
+        } else if (categoryId == R.id.ostale_kategorije) {
+            addMarkers(R.array.ostale_kategorije_coordinates, R.color.light_blue);
+        } else {
+            addMarkers(R.array.spomenici_coordinates, R.color.red);
+            addMarkers(R.array.v_objekti_coordinates, R.color.green);
+            addMarkers(R.array.biste_coordinates, R.color.yellow);
+            addMarkers(R.array.priroda_coordinates, R.color.blue);
+            addMarkers(R.array.sport_coordinates, R.color.orange);
+            addMarkers(R.array.ostale_kategorije_coordinates, R.color.light_blue);
+        }
+
+    }
+
+    private void addMarkers(int coordinateArrayResource, int colorResource) {
+        String[] coordinatesArray = getResources().getStringArray(coordinateArrayResource);
+        int color = ContextCompat.getColor(requireContext(), colorResource);
+
+        for (String coordinate : coordinatesArray) {
+            String[] parts = coordinate.split(",");
+            double lat = Double.parseDouble(parts[0]);
+            double lng = Double.parseDouble(parts[1]);
+            String title = parts[2];
+
+            myMap.addMarker(new MarkerOptions().position(new LatLng(lat, lng)).title(title).icon(createMarkerBitmapDescriptor(color)));
+        }
     }
 
 

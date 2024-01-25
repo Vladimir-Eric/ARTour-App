@@ -17,19 +17,19 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
+
     <ImageButton
         android:id="@+id/legendImageButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="bottom|end"
-        android:scaleType="fitCenter"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="130dp"
-        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_btn"
         android:padding="10dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/info"
-        app:tint="@color/primarna_blaga"
-        android:background="@drawable/round_btn"/>
-
+        app:tint="@color/primarna_blaga" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="V. objektu"/>
+                android:text="V. objekti"/>
             <Button
                 android:id="@+id/biste"
                 android:layout_width="wrap_content"
