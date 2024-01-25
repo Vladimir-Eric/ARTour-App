@@ -15,7 +15,7 @@ import java.util.List;
 public class PitajFragment extends Fragment {
 
     public PitajFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
@@ -72,7 +72,6 @@ public class PitajFragment extends Fragment {
                 "Teniski tereni"));
         mapaPitanjaOdgovora.put("Hitne službe", new PitanjeOdgovorModel("Hitne službe", "122 Policija; \n123 Vatrogasna služba; \n124 Služba hitne pomoći; \n\n1325 BIHAMK info centar; \n033/282-100 BIHAMK pozivi iz inostranstva; \n\n1285 Auto moto savez Republike Srpske; \n+387 051/341-285 AMSRS pozivi iz inostranstva;"));
         mapaPitanjaOdgovora.put("Godišnji događaji", new PitanjeOdgovorModel("Godišnji događaji", "Božićno selo \njanuar 4.-7. \n\nDoček Pravoslavne Nove godine \njanuar 13. \n\nMemorijalni turnir u malom fudbalu Slobodan Radovanović \njanuar 15-19 \n\nDan opštine Milići \nmart 31. \n\nJulsko-avgustovski dani kulture i sporta \njul 11. - avgust 31. \n\nJagnjijada Derventa \nseptembar - prva subota"));
-        // Dodajte još pitanja i odgovora prema potrebi...
 
         return new PitajAdapter(requireContext(), listaPitanja, mapaPitanjaOdgovora);
     }

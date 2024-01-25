@@ -42,7 +42,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-         //Inflate the layout for this fragment
+
         View rootView = inflater.inflate(R.layout.fragment_mapa, container, false);
 
         legendCardView = rootView.findViewById(R.id.legendCardView);
@@ -56,7 +56,7 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             getChildFragmentManager().beginTransaction().replace(R.id.map, mapFragment).commit();
         }
 
-        // Učitajte mapu asinkrono
+        // Učitavanje mape
         mapFragment.getMapAsync(this);
 
         legendImageButton = rootView.findViewById(R.id.legendImageButton);
@@ -65,6 +65,9 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public void onClick(View view) {
                 toggleLegendVisibility();
+
+                legendCardView = rootView.findViewById(R.id.legendCardView);
+                legendCardView.setClickable(false);
             }
         });
 
@@ -90,12 +93,11 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     private BitmapDescriptor createMarkerBitmapDescriptor(int color) {
         float[] hsv = new float[3];
         Color.colorToHSV(color, hsv);
-        hsv[2] *= 0.8f; // Reduce the saturation a bit to make the marker look better
+        hsv[2] *= 0.8f;
         return BitmapDescriptorFactory.defaultMarker(hsv[0]);
     }
     private void showMarkers(int categoryId) {
         myMap.clear(); // Clear existing markers
-        int[] localColorResources;
 
         if (categoryId == R.id.spomenici) {
             addMarkers(R.array.spomenici_coordinates, R.color.red);
@@ -154,26 +156,29 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         myMap.setMapType(GoogleMap.MAP_TYPE_HYBRID); //vrsta prikaza
 
 
-        // Postavite minimalni i maksimalni nivo zumiranja
-        myMap.setMinZoomPreference(10.0f); // Postavite željeni minimalni nivo zumiranja
-        myMap.setMaxZoomPreference(20.0f); // Postavite željeni maksimalni nivo zumiranja
+        //Minimalni i maksimalni nivo zumiranja
+        myMap.setMinZoomPreference(10.0f);
+        myMap.setMaxZoomPreference(20.0f);
 
-        // Definirajte granice (bounds)
+        // Granice mape koja može da se pomjera
         LatLngBounds bounds = new LatLngBounds(
-                new LatLng(44.04, 19.02), // Južozapadni kut
-                new LatLng(44.27, 19.24)  // Sjeveroistočni kut
+                new LatLng(44.04, 19.02), // Južozapadni ćošak
+                new LatLng(44.27, 19.24)  // Sjeveroistočni ćošak
         );
 
         if (zoomLevel == 10.0f) {
-            LatLng southwestCorner = new LatLng(44.22, 19.00); // Jugozapadni ugao
-            LatLng northeastCorner = new LatLng(44.25, 19.15); // Sjeveroistočni ugao
+            LatLng southwestCorner = new LatLng(44.22, 19.00); // Jugozapadni ćošak
+            LatLng northeastCorner = new LatLng(44.25, 19.15); // Sjeveroistočni ćošak
         } else if (zoomLevel == 20.0f) {
-            LatLng southwestCorner = new LatLng(44.04, 19.02); // Jugozapadni ugao
-            LatLng northeastCorner = new LatLng(44.27, 19.24); // Sjeveroistočni ugao
+            LatLng southwestCorner = new LatLng(44.04, 19.02); // Jugozapadni ćošak
+            LatLng northeastCorner = new LatLng(44.27, 19.24); // Sjeveroistočni ćošak
         }
 
         //Map toolbar-iskljucivanje
         myMap.getUiSettings().setMapToolbarEnabled(false);
+
+        //Compass dugme
+        googleMap.setPadding(0, 100, 0, 0);
 
         // Postavite granice karte
         myMap.setLatLngBoundsForCameraTarget(bounds);

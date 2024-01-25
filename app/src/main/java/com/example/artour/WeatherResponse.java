@@ -62,12 +62,6 @@ public class WeatherResponse {
             return weatherMain;
         }
 
-        /*@SerializedName("icon")
-        private String weatherIcon;
-
-        public String getWeatherIcon() {
-            return weatherIcon;
-        }*/
 
     }
 

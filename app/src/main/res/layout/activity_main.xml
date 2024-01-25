@@ -119,37 +119,5 @@
         app:layout_anchor="@+id/frame_layout"
         app:layout_anchorGravity="center" />
 
-    <ImageView
-        android:id="@+id/ikona1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="-155dp"
-        android:translationY="80dp"
-        android:visibility="gone"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_forest_24" />
-
-    <ImageView
-        android:id="@+id/ikona2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="-95dp"
-        android:translationY="80dp"
-        android:visibility="gone"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_local_cafe_24" />
-
-    <ImageView
-        android:id="@+id/ikona3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="-35dp"
-        android:translationY="80dp"
-        android:visibility="gone"
-        app:layout_anchor="@+id/frame_layout"
-        app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/baseline_church_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

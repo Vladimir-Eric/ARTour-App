@@ -70,7 +70,6 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
             destinationTitle = view.findViewById(R.id.destinationTitle);
             destinationDescription = view.findViewById(R.id.destinationDescription);
             extraText = view.findViewById(R.id.extraText);
-
         }
     }
 }

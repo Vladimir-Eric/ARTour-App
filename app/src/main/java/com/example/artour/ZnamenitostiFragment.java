@@ -180,7 +180,6 @@ public class ZnamenitostiFragment extends Fragment {
                 znamenitostImageView.setImageResource(R.drawable.sportski_centar);
                 znamenitostTextView.setText(getString(R.string.dest32));
                 break;
-            // Ostale kategorije...
             default:
                 // Defaultne slike i tekstovi
                 znamenitostImageView.setImageResource(R.drawable.default_image);
