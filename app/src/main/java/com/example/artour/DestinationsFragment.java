@@ -37,7 +37,6 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
     private void openZnamenitostiFragment(int destinationId) {
         FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, ZnamenitostiFragment.newInstance(destinationId));
-        transaction.addToBackStack(null);
         transaction.commit();
     }
 

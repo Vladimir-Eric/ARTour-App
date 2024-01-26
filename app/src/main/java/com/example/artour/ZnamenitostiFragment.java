@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
 public class ZnamenitostiFragment extends Fragment {
@@ -36,7 +37,12 @@ public class ZnamenitostiFragment extends Fragment {
         ImageView znamenitostImageView = view.findViewById(R.id.znamenitostImageView);
         TextView znamenitostTextView = view.findViewById(R.id.znamenitostTextView);
         Button backButton = view.findViewById(R.id.backButton);
-        backButton.setOnClickListener(v -> requireActivity().getSupportFragmentManager().popBackStack());
+        backButton.setOnClickListener(v -> {
+            FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_layout, new DestinationsFragment());
+            transaction.commit();
+        });
+
 
         // Dohvati destinationId
         assert getArguments() != null;
