@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/chatgpt"
         android:title="Info"
-        android:icon="@drawable/commentsquestion" />
+        android:icon="@drawable/commentsquestion"
+        tools:ignore="HardcodedText" />
 
     <item
         android:id="@+id/location"
         android:title="Mape"
-        android:icon="@drawable/marker"/>
+        android:icon="@drawable/marker"
+        tools:ignore="HardcodedText" />
 
     <item
         android:id="@+id/pocetna"
         android:title="Početna"
-        android:icon="@drawable/home"/>
+        android:icon="@drawable/home"
+        tools:ignore="HardcodedText"/>
 
     <item
         android:id="@+id/popis"
         android:title="Lokacije"
-        android:icon="@drawable/picture"/>
+        android:icon="@drawable/picture"
+        tools:ignore="HardcodedText"/>
 
     <item
         android:id="@+id/ar"
         android:title="Kamera"
-        android:icon="@drawable/aintel"/>
+        android:icon="@drawable/aintel"
+        tools:ignore="HardcodedText"/>
 
 </menu>
