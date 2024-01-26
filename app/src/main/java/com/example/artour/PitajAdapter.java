@@ -7,17 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
-
 import androidx.core.content.res.ResourcesCompat;
-
 import java.util.HashMap;
 import java.util.List;
 
 public class PitajAdapter extends BaseExpandableListAdapter {
 
-    private Context context;
-    private List<String> listaPitanja;
-    private HashMap<String, PitanjeOdgovorModel> mapaPitanjaOdgovora;
+    private final Context context;
+    private final List<String> listaPitanja;
+    private final HashMap<String, PitanjeOdgovorModel> mapaPitanjaOdgovora;
 
     public PitajAdapter(Context context, List<String> listaPitanja, HashMap<String, PitanjeOdgovorModel> mapaPitanjaOdgovora) {
         this.context = context;

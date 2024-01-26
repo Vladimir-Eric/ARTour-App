@@ -5,17 +5,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
 
 public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.ViewHolder> {
 
     private final List<Destination> destinationList;
     private final OnDestinationClickListener onDestinationClickListener;
-
 
     public DestinationAdapter(List<Destination> destinationList, OnDestinationClickListener onDestinationClickListener) {
         this.destinationList = destinationList;
@@ -25,7 +22,6 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
     public interface OnDestinationClickListener {
         void onDestinationClick(int destinationId);
     }
-
 
     @NonNull
     @Override
@@ -44,7 +40,6 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         holder.destinationDescription.setText(destination.getDescription());
         holder.extraText.setText(destination.getExtraText());
 
-
         holder.itemView.setOnClickListener(view -> {
             if (onDestinationClickListener != null) {
                 onDestinationClickListener.onDestinationClick(destination.getId());
@@ -62,7 +57,6 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         public TextView destinationTitle;
         public TextView destinationDescription;
         public TextView extraText;
-
 
         public ViewHolder(View view) {
             super(view);

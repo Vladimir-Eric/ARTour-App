@@ -44,8 +44,8 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
         List<Destination> destinations = new ArrayList<>();
         destinations.add(new Destination(1, "Spomenik", R.drawable.slika_spomenik11, "palim borcima u Otadžbinskom ratu", "Milići"));
         destinations.add(new Destination(2, "Spomen česma", R.drawable.spomen_cesma_misici1, "palim borcima u Otadžbinskom ratu", "Mišići"));
-        destinations.add(new Destination(3, "Spomen ploča", R.drawable.spomenik_bukovica1, "tragično nastradalim osobama i vojnicima u Otadžbinskom ratu", "Bukovičko Brdo"));
-        destinations.add(new Destination(4, "Spomen ploča", R.drawable.spomenik_zutica1, "tragično nastradalim osobama i vojnicima u Otadžbinskom ratu", "Žutica"));
+        destinations.add(new Destination(3, "Spomen ploča", R.drawable.spomenik_bukovica1, "tragično stradalim osobama i vojnicima u Otadžbinskom ratu", "Bukovičko Brdo"));
+        destinations.add(new Destination(4, "Spomen ploča", R.drawable.spomenik_zutica1, "tragično stradalim osobama i vojnicima u Otadžbinskom ratu", "Žutica"));
         destinations.add(new Destination(5, "Spomen ploča", R.drawable.spomen_ploca_buljevici1, "palim borcima u Otadžbinskom ratu", "Buljevići"));
         destinations.add(new Destination(6, "Spomen česma", R.drawable.spomen_cesma_derventa1, "palim borcima u 1., 2., i Otadžbinskom ratu", "Derventa"));
         destinations.add(new Destination(7, "Spomen kosturnica", R.drawable.spomen_kosturnica1, "poginulim partizanima u 1. i 2. svjetskom ratu", "Derventa"));
@@ -76,7 +76,7 @@ public class DestinationsFragment extends Fragment implements DestinationAdapter
         destinations.add(new Destination(32, "Rudnik boksita površinski kop Crvene Stijene", R.drawable.crvene_stijene1, "", "Lukić Polje"));
         destinations.add(new Destination(33, "Bazeni Milići", R.drawable.bazeni1, "", "Milići"));
         destinations.add(new Destination(34, "Sportski centar", R.drawable.sportski_centar1, "", "Milići"));
-        // Dodajte остале дестинације...
+        // Prostor za dodatne lokacije/destinacije
 
         return destinations;
     }

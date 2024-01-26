@@ -5,27 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
-import java.util.Objects;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 
     public class FragmentAbout extends Fragment {
         @SuppressLint("DiscouragedApi")
@@ -33,7 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_about, container, false);
 
-            // Izvucite argumente iz bundla
+            // Izvlavečenje elemenata iz bundle
             Bundle args = getArguments();
             if (args != null) {
                 String naslovStringId = args.getString("naslovStringId", "");
@@ -52,22 +35,14 @@ import androidx.fragment.app.FragmentTransaction;
 
             }
 
-
-
             Button backButton2 = rootView.findViewById(R.id.backButton2);
 
-            // Postavite OnClickListener za backButton2
-            backButton2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // Vraćanje na prethodni fragment
-                    FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-                    fragmentManager.popBackStack();
-                }
+            // OnClickListener za backButton2
+            backButton2.setOnClickListener(v -> {
+                // Vraćanje na prethodni fragment
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                fragmentManager.popBackStack();
             });
-
             return rootView;
         }
     }
-
-

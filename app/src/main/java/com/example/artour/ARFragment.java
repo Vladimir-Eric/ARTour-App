@@ -2,6 +2,7 @@ package com.example.artour;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -29,6 +30,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.Objects;
 
 public class ARFragment extends Fragment {
 
@@ -47,48 +49,42 @@ public class ARFragment extends Fragment {
         imageView = view.findViewById(R.id.menu_heading);
         picture = view.findViewById(R.id.button);
 
-        picture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Provera dozvola za kameru
-                if (ContextCompat.checkSelfPermission(requireActivity(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                    // Pokretanje kamere ako imamo dozvolu
-                    Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivityForResult(cameraIntent, 1);
-                } else {
-                    // Zahtevanje dozvole za kameru ako nemamo
-                    ActivityCompat.requestPermissions(requireActivity(), new String[]{Manifest.permission.CAMERA}, 100);
-                }
+        picture.setOnClickListener(view1 -> {
+            // Provjera dozvola za kameru
+            if (ContextCompat.checkSelfPermission(requireActivity(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                // Pokretanje kamere ako imamo dozvolu
+                Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(cameraIntent, 1);
+            } else {
+                // Zahtjevanje dozvole za kameru ako nemamo
+                ActivityCompat.requestPermissions(requireActivity(), new String[]{Manifest.permission.CAMERA}, 100);
             }
         });
-
         return view;
     }
 
     @SuppressLint("DefaultLocale")
     public void classifyImage(Bitmap image){
-        LinearLayout naslovLayout = getView().findViewById(R.id.tekst);
+        LinearLayout naslovLayout = requireView().findViewById(R.id.tekst);
         naslovLayout.setVisibility(View.GONE);
 
-        TextView upit1 = getView().findViewById(R.id.upit_text);
+        TextView upit1 = requireView().findViewById(R.id.upit_text);
         upit1.setVisibility(View.GONE);
 
-        TextView upit2 = getView().findViewById(R.id.upit_text2);
+        TextView upit2 = requireView().findViewById(R.id.upit_text2);
         upit2.setVisibility(View.GONE);
 
-        TextView resultTextView = getView().findViewById(R.id.result);
+        TextView resultTextView = requireView().findViewById(R.id.result);
         resultTextView.setVisibility(View.VISIBLE);
 
-        TextView confidencesText = getView().findViewById(R.id.confidencesText);
+        TextView confidencesText = requireView().findViewById(R.id.confidencesText);
         confidencesText.setVisibility(View.VISIBLE);
 
-        TextView classifiedTextView = getView().findViewById(R.id.classified);
+        TextView classifiedTextView = requireView().findViewById(R.id.classified);
         classifiedTextView.setVisibility(View.VISIBLE);
 
         try {
             model = Model.newInstance(requireContext());
-
-            // Creates inputs for reference.
             TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
             ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
             byteBuffer.order(ByteOrder.nativeOrder());
@@ -106,8 +102,6 @@ public class ARFragment extends Fragment {
             }
 
             inputFeature0.loadBuffer(byteBuffer);
-
-            // Runs model inference and gets result.
             Model.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
@@ -120,26 +114,23 @@ public class ARFragment extends Fragment {
                     maxPos = i;
                 }
             }
-
             displayResult(maxPos, confidences);
 
         } catch (IOException e) {
-            // TODO Handle the exception
+            //
         } finally {
-            // Releases model resources if no longer used.
             if (model != null) {
                 model.close();
             }
         }
     }
 
-    private void displayResult(int maxPos, float[] confidences) {
+    private void displayResult(int maxPos, float[] ignoredConfidences) {
         String[] classes = {"Bager", "Buldozer", "Bušilica", "Damper", "Rudarska lokomotiva", "Utovarivač", "Rajkov toranj"};
 
         int[] imageResources = {R.drawable.muzej, R.drawable.buldozer, R.drawable.busilica, R.drawable.damper, R.drawable.rudarska_lokomotiva, R.drawable.utovarivac, R.drawable.toranj_prikaz};
 
         //Postavljanje teksta i slike date masine
-        StringBuilder s = new StringBuilder();
         if(maxPos == 0){
             result.setText(classes[maxPos]);
             imageView.setImageResource(imageResources[maxPos]);
@@ -173,9 +164,9 @@ public class ARFragment extends Fragment {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode == 1 && resultCode == getActivity().RESULT_OK) {
-            Bitmap image = (Bitmap) data.getExtras().get("data");
-            int dimension = Math.min(image.getWidth(), image.getHeight());
+        if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
+            Bitmap image = (Bitmap) Objects.requireNonNull(Objects.requireNonNull(data).getExtras()).get("data");
+            int dimension = Math.min(Objects.requireNonNull(image).getWidth(), image.getHeight());
             image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
             imageView.setImageBitmap(image);
 

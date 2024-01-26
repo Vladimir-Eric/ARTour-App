@@ -3,10 +3,10 @@ package com.example.artour;
 public class Destination {
 
     private int id;
-    private String title;
-    private int imageResource;
-    private String description;
-    private String extraText;
+    private final String title;
+    private final int imageResource;
+    private final String description;
+    private final String extraText;
 
     public Destination(int id, String title, int imageResource, String description, String extraText) {
         this.id = id;
@@ -14,7 +14,6 @@ public class Destination {
         this.imageResource = imageResource;
         this.description = description;
         this.extraText = extraText;
-
     }
 
     public String getExtraText() {
@@ -27,24 +26,11 @@ public class Destination {
 
     public String getTitle() { return title; }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public int getImageResource() {
         return imageResource;
-    }
-
-    public void setImageResource(int imageResource) {
-        this.imageResource = imageResource;
     }
 
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
 }

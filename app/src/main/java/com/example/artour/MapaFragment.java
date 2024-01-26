@@ -9,11 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-
+import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -25,13 +24,9 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import android.util.TypedValue;
 
-
-import java.util.Objects;
-
 public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap myMap;
-    private ImageButton legendImageButton;
     private CardView legendCardView;
     private Button spomeniciButton;
     private Button vObjektiButton;
@@ -40,9 +35,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     private Button sportButton;
     private Button ostaleKategorijeButton;
     private Button sveKategorijeButton;
-    private int[] colorResources = {
-            R.color.red, R.color.blue, R.color.green, R.color.yellow, R.color.orange, R.color.light_blue
-    };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,10 +44,9 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
         legendCardView = rootView.findViewById(R.id.legendCardView);
 
-        //Pronađite SupportMapFragment u rasporedu fragmenta
+        //Pronađi SupportMapFragment u rasporedu fragmenta
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
 
-        // Ako ne postoji, dodajte ga
         if (mapFragment == null) {
             mapFragment = SupportMapFragment.newInstance();
             getChildFragmentManager().beginTransaction().replace(R.id.map, mapFragment).commit();
@@ -64,16 +55,12 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         // Učitavanje mape
         mapFragment.getMapAsync(this);
 
-        legendImageButton = rootView.findViewById(R.id.legendImageButton);
+        ImageButton legendImageButton = rootView.findViewById(R.id.legendImageButton);
 
-        legendImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                toggleLegendVisibility();
-
-                legendCardView = rootView.findViewById(R.id.legendCardView);
-                legendCardView.setClickable(false);
-            }
+        legendImageButton.setOnClickListener(view -> {
+            toggleLegendVisibility();
+            legendCardView = rootView.findViewById(R.id.legendCardView);
+            legendCardView.setClickable(false);
         });
 
         spomeniciButton = rootView.findViewById(R.id.spomenici);
@@ -106,19 +93,18 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
     @SuppressLint("ResourceAsColor")
     private void showMarkers(int categoryId) {
-        myMap.clear(); // Clear existing markers
+        myMap.clear(); // Brisanje postojećih markera
 
         ColorStateList backgroundTint = spomeniciButton.getBackgroundTintList();
         assert backgroundTint != null;
-        int defaultBoja = backgroundTint.getDefaultColor();
 
         // Kreiranje objekta TypedValue
         TypedValue typedValue = new TypedValue();
 
-        // Dobijanje vrednosti atributa R.attr.naslovna_linija
+        // Dobijanje vrijednosti atributa R.attr.naslovna_linija
         requireContext().getTheme().resolveAttribute(R.attr.naslovna_linija, typedValue, true);
 
-        // Postavljanje boje pozadine dugmeta koristeći dobijenu vrednost atributa
+        // Postavljanje boje pozadine dugmeta koristeći dobijenu vrijednost atributa
         spomeniciButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
         vObjektiButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
         bisteButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
@@ -170,8 +156,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         }
     }
 
-
-
     private void toggleLegendVisibility() {
         if (legendCardView.getVisibility() == View.VISIBLE) {
             // Ako je trenutno vidljiva, sakrij
@@ -182,39 +166,29 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         }
     }
 
-
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady(@NonNull GoogleMap googleMap) {
         myMap = googleMap;
-        float zoomLevel = 15.0f;//mijenjanje visine prikaza
-        myMap.setMapType(GoogleMap.MAP_TYPE_HYBRID); //vrsta prikaza
+        float zoomLevel = 15.0f; // Mijenjanje visine prikaza
+        myMap.setMapType(GoogleMap.MAP_TYPE_HYBRID); // Vrsta prikaza
 
-
-        //Minimalni i maksimalni nivo zumiranja
+        // Minimalni i maksimalni nivo zumiranja
         myMap.setMinZoomPreference(10.0f);
         myMap.setMaxZoomPreference(20.0f);
 
         // Granice mape koja može da se pomjera
         LatLngBounds bounds = new LatLngBounds(
-                new LatLng(44.04, 19.02), // Južozapadni ćošak
+                new LatLng(44.04, 19.02), // Jugozapadni ćošak
                 new LatLng(44.27, 19.24)  // Sjeveroistočni ćošak
         );
 
-        if (zoomLevel == 10.0f) {
-            LatLng southwestCorner = new LatLng(44.22, 19.00); // Jugozapadni ćošak
-            LatLng northeastCorner = new LatLng(44.25, 19.15); // Sjeveroistočni ćošak
-        } else if (zoomLevel == 20.0f) {
-            LatLng southwestCorner = new LatLng(44.04, 19.02); // Jugozapadni ćošak
-            LatLng northeastCorner = new LatLng(44.27, 19.24); // Sjeveroistočni ćošak
-        }
-
-        //Map toolbar-iskljucivanje
+        // Map toolbar-iskljucivanje
         myMap.getUiSettings().setMapToolbarEnabled(false);
 
-        //Compass dugme
+        // Compass dugme
         googleMap.setPadding(0, 100, 0, 0);
 
-        // Postavite granice karte
+        // Granice karte
         myMap.setLatLngBoundsForCameraTarget(bounds);
 
         LatLng muzej = new LatLng(44.16956, 19.07872);
@@ -342,5 +316,4 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
         myMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rajkov_toranj, zoomLevel));
     }
-
 }

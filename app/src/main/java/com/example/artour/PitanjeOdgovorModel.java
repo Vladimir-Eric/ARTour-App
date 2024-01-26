@@ -1,16 +1,10 @@
 package com.example.artour;
 
 public class PitanjeOdgovorModel {
-    private String pitanje;
-    private String odgovor;
+    private final String odgovor;
 
-    public PitanjeOdgovorModel(String pitanje, String odgovor) {
-        this.pitanje = pitanje;
+    public PitanjeOdgovorModel(String odgovor) {
         this.odgovor = odgovor;
-    }
-
-    public String getPitanje() {
-        return pitanje;
     }
 
     public String getOdgovor() {

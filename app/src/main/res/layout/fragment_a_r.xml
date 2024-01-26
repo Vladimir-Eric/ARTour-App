@@ -13,20 +13,23 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="?attr/shadow_menu"
         android:visibility="visible"
-        app:srcCompat="@drawable/gradient_rectangle" />
+        app:srcCompat="@drawable/gradient_rectangle"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/white_rectangle" />
+        app:srcCompat="@drawable/white_rectangle"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/button"
-        android:layout_below="@+id/confidencesText"
         android:fillViewport="true">
 
         <LinearLayout

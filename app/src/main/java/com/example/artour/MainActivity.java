@@ -2,25 +2,14 @@ package com.example.artour;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.WindowCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import com.example.artour.databinding.ActivityMainBinding;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
-
-import android.app.UiModeManager;
-import android.content.Context;
-import android.content.res.Configuration;
-import android.os.Build;
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
             insetsController.hide(WindowInsets.Type.navigationBars());
         }
 
-        //EDGE TO EDGE
-        //WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
-
         replaceFragment(new PocetnaFragment());
         binding.bottomNavigationView.setBackground(null);
 
@@ -55,12 +41,10 @@ public class MainActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.chatgpt) {
                 replaceFragment(new PitajFragment());
             } else if (item.getItemId() == R.id.popis) {
-                //promjena sa PopisFragment na DestinationsFragment zbog ubačenog fragmenta
                 replaceFragment(new DestinationsFragment());
             } else if (item.getItemId() == R.id.ar) {
                 replaceFragment(new ARFragment());
             }
-
             return true;
         });
         binding.bottomNavigationView.setSelectedItemId(R.id.pocetna);
@@ -68,9 +52,6 @@ public class MainActivity extends AppCompatActivity {
         OnBackPressedCallback callback = new OnBackPressedCallback(true /* enabled by default */) {
             @Override
             public void handleOnBackPressed() {
-                // Ovde možete dodatno obraditi pritisak na dugme "nazad"
-                // Ako želite uobičajeno ponašanje, možete pozvati super.handleOnBackPressed();
-
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 int count = fragmentManager.getBackStackEntryCount();
 
@@ -97,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        // Aktivirajte callback
+        // callback
         getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
