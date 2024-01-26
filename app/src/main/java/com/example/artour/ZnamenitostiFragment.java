@@ -81,107 +81,107 @@ public class ZnamenitostiFragment extends Fragment {
                 break;
             case 9:
                 znamenitostImageView.setImageResource(R.drawable.kapela_milici);
-                znamenitostTextView.setText(getString(R.string.kapela));
+                znamenitostTextView.setText(getString(R.string.dest9));
                 break;
             case 10:
                 znamenitostImageView.setImageResource(R.drawable.stecak_milici);
-                znamenitostTextView.setText(getString(R.string.dest9));
+                znamenitostTextView.setText(getString(R.string.dest10));
                 break;
             case 11:
                 znamenitostImageView.setImageResource(R.drawable.komic_grad);
-                znamenitostTextView.setText(getString(R.string.dest10));
+                znamenitostTextView.setText(getString(R.string.dest11));
                 break;
             case 12:
                 znamenitostImageView.setImageResource(R.drawable.gerovi);
-                znamenitostTextView.setText(getString(R.string.dest11));
+                znamenitostTextView.setText(getString(R.string.dest12));
                 break;
             case 13:
                 znamenitostImageView.setImageResource(R.drawable.dom_rudara);
-                znamenitostTextView.setText(getString(R.string.dest12));
+                znamenitostTextView.setText(getString(R.string.dest13));
                 break;
             case 14:
                 znamenitostImageView.setImageResource(R.drawable.biblioteka);
-                znamenitostTextView.setText(getString(R.string.dest13));
+                znamenitostTextView.setText(getString(R.string.dest14));
                 break;
             case 15:
                 znamenitostImageView.setImageResource(R.drawable.otvoreni_muzej0);
-                znamenitostTextView.setText(getString(R.string.dest14));
+                znamenitostTextView.setText(getString(R.string.dest15));
                 break;
             case 16:
                 znamenitostImageView.setImageResource(R.drawable.muzej1);
-                znamenitostTextView.setText(getString(R.string.dest15));
+                znamenitostTextView.setText(getString(R.string.dest16));
                 break;
             case 17:
                 znamenitostImageView.setImageResource(R.drawable.rajkov_toranj);
-                znamenitostTextView.setText(getString(R.string.dest16));
+                znamenitostTextView.setText(getString(R.string.dest17));
                 break;
             case 18:
                 znamenitostImageView.setImageResource(R.drawable.crkva_milici);
-                znamenitostTextView.setText(getString(R.string.dest17));
+                znamenitostTextView.setText(getString(R.string.dest18));
                 break;
             case 19:
                 znamenitostImageView.setImageResource(R.drawable.crkva_derventa);
-                znamenitostTextView.setText(getString(R.string.dest18));
+                znamenitostTextView.setText(getString(R.string.dest19));
                 break;
             case 20:
                 znamenitostImageView.setImageResource(R.drawable.crkva_dukici);
-                znamenitostTextView.setText(getString(R.string.dest19));
+                znamenitostTextView.setText(getString(R.string.dest20));
                 break;
             case 21:
                 znamenitostImageView.setImageResource(R.drawable.crkva_nova_kasaba);
-                znamenitostTextView.setText(getString(R.string.dest20));
+                znamenitostTextView.setText(getString(R.string.dest21));
                 break;
             case 22:
                 znamenitostImageView.setImageResource(R.drawable.crkva_koprivno);
-                znamenitostTextView.setText(getString(R.string.dest21));
+                znamenitostTextView.setText(getString(R.string.dest22));
                 break;
             case 23:
                 znamenitostImageView.setImageResource(R.drawable.crkva_vuksic_polje);
-                znamenitostTextView.setText(getString(R.string.dest22));
+                znamenitostTextView.setText(getString(R.string.dest23));
                 break;
             case 24:
                 znamenitostImageView.setImageResource(R.drawable.musa_pasina_dzamija);
-                znamenitostTextView.setText(getString(R.string.dest23));
+                znamenitostTextView.setText(getString(R.string.dest24));
                 break;
             case 25:
                 znamenitostImageView.setImageResource(R.drawable.park_srpskih_velikana);
-                znamenitostTextView.setText(getString(R.string.dest24));
+                znamenitostTextView.setText(getString(R.string.dest25));
                 break;
             case 26:
                 znamenitostImageView.setImageResource(R.drawable.park_ruskih_velikana);
-                znamenitostTextView.setText(getString(R.string.dest25));
+                znamenitostTextView.setText(getString(R.string.dest26));
                 break;
             case 27:
                 znamenitostImageView.setImageResource(R.drawable.park_evropskih_velikana);
-                znamenitostTextView.setText(getString(R.string.dest26));
+                znamenitostTextView.setText(getString(R.string.dest27));
                 break;
             case 28:
                 znamenitostImageView.setImageResource(R.drawable.park_indijskih_velikana);
-                znamenitostTextView.setText(getString(R.string.dest27));
+                znamenitostTextView.setText(getString(R.string.dest28));
                 break;
             case 29:
                 znamenitostImageView.setImageResource(R.drawable.park_kineskih_velikana);
-                znamenitostTextView.setText(getString(R.string.dest28));
+                znamenitostTextView.setText(getString(R.string.dest29));
                 break;
             case 30:
                 znamenitostImageView.setImageResource(R.drawable.panciceva_omorika);
-                znamenitostTextView.setText(getString(R.string.dest29));
+                znamenitostTextView.setText(getString(R.string.dest30));
                 break;
             case 31:
                 znamenitostImageView.setImageResource(R.drawable.boksit);
-                znamenitostTextView.setText(getString(R.string.dest30));
+                znamenitostTextView.setText(getString(R.string.dest31));
                 break;
             case 32:
                 znamenitostImageView.setImageResource(R.drawable.crvene_stijene);
-                znamenitostTextView.setText(getString(R.string.kop));
+                znamenitostTextView.setText(getString(R.string.dest32));
                 break;
             case 33:
                 znamenitostImageView.setImageResource(R.drawable.bazeni);
-                znamenitostTextView.setText(getString(R.string.dest31));
+                znamenitostTextView.setText(getString(R.string.dest33));
                 break;
             case 34:
                 znamenitostImageView.setImageResource(R.drawable.sportski_centar);
-                znamenitostTextView.setText(getString(R.string.dest32));
+                znamenitostTextView.setText(getString(R.string.dest34));
                 break;
             default:
                 // Defaultne slike i tekstovi
