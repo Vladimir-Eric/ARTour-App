@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">ARTour</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
@@ -16,7 +16,7 @@
     <string name="podnaslov_prava">i uslovi korišćenja</string>
 
     <string name="opstina_tekst">
-        Opština Milići nalazi se u istočnom dijelu Republike Srpske i Bosne i Hercegovine i centralni je dio regije Birač. \n\nKroz opštinu prolazi najznačajnija drumska saobraćajnica istočnog dijela RS i BiH, magistralni put M-19: Sarajevo - Sokolac - Vlasenica - Milići - Zvornik - Loznica, koja povezuje centralnu BiH i Srbiju. \nU južnom dijelu opštine je magistralni put R-452: Milići - Derventa - Zeleni Jadar. \n\nPodručje opštine Milići graniči se sa šest opština, na sjeveru opština Zvornik, na zapadu opština Vlasenica, na sjeveroistoku i istoku opštine Bratunac i Srebrenica, na jugoistoku i jugu sa opštinama Han Pijesak i Rogatica. \nOpštinsko područje obuhvata površinu od 278,86 km2, nadmorske visine od 165 m (ušće Jadra u Drinjaču) do 1.490 m (planina Javor, vrh Mehovac, u ataru naseljenog mjesta Đile). \n\nReljef opštine čini više fizičko geografskih cjelina - doline Studenog Jadra, Zelenog Jadra i Jadra; kompozitna dolina Drinjače; planina Udrč, sa visokim i srednje visokim pobrđem na sjeverozapadu, planinski masiv Javor (Devetak, planina Birač) i jugu opštine, kao niska planina Ludmer i njeni obronci na istoku opštine. \n\nOpština raspolaže obiljem vodotokova: većih, kao što su - Zeleni Jadar (18,7 km), Studeni Jadar (8,2 km), Jadar (15,1 km), Drinjača (11,5 km), i manjih - Tabana, Lukavica, Vaganjski potok, Štedrić, Bukovička rijeka, Koprivski potok, Dragošnica, Palučak, Dubnica, Radinja, Skugrićka rijeka, Cerski potok, Slanska rijeka i određen broj manjih bujičnih vodotokova. \n\nPored vode, područje opštine obiluje i značajnim šumskim bogatstvom (bukva, jela, smrča...), površine oko 12.366 ha, kojim gazduje ŠG Milići. \nVeći dio opštine (sjeverni i centralni) ima umjereno kontinentalnu klimu sa oštrim zimama i toplim ljetima. \n\nSa povećanjem nadmorske visine na jugu, jugoistoku i istoku klima prelazi u predplaninsku, umjereno kontinentalnu, dok na krajnjem jugozapadu i području planine Javor (Devetak) vlada planinska klima sa svježim ljetima i hladnim zimama, sa obilnim snježnim padavinama.
+        Opština Milići nalazi se u istočnom dijelu Republike Srpske i Bosne i Hercegovine i centralni je dio regije Birač. \n\nKroz opštinu prolazi najznačajnija drumska saobraćajnica istočnog dijela RS i BiH, magistralni put M-19: Sarajevo - Sokolac - Vlasenica - Milići - Zvornik - Loznica, koja povezuje centralnu BiH i Srbiju. \nU južnom dijelu opštine je magistralni put R-452: Milići - Derventa - Zeleni Jadar. \n\nPodručje opštine Milići graniči se sa šest opština, na sjeveru opština Zvornik, na zapadu opština Vlasenica, na sjeveroistoku i istoku opštine Bratunac i Srebrenica, na jugoistoku i jugu sa opštinama Han Pijesak i Rogatica. \nOpštinsko područje obuhvata površinu od 278,86 km2, nadmorske visine od 165 m (ušće Jadra u Drinjaču) do 1.490 m (planina Javor, vrh Mehovac, u ataru naseljenog mjesta Đile). \n\nReljef opštine čini više fizičko geografskih cjelina - doline Studenog Jadra, Zelenog Jadra i Jadra; kompozitna dolina Drinjače; planina Udrč, sa visokim i srednje visokim pobrđem na sjeverozapadu, planinski masiv Javor (Devetak, planina Birač) i jugu opštine, kao niska planina Ludmer i njeni obronci na istoku opštine. \n\nOpština raspolaže obiljem vodotokova: većih, kao što su - Zeleni Jadar (18,7 km), Studeni Jadar (8,2 km), Jadar (15,1 km), Drinjača (11,5 km), i manjih - Tabana, Lukavica, Vaganjski potok, Štedrić, Bukovička rijeka, Koprivski potok, Dragošnica, Palučak, Dubnica, Radinja, Skugrićka rijeka, Cerski potok, Slanska rijeka i određen broj manjih bujičnih vodotokova. \n\nPored vode, područje opštine obiluje i značajnim šumskim bogatstvom (bukva, jela, smrča…), površine oko 12.366 ha, kojim gazduje ŠG Milići. \nVeći dio opštine (sjeverni i centralni) ima umjereno kontinentalnu klimu sa oštrim zimama i toplim ljetima. \n\nSa povećanjem nadmorske visine na jugu, jugoistoku i istoku klima prelazi u predplaninsku, umjereno kontinentalnu, dok na krajnjem jugozapadu i području planine Javor (Devetak) vlada planinska klima sa svježim ljetima i hladnim zimama, sa obilnim snježnim padavinama.
     </string>
 
     <string name="aplikacija_tekst">
@@ -311,7 +311,6 @@
     <string name="lorem_ipsum">
        Prva apk
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="api">AIzaSyAACm4l9AUxJIOzZReIte6wLt98wfoMYTQ</string>
 
@@ -433,7 +432,7 @@
     <string name="objektiv">Milići kroz objektiv!?</string>
     <string name="sta_je_to">Šta je to?</string>
     <string name="opis_slike">TODO</string>
-    <string name="skenirani_objekat">Skenirani objekat je...</string>
+    <string name="skenirani_objekat">Skenirani objekat je…</string>
     <string name="kratka_istorija">Kratka istorija o skeniranom objektu:</string>
     <string name="istrazite_milice">Istražite Miliće</string>
 
