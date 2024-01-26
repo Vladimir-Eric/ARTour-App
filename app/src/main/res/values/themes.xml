@@ -22,7 +22,7 @@
 
         <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
         <item name="android:statusBarColor">@color/primarna</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/primarna</item>
         <!-- Ikone statusne linije da budu svijetle (bijele) -->
         <item name="android:windowLightStatusBar">false</item>
 

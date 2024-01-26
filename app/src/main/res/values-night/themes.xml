@@ -22,7 +22,7 @@
 
         <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/dark_theme_top_menu</item>
         <item name="android:statusBarColor">@color/dark_theme_top_menu</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
