@@ -36,6 +36,9 @@
     <color name="primarna_800">#3f62d7</color>
     <color name="primarna_900">#3c40b7</color>
 
+    <color name="boja_boja">#284085</color>
+    <color name="light_black">#80000000</color>
+
     <color name="red">#FF0000</color>
     <color name="blue">#0000FF</color>
     <color name="green">#00FF00</color>

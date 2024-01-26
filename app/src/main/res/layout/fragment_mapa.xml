@@ -20,16 +20,18 @@
 
     <ImageButton
         android:id="@+id/legendImageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="130dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/round_btn"
-        android:padding="10dp"
+        android:backgroundTint="?attr/naslovna_linija"
+        android:elevation="5dp"
+        android:padding="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/info"
-        app:tint="@color/primarna_blaga" />
+        app:tint="@color/white" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -38,6 +40,12 @@
         app:cardCornerRadius="0dp"
         app:cardElevation="0dp"
         app:cardMaxElevation="0dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/gradient_rectangle2" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -96,67 +104,99 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="70dp"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbarThumbHorizontal="@color/white50">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="horizontal">
-            <Button
-                android:id="@+id/spomenici"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Spomenici"/>
-            <Button
-                android:id="@+id/v_objekti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="V. objekti"/>
-            <Button
-                android:id="@+id/biste"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Biste"/>
-            <Button
-                android:id="@+id/priroda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Priroda"/>
-            <Button
-                android:id="@+id/sport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Sport"/>
-            <Button
-                android:id="@+id/ostale_kategorije"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ostale kategorije"/>
+
             <Button
                 android:id="@+id/sve_kategorije"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:text="Sve kategorije"/>
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Sve kategorije"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/spomenici"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Spomenici"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/v_objekti"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="V. objekti"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/biste"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Biste"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/priroda"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Priroda"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Sport"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ostale_kategorije"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/naslovna_linija"
+                android:text="Ostale kategorije"
+                android:textColor="@color/white" />
+
         </LinearLayout>
     </HorizontalScrollView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/legendCardView"
         android:layout_width="130dp"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_bottom_navigation_bar"
         android:elevation="0dp"
         android:visibility="invisible"
-        app:cardBackgroundColor="#80FFFFFF"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="190dp"
-        android:background="@drawable/rounded_bottom_navigation_bar">
+        app:cardBackgroundColor="#80000000">
 
         <!-- Legenda -->
         <LinearLayout
@@ -164,160 +204,138 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/carossoft"
                 android:text="Legenda"
                 android:textColor="@color/white"
-                android:fontFamily="@font/carossoft"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <!-- Crvena boja -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#FFFF0000" /> <!-- Crvena -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="Spomenici"/>
+                    android:text="Spomenici"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <!-- Zelena boja -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#FF00FF00" /> <!-- Zelena -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="V. objekti"/>
+                    android:text="V. objekti"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#FFFF00" /> <!-- Zuta -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="Biste"/>
+                    android:text="Biste"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#0000FF" /> <!-- Plava -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="Priroda"/>
+                    android:text="Priroda"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#FFA500" /> <!-- Narandzasta -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="Sport"/>
+                    android:text="Sport"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_marginTop="8dp"
                     android:background="#069AF3" /> <!-- Azurna -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
                     android:fontFamily="@font/carossoft"
-                    android:text="Ostale lokacije"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/carossoft"
-                    android:text="Sve kategorije"/>
+                    android:text="Ostale lokacije"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>

@@ -1,5 +1,7 @@
 package com.example.artour;
 
+import android.annotation.SuppressLint;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,6 +23,10 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import android.util.TypedValue;
+
+
+import java.util.Objects;
 
 public class MapaFragment extends Fragment implements OnMapReadyCallback {
 
@@ -37,7 +43,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
     private int[] colorResources = {
             R.color.red, R.color.blue, R.color.green, R.color.yellow, R.color.orange, R.color.light_blue
     };
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -87,6 +92,8 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         ostaleKategorijeButton.setOnClickListener(v -> showMarkers(R.id.ostale_kategorije));
         sveKategorijeButton.setOnClickListener(v -> showMarkers(R.id.sve_kategorije));
 
+        sveKategorijeButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
+
         return rootView;
     }
 
@@ -96,22 +103,50 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
         hsv[2] *= 0.8f;
         return BitmapDescriptorFactory.defaultMarker(hsv[0]);
     }
+
+    @SuppressLint("ResourceAsColor")
     private void showMarkers(int categoryId) {
         myMap.clear(); // Clear existing markers
 
+        ColorStateList backgroundTint = spomeniciButton.getBackgroundTintList();
+        assert backgroundTint != null;
+        int defaultBoja = backgroundTint.getDefaultColor();
+
+        // Kreiranje objekta TypedValue
+        TypedValue typedValue = new TypedValue();
+
+        // Dobijanje vrednosti atributa R.attr.naslovna_linija
+        requireContext().getTheme().resolveAttribute(R.attr.naslovna_linija, typedValue, true);
+
+        // Postavljanje boje pozadine dugmeta koristeći dobijenu vrednost atributa
+        spomeniciButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        vObjektiButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        bisteButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        prirodaButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        sportButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        ostaleKategorijeButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+        sveKategorijeButton.setBackgroundTintList(ColorStateList.valueOf(typedValue.data));
+
         if (categoryId == R.id.spomenici) {
             addMarkers(R.array.spomenici_coordinates, R.color.red);
+            spomeniciButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
         } else if (categoryId == R.id.v_objekti) {
             addMarkers(R.array.v_objekti_coordinates, R.color.green);
+            vObjektiButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
         } else if (categoryId == R.id.biste) {
             addMarkers(R.array.biste_coordinates, R.color.yellow);
+            bisteButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
         } else if (categoryId == R.id.priroda) {
             addMarkers(R.array.priroda_coordinates, R.color.blue);
+            prirodaButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
         } else if (categoryId == R.id.sport) {
             addMarkers(R.array.sport_coordinates, R.color.orange);
+            sportButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
         } else if (categoryId == R.id.ostale_kategorije) {
             addMarkers(R.array.ostale_kategorije_coordinates, R.color.light_blue);
-        } else {
+            ostaleKategorijeButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
+        } else if(categoryId == R.id.sve_kategorije) {
+            sveKategorijeButton.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.boja_boja));
             addMarkers(R.array.spomenici_coordinates, R.color.red);
             addMarkers(R.array.v_objekti_coordinates, R.color.green);
             addMarkers(R.array.biste_coordinates, R.color.yellow);
@@ -119,7 +154,6 @@ public class MapaFragment extends Fragment implements OnMapReadyCallback {
             addMarkers(R.array.sport_coordinates, R.color.orange);
             addMarkers(R.array.ostale_kategorije_coordinates, R.color.light_blue);
         }
-
     }
 
     private void addMarkers(int coordinateArrayResource, int colorResource) {

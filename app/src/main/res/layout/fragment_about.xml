@@ -44,8 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:autoSizeMaxTextSize="24sp"
-                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="20sp"
                     android:autoSizeTextType="uniform"
                     android:fontFamily="@font/carossoftbold"
                     android:gravity="center"
@@ -59,13 +58,13 @@
                     android:id="@+id/Podnaslov"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMaxTextSize="12sp"
                     android:fontFamily="@font/carossoft"
                     android:includeFontPadding="false"
                     android:text="Podnaslov"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <View
