@@ -7,14 +7,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
 public class ZnamenitostiFragment extends Fragment {
-    private ViewPager2 viewPager2;
-    private ViewPagerAdapter viewPagerAdapter;
 
     private static final String ARG_DESTINATION_ID = "destinationId";
 
@@ -192,8 +189,8 @@ public class ZnamenitostiFragment extends Fragment {
                 znamenitostTextView.setText(getString(R.string.default_opis));
         }
 
-        viewPager2 = view.findViewById(R.id.viewPager2);
-        viewPagerAdapter = new ViewPagerAdapter(getContext());
+        ViewPager2 viewPager2 = view.findViewById(R.id.viewPager2);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getContext());
 
         if(destinationId == 1){
         viewPagerAdapter.addSlide(R.drawable.slika_spomenik1, "Tekst 1");

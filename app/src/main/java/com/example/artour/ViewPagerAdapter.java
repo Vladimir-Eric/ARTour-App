@@ -7,19 +7,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import androidx.annotation.NonNull;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.ViewHolder> {
 
-    private List<Slide> slides = new ArrayList<>();
-    private Context context;
+    private final List<Slide> slides = new ArrayList<>();
 
-    public ViewPagerAdapter(Context context) {
-        this.context = context;
+    public ViewPagerAdapter(Context ignoredContext) {
     }
 
     public void addSlide(int image, String text) {

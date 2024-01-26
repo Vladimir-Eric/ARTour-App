@@ -56,8 +56,6 @@ public class WeatherResponse {
         @SerializedName("main")
         private String weatherMain;
 
-        // Dodajte dodatne atribute prema potrebi (opis, ikona, itd.)
-
         public String getWeatherMain() {
             return weatherMain;
         }
@@ -68,8 +66,6 @@ public class WeatherResponse {
     public static class WindInfo {
         @SerializedName("speed")
         private double windSpeed;
-
-        // Dodajte dodatne atribute prema potrebi (smjer vjetra, itd.)
 
         public double getWindSpeed() {
             return windSpeed;
