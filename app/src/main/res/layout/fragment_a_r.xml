@@ -31,7 +31,7 @@
                 android:fontFamily="@font/carossoftbold"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:text="Kamera"
+                android:text="@string/kamera"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:autoSizeMaxTextSize="15sp"
                 android:fontFamily="@font/carossoft"
                 android:includeFontPadding="false"
-                android:text="Proširite realnost"
+                android:text="@string/prosirite_realnost"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -73,7 +73,7 @@
             android:autoSizeMaxTextSize="24sp"
             android:fontFamily="@font/carossoftblack"
             android:gravity="center|top"
-            android:text="Milići kroz objektiv!?"
+            android:text="@string/objektiv"
             android:textColor="@color/primarna_700"
             android:textSize="24sp" />
 
@@ -85,7 +85,7 @@
             android:autoSizeMaxTextSize="18sp"
             android:fontFamily="@font/carossoftblack"
             android:gravity="center|top"
-            android:text="Šta je to?"
+            android:text="@string/sta_je_to"
             android:textColor="@color/primarna_700"
             android:textSize="18sp" />
     </LinearLayout>
@@ -103,20 +103,21 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="UselessParent">
 
             <TextView
                 android:id="@+id/tuto_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMaxTextSize="1sp"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="10dp"
                 android:fontFamily="@font/carossoftbold"
-                android:text="Ova kamera skenira mašine-eksponate muzeja rudarstva na otvorenom u Milićima, ali i druge znamenitosti Milića koji kriju zaboravljene priče, oživljene fragmentima prošlosti.\nOtkrijte ih i upoznajte Miliće
-                \n\nŠta mi treba da bih koristio ovu kameru?\n\nSve što trebate je naša aplikacija. Ona sadrži sve što je potrebno za kameru i interakciju sa realnim prostorom.\n\n\nKako mogu da je koristim?\n\n~Klikom na dugme 'Istražite Miliće':\n~Usmjerite kameru ka objektu koji vas zanima, pritisnite dugme za slikanje.\n~Ako se objekat jasno vidi, potvrdite je. Inače, ponovite prethodni korak.\n~Skeniran je? Super! Sada će vam odmah priča biti otkrivena o objektu i prošlosti ovog kraja."
+                android:text="@string/kamera_opis"
                 android:textAlignment="textStart"
-                android:textSize="15sp" />
+                android:textSize="14sp" />
         </ScrollView>
 
 
@@ -127,7 +128,8 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/opis_slike" />
 
     <TextView
         android:id="@+id/classified"
@@ -136,7 +138,7 @@
         android:layout_below="@+id/menu_heading"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0sp"
-        android:text="Skenirani objekat je..."
+        android:text="@string/skenirani_objekat"
         android:textColor="@color/primarna_700"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -164,7 +166,7 @@
         android:layout_below="@+id/result"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0sp"
-        android:text="Kratka istorija o skeniranom objektu:"
+        android:text="@string/kratka_istorija"
         android:textColor="@color/primarna_700"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -181,29 +183,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:text=""
         android:textColor="@color/primarna_700"
         android:textSize="15sp"
         android:id="@+id/confidence"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/carossoft"
-        android:layout_below="@+id/confidencesText" />
+        android:fontFamily="@font/carossoft" />
 
     </ScrollView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/round_btn"
+        android:background="@drawable/round_btn1"
         android:fontFamily="@font/carossoftbold"
-        android:text="Istražite Miliće"
-        android:textAllCaps="false"
+        android:text="@string/istrazite_milice"
         android:textColor="@color/white"
-        android:textSize="21sp"
-        android:textStyle="bold" />
+        android:textSize="21sp" />
 
 </RelativeLayout>
