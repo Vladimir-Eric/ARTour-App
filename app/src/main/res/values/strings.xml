@@ -478,4 +478,39 @@ Ovaj eksponat nije samo metalna konstrukcija; on je oživljeni spomenik radu, in
     <string name="podnaslov">Podnaslov</string>
     <string name="tekst">Tekst</string>
 
+    <!--fragment_destinations-->
+    <string name="lokacija">Lokacije</string>
+    <string name="istrazite_opstinu">Istražite opštinu Milići</string>
+
+    <!--fragment_mapa-->
+    <string name="opis_dugmeta">TODO</string>
+    <string name="mapa">Mapa</string>
+    <string name="sljedece_odrediste">Pronađite sljedeće odredište</string>
+    <string name="sve_kategorije">Sve kategorije</string>
+    <string name="spomenici">Spomenici</string>
+    <string name="v_objekti">V. objekti</string>
+    <string name="biste">Biste</string>
+    <string name="priroda">Priroda</string>
+    <string name="sport">Sport</string>
+    <string name="ostale_kategorije">Ostale kategorije</string>
+    <string name="legenda">Legenda</string>
+    <string name="ostale_lokacije">Ostale lokacije</string>
+
+    <!--fragment_menu-->
+    <string name="menu">Menu</string>
+
+    <!--fragment_znamenitosti-->
+    <string name="galerija">Galerija</string>
+
+    <!--pitaj_fragment-->
+    <string name="info_centar">Info Centar</string>
+    <string name="korisne_lokacije">Korisne informacije iz lokalne perspektive</string>
+
+    <!--fragment_pocetna-->
+    <string name="trenutno_u_milicima">Trenutno u Milićima</string>
+    <string name="dan">dan</string>
+    <string name="n_a">Nema mreže</string>
+    <string name="kategorije">Kategorije</string>
+    <string name="izdvojene_lokacije1">Izdvojene lokacije</string>
+
 </resources>

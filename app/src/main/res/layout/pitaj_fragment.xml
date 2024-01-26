@@ -37,7 +37,7 @@
                     android:fontFamily="@font/carossoftbold"
                     android:gravity="center"
                     android:includeFontPadding="false"
-                    android:text="Info Centar"
+                    android:text="@string/info_centar"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
                     android:autoSizeMaxTextSize="15sp"
                     android:fontFamily="@font/carossoft"
                     android:includeFontPadding="false"
-                    android:text="Korisne informacije iz lokalne perspektive"
+                    android:text="@string/korisne_lokacije"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15sp" />

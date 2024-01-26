@@ -31,7 +31,9 @@
         android:padding="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/info"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        android:contentDescription="@string/opis_dugmeta"
+        tools:ignore="RtlHardcoded" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -45,7 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="70dp"
-        app:srcCompat="@drawable/gradient_rectangle2" />
+        app:srcCompat="@drawable/gradient_rectangle2"
+        android:contentDescription="@string/opis_slike" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -72,7 +75,7 @@
                 android:fontFamily="@font/carossoftbold"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:text="Mapa"
+                android:text="@string/mapa"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -84,7 +87,7 @@
                 android:autoSizeMaxTextSize="15sp"
                 android:fontFamily="@font/carossoft"
                 android:includeFontPadding="false"
-                android:text="Pronađite sljedeće odredište"
+                android:text="@string/sljedece_odrediste"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -117,10 +120,10 @@
                 android:id="@+id/sve_kategorije"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Sve kategorije"
+                android:text="@string/sve_kategorije"
                 android:textColor="@color/white" />
 
             <Button
@@ -130,57 +133,57 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Spomenici"
+                android:text="@string/spomenici"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/v_objekti"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="V. objekti"
+                android:text="@string/v_objekti"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/biste"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Biste"
+                android:text="@string/biste"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/priroda"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Priroda"
+                android:text="@string/priroda"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/sport"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Sport"
+                android:text="@string/sport"
                 android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/ostale_kategorije"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:text="Ostale kategorije"
+                android:text="@string/ostale_kategorije"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -192,11 +195,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
         android:layout_marginTop="180dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_bottom_navigation_bar"
         android:elevation="0dp"
         android:visibility="invisible"
-        app:cardBackgroundColor="#80000000">
+        app:cardBackgroundColor="#80000000"
+        tools:ignore="RtlHardcoded">
 
         <!-- Legenda -->
         <LinearLayout
@@ -211,7 +215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/carossoft"
-                android:text="Legenda"
+                android:text="@string/legenda"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -233,7 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Spomenici"
+                    android:text="@string/spomenici"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -254,7 +258,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="V. objekti"
+                    android:text="@string/v_objekti"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -274,7 +278,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Biste"
+                    android:text="@string/biste"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -294,7 +298,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Priroda"
+                    android:text="@string/priroda"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -314,7 +318,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Sport"
+                    android:text="@string/sport"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -334,7 +338,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Ostale lokacije"
+                    android:text="@string/ostale_lokacije"
                     android:textColor="@color/white" />
             </LinearLayout>
 

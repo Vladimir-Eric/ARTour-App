@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
@@ -12,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -66,7 +67,7 @@
                         android:autoSizeMaxTextSize="20sp"
                         android:autoSizeMinTextSize="14sp"
                         android:fontFamily="@font/carossoft"
-                        android:text="Galerija"
+                        android:text="@string/galerija"
                         android:textColor="?attr/heading_text"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -100,7 +101,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/arrow_small_left"
             android:gravity="center"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/white"
+            tools:ignore="RtlHardcoded" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
@@ -111,13 +113,15 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="?attr/shadow_menu"
         android:visibility="visible"
-        app:srcCompat="@drawable/gradient_rectangle"/>
+        app:srcCompat="@drawable/gradient_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/white_rectangle"/>
+        app:srcCompat="@drawable/white_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
 </RelativeLayout>

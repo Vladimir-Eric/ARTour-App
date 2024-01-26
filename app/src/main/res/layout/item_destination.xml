@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/kartica"
     android:layout_width="match_parent"
     android:layout_height="120dp"
@@ -21,7 +22,7 @@
             android:id="@+id/destinationImage"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:contentDescription="slika rezervacija"
+            android:contentDescription="@string/opis_slike"
             android:scaleType="centerCrop"
             android:src="@drawable/placeholder_image" />
 
@@ -66,9 +67,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/carossoft"
                 android:gravity="bottom|right"
-                android:text="TextView"
+                android:text="@string/artour1"
                 android:textColor="#C1C1C1"
-                android:textSize="11sp" />
+                android:textSize="11sp"
+                tools:ignore="RtlHardcoded" />
 
             <!-- Ovo je .xml fajl za formatiranje kartičnog izgleda destinacija
                 Ovdje se pravi izgled kartice, slika, naslov i tekst -->

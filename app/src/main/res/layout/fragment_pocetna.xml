@@ -35,7 +35,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1">
 
                     <ImageButton
@@ -43,12 +43,12 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center|left"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
                         android:background="#00FFFFFF"
-                        android:contentDescription="TODO"
+                        android:contentDescription="@string/opis_dugmeta"
                         app:srcCompat="@drawable/baseline_menu_24"
-                        app:tint="@color/white" />
+                        app:tint="@color/white"
+                        tools:ignore="RtlHardcoded" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -68,7 +68,7 @@
                         android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoftbold"
                         android:gravity="center"
-                        android:text="ARTour"
+                        android:text="@string/artour1"
                         android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -84,7 +84,7 @@
                         android:autoSizeTextType="uniform"
                         android:fontFamily="@font/carossoft"
                         android:gravity="center"
-                        android:text="Turistički vodič opštine Milići"
+                        android:text="@string/turisticki_vodic"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -94,9 +94,11 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center|right"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/artour_logo_white" />
+                    android:src="@drawable/artour_logo_white"
+                    android:contentDescription="@string/opis_slike"
+                    tools:ignore="RtlHardcoded" />
 
             </LinearLayout>
 
@@ -140,7 +142,7 @@
                         android:autoSizeMaxTextSize="20sp"
                         android:autoSizeMinTextSize="14sp"
                         android:fontFamily="@font/carossoft"
-                        android:text="Trenutno u Milićima"
+                        android:text="@string/trenutno_u_milicima"
                         android:textColor="?attr/heading_text"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -155,17 +157,19 @@
                         android:fontFamily="@font/carossoft"
                         android:foregroundGravity="bottom"
                         android:gravity="bottom|right"
-                        android:text="dan"
+                        android:text="@string/dan"
                         android:textColor="?attr/heading_text"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -179,8 +183,8 @@
                             android:id="@+id/weatherIconImageView"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:layout_below="@id/windSpeedTextView"
-                            android:layout_gravity="center|center_horizontal|center_vertical" />
+                            android:layout_gravity="center|center_horizontal|center_vertical"
+                            android:contentDescription="@string/opis_slike" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -197,7 +201,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="?attr/heading_text"
                             android:textSize="30sp" />
 
@@ -205,10 +209,9 @@
                             android:id="@+id/weatherInfoTextView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/humidityTextView"
                             android:layout_gravity="center_horizontal"
                             android:autoSizeTextType="uniform"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="?attr/heading_text"
                             android:textSize="18sp" />
 
@@ -218,10 +221,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="60dp"
                         android:layout_gravity="center|right"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1"
                         android:gravity="bottom|right"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="RtlHardcoded">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -230,18 +234,18 @@
                             android:layout_marginRight="15dp"
                             android:gravity="center|center_horizontal|center_vertical"
                             android:orientation="horizontal"
-                            android:padding="2dp">
+                            android:padding="2dp"
+                            tools:ignore="UseCompoundDrawables">
 
                             <TextView
                                 android:id="@+id/humidityTextView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/temperatureTextView"
                                 android:layout_gravity="left"
                                 android:autoSizeMaxTextSize="15sp"
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
-                                android:text="N/A"
+                                android:text="@string/n_a"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="15sp" />
 
@@ -252,7 +256,8 @@
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
                                 android:src="@drawable/raindrops"
-                                app:tint="?attr/slicice" />
+                                app:tint="?attr/slicice"
+                                android:contentDescription="@string/opis_slike" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -261,17 +266,17 @@
                             android:layout_gravity="right"
                             android:layout_marginRight="15dp"
                             android:gravity="center|center_horizontal|center_vertical"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
 
                             <TextView
                                 android:id="@+id/windSpeedTextView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/weatherInfoTextView"
                                 android:layout_gravity="left"
                                 android:autoSizeTextType="uniform"
                                 android:gravity="left"
-                                android:text="N/A"
+                                android:text="@string/n_a"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="15sp" />
 
@@ -282,7 +287,8 @@
                                 android:layout_gravity="center|right"
                                 android:layout_marginLeft="8dp"
                                 android:src="@drawable/wind"
-                                app:tint="?attr/slicice" />
+                                app:tint="?attr/slicice"
+                                android:contentDescription="@string/opis_slike" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -317,7 +323,7 @@
                     android:autoSizeMaxTextSize="20sp"
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Kategorije"
+                    android:text="@string/kategorije"
                     android:textColor="?attr/heading_text"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -328,7 +334,8 @@
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
                     android:clipToPadding="false"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <FrameLayout
                         android:id="@+id/frame1"
@@ -341,7 +348,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <ImageButton
                                 android:id="@+id/dugme1"
@@ -350,7 +358,7 @@
                                 android:layout_gravity="center|top"
                                 android:background="@drawable/round_btn"
                                 android:backgroundTint="?attr/kategorije_ikonice"
-                                android:contentDescription="TODO"
+                                android:contentDescription="@string/opis_dugmeta"
                                 android:elevation="2dp"
                                 android:outlineSpotShadowColor="#00000000"
                                 android:padding="5dp"
@@ -371,12 +379,13 @@
                                 android:autoSizePresetSizes="12sp"
                                 android:fontFamily="@font/carossoftlight"
                                 android:gravity="bottom|center"
-                                android:text="Spomenici"
+                                android:text="@string/spomenici"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="10sp"
                                 android:textStyle="bold"
                                 app:layout_anchor="@+id/frame1"
-                                app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical"
+                                tools:ignore="SmallSp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -392,7 +401,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <ImageButton
                                 android:id="@+id/dugme2"
@@ -401,7 +411,7 @@
                                 android:layout_gravity="center|top"
                                 android:background="@drawable/round_btn"
                                 android:backgroundTint="?attr/kategorije_ikonice"
-                                android:contentDescription="TODO"
+                                android:contentDescription="@string/opis_dugmeta"
                                 android:elevation="2dp"
                                 android:outlineSpotShadowColor="#00000000"
                                 android:padding="5dp"
@@ -422,12 +432,13 @@
                                 android:autoSizePresetSizes="12sp"
                                 android:fontFamily="@font/carossoftlight"
                                 android:gravity="bottom|center"
-                                android:text="V. objekti"
+                                android:text="@string/v_objekti"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="10sp"
                                 android:textStyle="bold"
                                 app:layout_anchor="@+id/frame1"
-                                app:layout_anchorGravity="center|center_horizontal|center_vertical" />
+                                app:layout_anchorGravity="center|center_horizontal|center_vertical"
+                                tools:ignore="SmallSp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -443,7 +454,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <ImageButton
                                 android:id="@+id/dugme3"
@@ -452,7 +464,7 @@
                                 android:layout_gravity="center|top"
                                 android:background="@drawable/round_btn"
                                 android:backgroundTint="?attr/kategorije_ikonice"
-                                android:contentDescription="TODO"
+                                android:contentDescription="@string/opis_dugmeta"
                                 android:elevation="2dp"
                                 android:outlineSpotShadowColor="#00000000"
                                 android:padding="5dp"
@@ -472,12 +484,13 @@
                                 android:autoSizePresetSizes="12sp"
                                 android:fontFamily="@font/carossoftlight"
                                 android:gravity="bottom|center"
-                                android:text="Biste"
+                                android:text="@string/biste"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="10sp"
                                 android:textStyle="bold"
                                 app:layout_anchor="@+id/frame1"
-                                app:layout_anchorGravity="bottom|center" />
+                                app:layout_anchorGravity="bottom|center"
+                                tools:ignore="SmallSp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -493,7 +506,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <ImageButton
                                 android:id="@+id/dugme4"
@@ -502,7 +516,7 @@
                                 android:layout_gravity="center|top"
                                 android:background="@drawable/round_btn"
                                 android:backgroundTint="?attr/kategorije_ikonice"
-                                android:contentDescription="TODO"
+                                android:contentDescription="@string/opis_dugmeta"
                                 android:elevation="2dp"
                                 android:outlineSpotShadowColor="#00000000"
                                 android:padding="5dp"
@@ -522,12 +536,13 @@
                                 android:autoSizePresetSizes="12sp"
                                 android:fontFamily="@font/carossoftlight"
                                 android:gravity="bottom|center"
-                                android:text="Priroda"
+                                android:text="@string/priroda"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="10sp"
                                 android:textStyle="bold"
                                 app:layout_anchor="@+id/frame1"
-                                app:layout_anchorGravity="bottom|center" />
+                                app:layout_anchorGravity="bottom|center"
+                                tools:ignore="SmallSp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -543,7 +558,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
 
                             <ImageButton
                                 android:id="@+id/dugme5"
@@ -552,7 +568,7 @@
                                 android:layout_gravity="center|top"
                                 android:background="@drawable/round_btn"
                                 android:backgroundTint="?attr/kategorije_ikonice"
-                                android:contentDescription="TODO"
+                                android:contentDescription="@string/opis_dugmeta"
                                 android:elevation="2dp"
                                 android:outlineSpotShadowColor="#00000000"
                                 android:padding="5dp"
@@ -572,12 +588,13 @@
                                 android:autoSizePresetSizes="12sp"
                                 android:fontFamily="@font/carossoftlight"
                                 android:gravity="bottom|center"
-                                android:text="Sport"
+                                android:text="@string/sport"
                                 android:textColor="?attr/heading_text"
                                 android:textSize="10sp"
                                 android:textStyle="bold"
                                 app:layout_anchor="@+id/frame1"
-                                app:layout_anchorGravity="bottom|center" />
+                                app:layout_anchorGravity="bottom|center"
+                                tools:ignore="SmallSp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -612,7 +629,7 @@
                     android:autoSizeMaxTextSize="20sp"
                     android:autoSizeMinTextSize="14sp"
                     android:fontFamily="@font/carossoft"
-                    android:text="Izdvojene Lokacije"
+                    android:text="@string/izdvojene_lokacije1"
                     android:textColor="?attr/heading_text"
                     android:textSize="16sp"
                     android:textStyle="bold" />

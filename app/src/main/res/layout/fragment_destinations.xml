@@ -38,7 +38,7 @@
                     android:fontFamily="@font/carossoftbold"
                     android:gravity="center"
                     android:includeFontPadding="false"
-                    android:text="Lokacije"
+                    android:text="@string/lokacija"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -50,7 +50,7 @@
                     android:autoSizeMaxTextSize="15sp"
                     android:fontFamily="@font/carossoft"
                     android:includeFontPadding="false"
-                    android:text="Istražite opštinu Milići"
+                    android:text="@string/istrazite_opstinu"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
@@ -83,13 +83,15 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="100dp"
         android:visibility="visible"
-        app:srcCompat="@drawable/gradient_rectangle" />
+        app:srcCompat="@drawable/gradient_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/white_rectangle" />
+        app:srcCompat="@drawable/white_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
 </RelativeLayout>
