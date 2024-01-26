@@ -10,6 +10,8 @@ import com.example.artour.databinding.ActivityMainBinding;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,9 +85,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void replaceFragment(Fragment fragment) {
+        // Učitajte animaciju fade_in
+        Animation fadeIn = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_in);
+
+        // Dobivanje reference na odgovarajući View objekt (pretpostavljamo da je R.id.frame_layout)
+        View view = findViewById(R.id.frame_layout);
+
+        // Pokrenite animaciju na odgovarajućem View objektu
+        view.startAnimation(fadeIn);
+
+        // Zamijenite fragmente
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
+
 }
