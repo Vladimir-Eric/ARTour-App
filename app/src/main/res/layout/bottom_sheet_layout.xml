@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -19,7 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:backgroundTint="?attr/naslovna_linija"
-                android:src="@drawable/one_side_radius_rectangle" />
+                android:src="@drawable/one_side_radius_rectangle"
+                android:contentDescription="@string/opis_slike" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -27,7 +29,8 @@
                 android:layout_height="3dp"
                 android:layout_gravity="center|top"
                 android:layout_marginTop="5dp"
-                app:srcCompat="@drawable/rectangle_handle" />
+                app:srcCompat="@drawable/rectangle_handle"
+                android:contentDescription="@string/opis_slike"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,20 +43,23 @@
                     android:layout_height="70dp"
                     android:layout_gravity="center|left"
                     android:layout_marginHorizontal="20dp"
-                    app:srcCompat="@drawable/artour_logo_white" />
+                    app:srcCompat="@drawable/artour_logo_white"
+                    android:contentDescription="@string/opis_slike"
+                    tools:ignore="RtlHardcoded" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center|left"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
 
                     <TextView
                         android:id="@+id/aplikacija_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/carossoftextrabold"
-                        android:text="ARTour"
+                        android:text="@string/artour1"
                         android:textColor="@color/white"
                         android:textSize="30sp" />
 
@@ -63,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:autoSizeMaxTextSize="14sp"
                         android:fontFamily="@font/carossoftbold"
-                        android:text="Turistički vodič opštine Milići"
+                        android:text="@string/turisticki_vodic"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -103,16 +109,18 @@
                         android:fontFamily="@font/carossoftbold"
                         android:onClick="prikaziOpstinu"
                         android:padding="15dp"
-                        android:text="O opštini Milići"
+                        android:text="@string/o_opstini"
                         android:textColor="?attr/theme_text"
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/arrow_proceed" />
+                        app:srcCompat="@drawable/arrow_proceed"
+                        android:contentDescription="@string/opis_slike"
+                        tools:ignore="RtlHardcoded" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,16 +135,18 @@
                         android:autoSizeMaxTextSize="18sp"
                         android:fontFamily="@font/carossoftbold"
                         android:padding="15dp"
-                        android:text="O aplikaciji"
+                        android:text="@string/o_aplikaciji"
                         android:textColor="?attr/theme_text"
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/arrow_proceed" />
+                        app:srcCompat="@drawable/arrow_proceed"
+                        android:contentDescription="@string/opis_slike"
+                        tools:ignore="RtlHardcoded" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -151,16 +161,18 @@
                         android:autoSizeMaxTextSize="18sp"
                         android:fontFamily="@font/carossoftbold"
                         android:padding="15dp"
-                        android:text="Autorska prava i Uslovi korišćenja"
+                        android:text="@string/autorska_prava"
                         android:textColor="?attr/theme_text"
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/arrow_proceed" />
+                        app:srcCompat="@drawable/arrow_proceed"
+                        android:contentDescription="@string/opis_slike"
+                        tools:ignore="RtlHardcoded" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -181,8 +193,9 @@
                     android:autoSizeMaxTextSize="12sp"
                     android:fontFamily="@font/carossoft"
                     android:paddingLeft="10dp"
-                    android:text="ARTour©"
-                    android:textSize="10sp" />
+                    android:text="@string/artour"
+                    android:textSize="10sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -193,8 +206,9 @@
                     android:fontFamily="@font/carossoft"
                     android:gravity="right"
                     android:paddingRight="10dp"
-                    android:text="S ponosom predstavljamo Miliće 🌍"
-                    android:textSize="10sp" />
+                    android:text="@string/ponos_opstine"
+                    android:textSize="10sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp" />
 
             </LinearLayout>
 

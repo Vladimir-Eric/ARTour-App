@@ -41,8 +41,9 @@
             android:layout_marginBottom="2dp"
             android:autoSizeMaxTextSize="12sp"
             android:fontFamily="@font/carossoft"
-            android:text="ARTour©"
-            android:textSize="10sp" />
+            android:text="@string/artour"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -53,7 +54,8 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/rounded_bottom_navigation_bar"
             android:backgroundTint="@color/dark_theme"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:contentDescription="@string/opis_slike" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -65,7 +67,8 @@
             android:background="@drawable/rounded_bottom_navigation_bar"
             android:backgroundTint="?attr/nav_meni"
             android:elevation="8dp"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:contentDescription="@string/opis_slike" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -90,8 +93,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="TURISTIČKI VODIČ OPŠTINE MILIĆI"
-        android:textSize="25dp"
+        android:text="@string/turisticki_vodic"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:translationY="-260dp"
         android:visibility="gone"
@@ -103,8 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="IZDVOJENE LOKACIJE"
-        android:textSize="20dp"
+        android:text="@string/izdvojene_lokacije"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:translationY="-180dp"
         android:visibility="gone"

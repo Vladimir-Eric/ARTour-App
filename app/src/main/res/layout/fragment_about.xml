@@ -31,7 +31,8 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/arrow_small_left"
                 android:gravity="center"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/white"
+                tools:ignore="RtlHardcoded" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +50,7 @@
                     android:fontFamily="@font/carossoftbold"
                     android:gravity="center"
                     android:includeFontPadding="false"
-                    android:text="Naslov"
+                    android:text="@string/naslov"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -61,7 +62,7 @@
                     android:autoSizeMaxTextSize="12sp"
                     android:fontFamily="@font/carossoft"
                     android:includeFontPadding="false"
-                    android:text="Podnaslov"
+                    android:text="@string/podnaslov"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -84,13 +85,12 @@
                 android:id="@+id/tekst_tekst"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:fontFamily="@font/carossoft"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
                 android:paddingRight="20dp"
                 android:paddingBottom="130dp"
-                android:text="Tekst" />
+                android:text="@string/tekst" />
         </ScrollView>
 
     </LinearLayout>
@@ -103,7 +103,8 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="100dp"
         android:visibility="visible"
-        app:srcCompat="@drawable/gradient_rectangle" />
+        app:srcCompat="@drawable/gradient_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
     <ImageView
         android:id="@+id/background_rect2"
@@ -111,6 +112,7 @@
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        app:srcCompat="@drawable/white_rectangle" />
+        app:srcCompat="@drawable/white_rectangle"
+        android:contentDescription="@string/opis_slike" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

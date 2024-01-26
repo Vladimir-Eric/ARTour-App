@@ -449,6 +449,7 @@ Ovaj eksponat nije samo metalna konstrukcija; on je oživljeni spomenik radu, in
         <item>44.16922, 19.07745, Parking kod doma zdravlja</item>
         <item>44.16516, 19.07032, Parking kod sportske dvorane</item>
     </string-array>
+
 <!--tekstovi iz fragmenta_a_r-->
     <string name="kamera_opis">Ova kamera skenira mašine-eksponate muzeja rudarstva na otvorenom u Milićima, ali i druge znamenitosti Milića koji kriju zaboravljene priče, oživljene fragmentima prošlosti.\nOtkrijte ih i upoznajte Miliće
                 \n\nŠta mi treba da bih koristio ovu kameru?\n\nSve što trebate je naša aplikacija. Ona sadrži sve što je potrebno za kameru i interakciju sa realnim prostorom.\n\n\nKako mogu da je koristim?\n\n~Klikom na dugme \'Istražite Miliće\':\n~Usmjerite kameru ka objektu koji vas zanima,
@@ -461,5 +462,20 @@ Ovaj eksponat nije samo metalna konstrukcija; on je oživljeni spomenik radu, in
     <string name="skenirani_objekat">Skenirani objekat je...</string>
     <string name="kratka_istorija">Kratka istorija o skeniranom objektu:</string>
     <string name="istrazite_milice">Istražite Miliće</string>
+
+    <!--tekstovi activity_main-->
+    <string name="artour">ARTour©</string>
+    <string name="turisticki_vodic">TURISTIČKI VODIČ OPŠTINE MILIĆI</string>
+    <string name="izdvojene_lokacije">IZDVOJENE LOKACIJE</string>
+
+    <!--bottom_sheet_view-->
+    <string name="artour1">ARTour</string>
+    <string name="o_opstini">O opštini Milići</string>
+    <string name="o_aplikaciji">O aplikaciji</string>
+    <string name="autorska_prava">Autorska prava i Uslovi korišćenja</string>
+    <string name="ponos_opstine">S ponosom predstavljamo Miliće 🌍</string>
+    <string name="naslov">Naslov</string>
+    <string name="podnaslov">Podnaslov</string>
+    <string name="tekst">Tekst</string>
 
 </resources>
