@@ -3,8 +3,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ARFragment"
-    android:layout_marginBottom="130dp">
+    tools:context=".ARFragment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="?attr/shadow_menu"
+        android:visibility="visible"
+        app:srcCompat="@drawable/gradient_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/white_rectangle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button"
+        android:layout_below="@+id/confidencesText"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/menu_heading"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/opis_slike" />
+
+            <TextView
+                android:id="@+id/classified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0sp"
+                android:fontFamily="@font/carossoft"
+                android:text="@string/skenirani_objekat"
+                android:textColor="@color/primarna_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/carossoft"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/primarna_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/confidencesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0sp"
+                android:fontFamily="@font/carossoftbold"
+                android:text="@string/kratka_istorija"
+                android:textColor="@color/primarna_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/confidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/carossoft"
+                android:text=""
+                android:textColor="@color/primarna_700"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -112,9 +197,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autoSizeMaxTextSize="1sp"
+                android:fontFamily="@font/carossoftbold"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="10dp"
-                android:fontFamily="@font/carossoftbold"
                 android:text="@string/kamera_opis"
                 android:textAlignment="textStart"
                 android:textSize="14sp" />
@@ -123,82 +208,14 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/menu_heading"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/opis_slike" />
-
-    <TextView
-        android:id="@+id/classified"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/menu_heading"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0sp"
-        android:text="@string/skenirani_objekat"
-        android:textColor="@color/primarna_700"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/carossoft"
-        android:visibility="gone"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_centerHorizontal="true"
-        android:text=""
-        android:gravity="center"
-        android:textColor="@color/primarna_700"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:id="@+id/result"
-        android:layout_below="@+id/classified"
-        android:fontFamily="@font/carossoft"
-        android:visibility="gone"/>
-
-    <TextView
-        android:id="@+id/confidencesText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/result"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0sp"
-        android:text="@string/kratka_istorija"
-        android:textColor="@color/primarna_700"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/carossoftbold"
-        android:visibility="gone" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_below="@+id/confidencesText"
-        android:layout_above="@id/button">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="@color/primarna_700"
-        android:textSize="15sp"
-        android:id="@+id/confidence"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/carossoft" />
-
-    </ScrollView>
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/round_btn1"
+        android:layout_marginBottom="110dp"
+        android:backgroundTint="?attr/naslovna_linija"
         android:fontFamily="@font/carossoftbold"
         android:text="@string/istrazite_milice"
         android:textColor="@color/white"
