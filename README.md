@@ -16,7 +16,7 @@ Users can scan selected attractions using their device camera and receive inform
 
 ## AR Camera
 
-<p>The AR camera is the main innovative feature of the application.</p>
+<p>The main feature of ARTOUR is its augmented reality camera with image recognition.</p>
 <p>Using image recognition, the application can recognize selected attractions in the Municipality of Milići, including mining
 machinery located in the Museum of the mining on the open and Rajkov Tower</p>
 <p>After an attraction is recognized, the application displays information and an image related to the recognized location</p>
