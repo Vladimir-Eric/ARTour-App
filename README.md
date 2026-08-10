@@ -40,6 +40,22 @@ Users can explore locations through an interactive map or browse them by categor
 The interactive map displays locations included in the application and allows users to explore the municipality and find
 important places and tourist attractions.
 
+## Screenshots
+<p align="center" padding="10">
+  <img src="screenshots/info.jpg" width="200">
+  <img src="screenshots/map1.jpg" width="200">
+  <img src="screenshots/map2.jpg" width="200">
+</p>
+<p align="center" padding="10">
+  <img src="screenshots/home.jpg" width="200">
+  <img src="screenshots/locations.jpg" width="200">
+  <img src="screenshots/locations1.jpg" width="200">
+</p>
+<p align="center" padding="10">
+  <img src="screenshots/ar.jpg" width="200">
+  <img src="screenshots/ar1.jpg" width="200">
+</p>
+
 ## Technologies
 * Java
 * Teachable Machine
