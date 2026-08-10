@@ -17,15 +17,15 @@ Users can scan selected attractions using their device camera and receive inform
 ## AR Camera
 
 <p>The main feature of ARTOUR is its augmented reality camera with image recognition.</p>
-<p>Using image recognition, the application can recognize selected attractions in the Municipality of Milići, including mining
-machinery located in the Museum of the mining on the open and Rajkov Tower</p>
+<p>Using image recognition, the application can recognize selected attractions in the Municipality of Milići, including the mining
+machinery located in the Open-Air Mining Museum and Rajkov Tower</p>
 <p>After an attraction is recognized, the application displays information and an image related to the recognized location</p>
 
 ## Tourist Guide
 <p>ARTour provides a categorized overview of tourist attractions and important locations throughout the municipality.</p>
 Users can explore locations through an interactive map or browse them by category. Each location contains additional
   information and a description to help users learn more about the area.
-<p>The application also provides practical information about important local sevices and facilities, including: </p>
+<p>The application also provides practical information about important local services and facilities, including: </p>
 
 * Parking
 * Gas stations
@@ -64,7 +64,7 @@ important places and tourist attractions.
 
 ## Team Project
 
-ARTour was developed as a collaborative project by the team <b>iTek</b>.
+ARTour was developed as a collaborative project by the ***<b>iTek</b>*** team.
 
 ## Contributors
 * Vladimir Erić
