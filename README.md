@@ -22,11 +22,11 @@ machinery located in the Museum of the mining on the open and Rajkov Tower</p>
 <p>After an attraction is recognized, the application displays information and an image related to the recognized location</p>
 
 ## Tourist Guide
-
 <p>ARTour provides a categorized overview of tourist attractions and important locations throughout the municipality.</p>
 Users can explore locations through an interactive map or browse them by category. Each location contains additional
   information and a description to help users learn more about the area.
 <p>The application also provides practical information about important local sevices and facilities, including: </p>
+
 * Parking
 * Gas stations
 * Pharmacies
